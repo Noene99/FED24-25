@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Sandra Strijker
 
   #### Je startniveau:
-  Ik kies Blauw.
+  Blauw.
 
   #### Je focus:
   Surface plane.
@@ -119,7 +119,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   KLEURENBLINDHEID
   •	Opvallend: De kleuren van de hoverstate van de navigatie worden grijs in plaats van rood bij kleurenblindheid voor de kleur rood.
-  
+
 </details>
 
 
