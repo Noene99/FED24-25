@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Sandra Strijker
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Ik kies Blauw.
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Surface plane.
  
 </details>
 
@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  (https://www.justinbiebermusic.com/)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/justin-bieber-music.jpg" width="375px" alt="Home-page">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/Album-pagina.JPG" width="375px" alt="Albumpagina">
  
 </details>
 
@@ -58,6 +58,68 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  >>>>>>>>>>>TEST Screenreader
+
+  •	h1 is niet uniek en omvat opzich wel de inhoud van de eerste pagina maar onvoldoende.
+  •	Er is een link 'Listen to Honest' achter de image op de eerste pagina maar deze kan je niet aanklikken zonder de tab toets te gebruiken.
+
+>>>>>>>>>>>>>TEST WCAG checklist
+
+  CONTENT
+  •	Songtitels worden meevertaald wanneer de taal wordt aangepast.
+  •	Stream/download mag specifieker met een aria label en er moet worden aangegeven dat je naar een niewue pagina wordt geleid. (opent in nieuw venster)
+  •	Bekijk alles is te vaag en moet met een aria label worden gekenmerkt.
+  •	Alleen de term newsletter is wat kort. Kan wellicht beter worden aangemerkt als schrijf je in voor de nieuwsbrief met een aria label.
+
+  GLOBAL CODE
+  •	Er zijn 3 fouten in de code en veel waarschuwingen.
+  
+  KEYBOARD
+  •	De visuele focus van de tab is minimaal en weinig opvallend.
+  •	Keyboard focus en visuele layout kloppen niet helemaal. De volgorde van de carousel klopt ook niet helemaal. Eerst kan je op verder dan door alles heen en dan terug.
+  •	h2 staat onderaan de pagina en komt visueel na de eerste h3.
+
+  MOBILE AND TOUCH
+  Landscape mode op telefoon> nav is te lang. 
+
+  HEADINGS
+  •	h1 is niet uniek (het logo is de h1).
+
+  LISTS
+  •	Voor de Carousel is geen ul gebruikt. Moet dat? !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  IMAGES
+  •	Niet alle afbeeldingen hebben een goede alt-tekst met tekst die ook op ed afbeelding staat.
+
+  MEDIA (VIDEO en AUDIO)
+  •	Er is geen transcriptie en makkelijk toegankelijk en zichtbaar  maken.  
+
+  CONTROLS<<<>>>
+  •	Geen href bij sommige links maar een #
+  •	Geen type=’’button’’ bij sommige buttons
+  •	Onclick ipv button of a (submit form) 
+  •	De footer links hebben wel onderstreping bij hover state, maar BEKIJK ALLES en STREAM/DOWNLOAD niet.
+  •	STREAM/DOWNLOAD> onduidelijk dat er een nieuwe pagina wordt geopend voor mensen (met? en) zonder beperking.
+  •	Buttons in Carousel zijn niet genoeg herkenbaar als button.
+
+  APPEARANCE
+  •	Er is geen verschil tussen donkere en lichte modus. Wat moet ik hiermee!!!!!!??????
+  •	Animatie effecten besturingssysteem aan of uitzetten heeft geen verschil op de website.
+  •	Tekengrootte 200%> STREAM/DOWNLOAD overlapt elkaar wel op de homepagina maar op de albumpagina niet.
+  •	High-contrast wordt wel ondersteund maar de SM iconen hebben amper contrast op de albumpagina.
+
+  ANIMATIES
+  •	Kan niks vinden over de media query prefers reduced motion. Ik snap ook niet wat ermee bedoeld wordt en wat je zou moeten doen als het er is. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  •	Er is geen backgroundvideo
+  •	Animaties flitsen niet maar bewegen wel.
+
+  COLOR CONTRAST
+  •	de h2's hebben een te laag contrast en voldoen niet aan de regel van 3:1 contrastverhouding.
+  •	Ik kan geen custom ::selection colors vinden (voldoende contrast?) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  KLEURENBLINDHEID
+  •	Opvallend: De kleuren van de hoverstate van de navigatie worden grijs in plaats van rood bij kleurenblindheid voor de kleur rood.
+  
 </details>
 
 
