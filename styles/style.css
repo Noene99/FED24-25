@@ -29,3 +29,44 @@
 
 /* jouw code */
 
+
+/* Button container opmaak (het maken van grid en opmaak terwijl de streepjes opelkaar in het midden staan) */
+header button {
+	display:grid;
+	place-items:center;
+	aspect-ratio: 1;
+	appearance: none;
+	background: none;
+}
+/* button children opmaak (de streepjes) */
+header button span {
+	display: block;
+	grid-row-start: 1;
+	grid-column-start: 1;
+	border-radius: .4em;
+	transition: .2s;
+}
+
+/* Button header maken tot hamburgermenu */
+header button span:nth-child(1){
+	translate: 0 -1em;
+}
+  
+header button span:nth-child(3){
+	translate: 0 1em;
+}
+
+/* Button header wanneer geopend (dan is de klasse .toonMenu toegevoegd aan het element button) */
+header.toonMenu button span:nth-child(1){
+	translate: none;
+	rotate: 45deg;
+}
+  
+header.toonMenu button span:nth-child(2){
+	scale: 0 1;
+}
+  
+header.toonMenu button span:nth-child(3){
+	translate: none;
+	rotate: -45deg;
+}

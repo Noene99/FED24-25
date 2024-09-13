@@ -152,16 +152,56 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Dit ging goed:
+  •	Het globaal opdelen van de html (breakdownschets)
+  •	Het benoemen van de secties, kopjes en content als elementen
+  •	
+
+  Dit ging niet goed:
+  •	De attributen (aria-labels ed) benoemen.
+  •	Alle content van de website halen en downloaden en organiseren.
+  •	Ik zou graag een schema willen van welke dynamische delen ik uiteindelijk wil doen.
+  •	Een planning
+  •	De kleuren aanmaken
+  •	
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+ Vragen:
 
+Moet de website nagemaakt worden ondanks dat ik denkdat sommige ontwerpkeuzes beter konden? Bv. Newsletter wordt afgesneden en dat is fixed responsiveness.
+
+Moeten we rekening houden met fluid design, fixed design en adaptive design?
+
+kloppen bovenstaande media queries?
+
+SM iconen nav?
+
+Moet ik een legend geven in het formulier?
+
+KLopt dit?
+
+Media query
+
+/* Telefoons */
+@media (max-width: 767px) {
+/* CSS voor telefoons */
+ }
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+ /* CSS voor tablets */
+}
+
+/* Desktops */
+@media (min-width: 1025px) {
+/* CSS voor desktops */
+ }
+
+
+Kan ik ergens anders op focussen in plaats van op de buttons onderaan de carousel en dit doen met spans want ik ben bang dat ik met de carousel, animaties en hamburgermenu al mn handen vol heb.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen

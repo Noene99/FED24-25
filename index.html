@@ -15,19 +15,39 @@
 <body>
 	<header>
 		<!-- logo -->
-		 <!-- moet  het logo in een p blok element of div? -->
-		<p> 
-			<a href="index.html">
-				<img id="logo" src="images/logo-Justin-Bieber.png" alt="logo Justin Bieber">
+		 <!-- Aria label hier of onnodig door de alt tekst bij de img? --> 
+		<h1>
+			<!-- href= index.html of # -->
+			<a href=#> 
+				<img id="logo-website" src="images/logo-Justin-Bieber.png" alt="logo Justin Bieber">
 			</a>
-		</p>
+		</h1>
 		<!--navigatie-->
+		
+		<button aria-label="Open navigatiemenu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
 		<nav>
 			<ul>
-				<li><a href="">Music</a></li>
-				<li><a href="">Tour</a></li>
-				<li><a href="">Shop</a></li>
-				<li><a href="">Video's</a></li>
+				<!-- Klopt dit met die #? -->
+				 <!-- Zijn hier aria-labels nodig? -->
+				<li><a href="#" aria-label="Klik hier voor een overzicht van alle albums en singles van Justin Bieber.">Music</a></li>
+				<li><a href="#" aria-label="Klik hier om meer informatie over Justin's tour te ontdekken">Tour</a></li>
+				<li><a href="#" aria-label="Bezoek de officiële Justin Bieber Webshop">Shop</a></li>
+				<li><a href="#" aria-label="Klik hier om alle video's van Justin Bieber te zien">Video's</a></li>
+			</ul>
+
+			<ul>
+				<li><a href="#"><img src="images/" alt="Apple Music"></a></li>
+				<li><a href="#"><img src="images/" alt="Facebook"></a></li>
+				<li><a href="#"><img src="images/" alt="Instagram"></a></li>
+				<li><a href="#"><img src="images/" alt="Spotify"></a></li>
+				<li><a href="#"><img src="images/" alt="X"></a></li>
+				<li><a href="#"><img src="images/" alt="Youtube"></a></li>
+				<li><a href="#"><img src="images/" alt="Mailing list"></a></li>
 			</ul>
 		</nav>
 	</header>
