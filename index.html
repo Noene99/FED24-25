@@ -57,34 +57,59 @@
 
 		</section>
 
-		<section aria-labelledby="newsletter-heading">
-			<h2 id="newsletter-heading">Newsletter</h2>
-			
-			<form action="#" method="POST">
-			  <!-- Email field -->
-			  <div>
-				<label for="email">Email</label>
-				<input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
-			  </div>
-			  
+		<form action="#" method="POST"> <!-- attributen nog bekijken -->
+			<!-- Koptitel voor de sectie -->
+			<h2>Newsletter</h3>
+		  
+			<!-- Groep van checkboxes voor de keuze wie updates stuurt, van chat gpt -->
+			<fieldset>
+			  <legend>Subscribe to Email Updates From:</legend>
+		  
+			  <label>
+				<input type="checkbox" name="subscription" value="justin-bieber"> Justin Bieber
+			  </label><br>
+		  
+			  <label>
+				<input type="checkbox" name="subscription" value="def-jam"> Def Jam
+			  </label><br>
+		  
+			  <label>
+				<input type="checkbox" name="subscription" value="universal-music-group"> Universal Music Group
+			  </label>
+			</fieldset>
+		  
+			<!-- Label en invoerveld voor het e-mailadres -->
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" autocomplete="email" required>
+		  
+			<!-- Label en invoerveld voor landselectie -->
 			  <!-- Country selection field -->
-			  <div>
+			<div>
 				<label for="country">Choose country</label>
 				<input list="countries" id="country" name="country" placeholder="Select country" required>
 				<datalist id="countries">
-				  <option value="United States"></option>
-				  <option value="Canada"></option>
-				  <option value="United Kingdom"></option>
-				  <option value="Australia"></option>
-				  <option value="Germany"></option>
-				  <!-- More countries -->
+					<option value="United States"></option>
+					<option value="Canada"></option>
+					<option value="United Kingdom"></option>
+					<option value="Australia"></option>
+					<option value="Germany"></option>
+					<!-- More countries -->
 				</datalist>
-			  </div>
-			  
-			  <!-- Submit button -->
-			  <button type="submit">Submit</button>
-			</form>
-		  </section>
+			</div>
+		  
+			<!-- Informatie over de e-mails en privacybeleid -->
+			<p>Emails will be sent by or on behalf of Universal Music Group, 2220 Colorado Avenue, Santa Monica, CA 90404, (310) 865-4000. You may withdraw your consent at any time.</p>
+		  
+			<!-- Links naar Privacy Policy en Do Not Sell -->
+			<p>
+			  <a href="privacy-policy-url">Privacy Policy</a> /
+			  <a href="do-not-sell-url">Do Not Sell My Personal Information</a>
+			</p>
+		  
+			<!-- Submit-knop -->
+			<button type="submit">Sumbit</button>
+		</form>
+
 	</main>
 
 	<footer>
