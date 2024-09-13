@@ -54,12 +54,18 @@
 
 	<main>
 		<section>
+			<h2>Video's</h2>
 
+			<button aria-label="Ga naar alle singles en albums">View All</button> <!-- Koptitel voor de sectie -->
 		</section>
 
-		<form action="#" method="POST"> <!-- attributen nog bekijken -->
-			<!-- Koptitel voor de sectie -->
+		<section>
+
+		</section>
 			<h2>Newsletter</h3>
+
+			<form action="#" method="POST"> <!-- attributen nog bekijken -->
+			<!-- Koptitel voor de sectie -->
 		  
 			<!-- Groep van checkboxes voor de keuze wie updates stuurt, van chat gpt -->
 			<fieldset>
@@ -77,14 +83,14 @@
 				<input type="checkbox" name="subscription" value="universal-music-group"> Universal Music Group
 			  </label>
 			</fieldset>
-		  
-			<!-- Label en invoerveld voor het e-mailadres -->
-			<label for="email">Email</label>
-			<input type="email" id="email" name="email" autocomplete="email" required>
-		  
-			<!-- Label en invoerveld voor landselectie -->
-			  <!-- Country selection field -->
-			<div>
+
+			<fieldset>
+				<!-- Label en invoerveld voor het e-mailadres -->
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" autocomplete="email" required>
+			
+				<!-- Label en invoerveld voor landselectie -->
+				<!-- Country selection field -->
 				<label for="country">Choose country</label>
 				<input list="countries" id="country" name="country" placeholder="Select country" required>
 				<datalist id="countries">
@@ -93,9 +99,10 @@
 					<option value="United Kingdom"></option>
 					<option value="Australia"></option>
 					<option value="Germany"></option>
-					<!-- More countries -->
+						<!-- More countries -->
 				</datalist>
-			</div>
+			</fieldset>
+
 		  
 			<!-- Informatie over de e-mails en privacybeleid -->
 			<p>Emails will be sent by or on behalf of Universal Music Group, 2220 Colorado Avenue, Santa Monica, CA 90404, (310) 865-4000. You may withdraw your consent at any time.</p>
@@ -113,9 +120,13 @@
 	</main>
 
 	<footer>
-
+		<ul>
+			<li><a href="privacy-policy-url">Privacy Policy</a></li>
+			<li><a href="terms-conditions-url">Terms & Conditions</a></li>
+			<li><a href="cookie-choices-url">Cookie Choices</a></li>
+			<li><a href="do-not-sell-url">Do Not Sell My Personal Information</a></li>
+		</ul>
 	</footer>
-	<h1>Howdy FED2425</h1>
 
 	<script defer src="scripts/script.js"></script>
 </body>
