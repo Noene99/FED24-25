@@ -130,13 +130,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets-homepage.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### de tweede pagina: 
+  <img src="readme-images/breakdownschets-albumpagina.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### dynamisch deel (Menu): 
+  <img src="readme-images/dynamisch-deel-1-menu-breakdownschets.png" width="375px" alt="breakdown van het menu">
+
+  ### wellicht nog een dynamisch deel (Carousel): 
+  <img src="readme-images/dynamisch-deel-2-carousel-breakdownschets.jpg" width="375px" alt="breakdown van de carousel">
+
+  ### wellicht nog een dynamisch deel (Formulier): 
+  <img src="readme-images/dynamisch-deel-3-formulier-breakdownschets.jpg" width="375px" alt="breakdown van het formulier">
 
 </details>
 
@@ -155,7 +161,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Dit ging goed:
   •	Het globaal opdelen van de html (breakdownschets)
   •	Het benoemen van de secties, kopjes en content als elementen
-  •	
 
   Dit ging niet goed:
   •	De attributen (aria-labels ed) benoemen.
@@ -163,59 +168,117 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   •	Ik zou graag een schema willen van welke dynamische delen ik uiteindelijk wil doen.
   •	Een planning
   •	De kleuren aanmaken
-  •	
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  Vragen:
+  - Moet er een p om mijn date/time element?
+  - Carousel opbouw?
+  - Kan ik ergens anders op focussen in plaats van op de buttons onderaan de carousel en dit doen met spans want ik ben bang dat ik met de carousel, animaties en hamburgermenu al mn handen vol heb.
+  - De volgorde van de header elementen goed?
+  - Listen to Honest h2
+  - Wel of geen aria label bij view all?
+  - Welke onderdelen wel en welke onderdelen niet maken
+  - Moet de section wel of geen aria label? moet dit consistent?
+  - Moet de website nagemaakt worden ondanks dat ik denkdat sommige ontwerpkeuzes beter konden? Bv. Newsletter wordt afgesneden en dat is fixed responsiveness.
+  - Moeten we rekening houden met fluid design, fixed design en adaptive design?
+  - kloppen bovenstaande media queries?
+  - SM iconen nav?
+  - Moet ik een legend geven in het formulier?
+  - KLopt dit?
+          Media query
 
- Vragen:
+          /* Telefoons */
+          @media (max-width: 767px) {
+          /* CSS voor telefoons */
+          }
 
-Moet de website nagemaakt worden ondanks dat ik denkdat sommige ontwerpkeuzes beter konden? Bv. Newsletter wordt afgesneden en dat is fixed responsiveness.
+          /* Tablets */
+          @media (min-width: 768px) and (max-width: 1024px) {
+          /* CSS voor tablets */
+          }
 
-Moeten we rekening houden met fluid design, fixed design en adaptive design?
-
-kloppen bovenstaande media queries?
-
-SM iconen nav?
-
-Moet ik een legend geven in het formulier?
-
-KLopt dit?
-
-Media query
-
-/* Telefoons */
-@media (max-width: 767px) {
-/* CSS voor telefoons */
- }
-
-/* Tablets */
-@media (min-width: 768px) and (max-width: 1024px) {
- /* CSS voor tablets */
-}
-
-/* Desktops */
-@media (min-width: 1025px) {
-/* CSS voor desktops */
- }
-
-
-Kan ik ergens anders op focussen in plaats van op de buttons onderaan de carousel en dit doen met spans want ik ben bang dat ik met de carousel, animaties en hamburgermenu al mn handen vol heb.
+          /* Desktops */
+          @media (min-width: 1025px) {
+          /* CSS voor desktops */
+          }
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+>>>Opmerkingen:
+  - H1 geen a op de eerste pagina. H1 ook aria label geven, omdat het een h1 is zonder tekst, maar met een afbeelding.
+  - Video element bevat een width en height omdat dan al meteen de juiste hoogte en breedte kunnen worden ongenomen.
+  - Video element kan een poster attribuut bevatten (soort thumbnail)
+  - Attribuut >Aria-current=''page''< op de actieve pagina (li) in ed navigatie zetten. Dit doe je voor elke pagina op het li dat actief is. In de CSS spreek je dit aan als: a[attribuut]
+  - Span kan je gebruiken voor een inline stukje tekst wat apart betekenis moet krijgen.
+  - Articles staan op zichzelf en kunnen worden hergeberuik.
+  - q element is voor een quote en dan plaats je ook '' ''.
+  - pre element is er zodat als je tekst op een nieuwe pagina doet dat de witruimte ertoe doet en het zo onder elkaar komt te staan.
+  - Time moet in een p!
+  - In de carousel moeten onderaan a tjes en de li moeten allemaal een eigen id hebben om aan te kunnen spreken. 
+
+
+>>>Zelf uitzoeken a.d.v. feedback:
+  - Wanneer br (en geen pre of p)?
+  br is inline en gebruik je binnen een p om tekst op een nieuwe regel te laten beginnen zoals bij een handtekening onderaan aan mail. Pre wordt gebruikt voor kunst en behoudt witruimte. Het is een blokelement en wordt herkend als kunst. https://chatgpt.com/c/66df49ba-dbac-8005-983e-56c3c8a2903a
+  - Waarom een a en geen button bij de carousel dots?
+
+>>>Beantwoorde vragen:
+  - Moet er een p om het date/time element?
+  Antwoord: ja want date/time is inline en in feite is het een p met een date/time erin.
+  - Hoe is de carousel opgebouwd?
+  Antwoord:
+  Ul>li (met id's)>h3, img, p, a
+  buttons eronder
+  a a a a a a a a a a a
+  - Wat is de volgorde van de header elementen?
+  Antwoord: H1, button, nav is een goede volgorde
+
+>>>Niet kunnen vragen:
+  - Moet er altijd een p element om het time element, want Chat GPT zegt van niet (zie heironder) en ik snap niet waarom het semantisch wel zou moeten.
+  Antwoord Chat GPT (https://chatgpt.com/c/66df49ba-dbac-8005-983e-56c3c8a2903a):
+  Inline-element: Het <time>-element gedraagt zich inline, net als andere tekst, en kan binnen een <p> gebruikt worden, maar dat hoeft niet.
+  Keuze afhankelijk van context: Als de datum onderdeel is van een tekst, gebruik je het binnen een <p>. Als de datum zelfstandig is, kun je het zonder aanvullende tags gebruiken.
+
+  - Ik snap h2 ''Listen to Hones'' niet op de officiele website. Deze staat achter de afbeelding, maar je kan niet op de afbeelding klikken. Via tab kan je hierheen navigeren en als je op enter klikt dan wordt je doorgestuurd naar een website, maar je kan niet op de afbeelding zelf klikken. Waarom?
+
+  - Wel of geen aria label bij view all? (want de link bevind zich in de desbetreffende sectie/je kan aan de context zien wat het moet zijn)
+
+  - Op welke onderdelen kan ik me het beste als eerst focussen en welke daarna en welke niet? (te moeilijk). Is alles haalbaar?
+
+  - Kan ik ergens anders op focussen in plaats van op de links onderaan de carousel want ik ben bang dat ik met de carousel, animaties en hamburgermenu al mn handen vol heb.
+
+  - Moet de section wel of geen aria label? moet dit consistent?
+
+  - Moet de website nagemaakt worden ondanks dat ik denk dat sommige ontwerpkeuzes beter konden? Bv. Newsletter wordt afgesneden en dat is fixed responsiveness.
+
+  - Moeten we rekening houden met fluid design, fixed design en adaptive design?
+
+  - Moet ik een legend geven in het formulier?
+  Ja, je kunt een <fieldset> gebruiken zonder een <legend>-element en in plaats daarvan een ARIA-label gebruiken om de toegankelijkheid te verbeteren. Het <legend>-element wordt echter aanbevolen omdat het standaard ondersteunt wordt door schermlezers en browsers om de context van de velden te verduidelijken. Maar als je om welke reden dan ook geen <legend> wilt gebruiken, kun je een ARIA-label toevoegen voor toegankelijkheid.
+  https://chatgpt.com/c/66e4268f-aa78-8005-a9af-4c22c7f4dffb
+
+  - Klopt de html code in mijn formulier zo?
+
+  - Kloppen onderstaande media queries?
+    /* Telefoons */
+    @media (max-width: 767px) {
+    /* CSS voor telefoons */
+    }
+
+    /* Tablets */
+    @media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS voor tablets */
+    }
+
+    /* Desktops */
+    @media (min-width: 1025px) {
+    /* CSS voor desktops */
+    }
+
 
 </details>
-
-
-
-
 
 ## Voortgang 2 (week 3)
 
