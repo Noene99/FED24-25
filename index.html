@@ -73,16 +73,26 @@
 					<!-- volgorde image en tekst -->
 					<h3>Honest</h3>
 					<!-- Date time? -->
-                    <time datetime="2022-04-29">Apr 29th 2022</time>
+                    <p><time datetime="2022-04-29">Apr 29th 2022</time></p>
                     <a href="#">Stream/Download</a>
 
 					<img src="images/carousel/hold-on-single.jpg" alt="Honest ">
 				</li>
 			</ul>
 
+			<!-- Navigatieknoppen in een nav-element -->
 			<!-- Tekst kan ik vervangen naar een icoon in CSS -->
-			<button>Volgende single</button>
-			<button>Vorige single</button>
+			<nav class="carousel-controls">
+				<button>Next song</button>
+				<button>Previous song</button>
+			</nav>
+		
+			<!-- Dots als navigatie in een nav-element -->
+			<nav class="carousel-dots">
+				<button class="dot active" onclick="goToSlide(1)">Load first song</button>
+				<button class="dot" onclick="goToSlide(2)">Load second song</button>
+				<button class="dot" onclick="goToSlide(2)">Load third song</button>
+			</nav>
 
 			<!-- Span of button? -->
 			<button aria-label="Ga naar alle singles en albums">View All</button> <!-- Is aria label nodig?? -->
@@ -90,6 +100,7 @@
 
 		<section>
 			<h2>Video's</h2>
+
 
 			<img src="images/video.jpg" alt="Thumbnail van de video van Honest van Justin Bieber en Don Oliver op Vevo. Het centrale beeld op de cover toont Justin Bieber en Don Oliver op een jetski die door de sneeuw rijdt. Dit beeld is verrassend en enigszins surrealistisch, aangezien jetski's meestal geassocieerd worden met water en niet met sneeuw. De jetski zelf is opvallend en gedetailleerd, en het contrast tussen de sneeuw en het voertuig benadrukt de unieke en speelse aard van de cover.">
 
