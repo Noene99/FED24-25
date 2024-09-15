@@ -15,9 +15,27 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text-primary: black;
+	--color-text-primary: white;
+	--color-text-secondary: #555555;
+	--color-text-footer: #B3B3B3;
+	--color-bigtext-background-light: #E5E5E5;
+	--color-bigtext-background-dark: #1A1A1A;
+
+	--color-logo: white;
+
+	--color-section-background-light: white;
+	--color-section-background-dark: black;
+	--color-section-background-album: lightgrey;
+	--color-footer-background: black;
+
+	--color-vibrant: #FE5768;
+	--color-vibrant-dark:#7F2B34
+	;
+
+
 }
+
 
 
 

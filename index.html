@@ -18,26 +18,23 @@
 
 <body>
 	<header>
-		<!-- logo -->
-		 <!-- Aria label hier of onnodig door de alt tekst bij de img? --> 
-		<h1>
-			<!-- href= index.html of # -->
-			<a href=#> 
-				<img id="logo-website" src="images/logo-justin-bieber.png" alt="logo Justin Bieber" width="200px">
-			</a>
+		<!-- LOGO -->
+		 <!-- Aria label hier of onnodig door de alt tekst bij de img? Beter wel een aria-label want er staat geen tekst in de h1 maar een image --> 
+		<h1 aria-label="Justin Bieber Music website">
+			<img id="logo-website" src="images/logo-justin-bieber.png" alt="logo Justin Bieber" width="200px">
 		</h1>
 
-		<!--navigatie--> 
+		<!--HAMBURGERMENU--> 
 		<!-- DE VOLGORDE VAN DE HEADER ELEMENTEN -->
-		<button aria-label="Toggle navigatiemenu">
+		<button aria-label="Toggle navigatiemenu">  <!-- geen open of close, anders moet je dit met Javascript erin zetten en dit is opzich mooi maar meer werk -->
 			<span></span>
 			<span></span>
 			<span></span>
 		</button>
 
 		<nav>
+			<!-- MAIN NAV -->
 			<ul>
-				<!-- Klopt dit met die #? -->
 				 <!-- Zijn hier aria-labels nodig? -->
 				<li><a href="#">Music</a></li>
 				<li><a href="#">Tour</a></li>
@@ -45,6 +42,7 @@
 				<li><a href="#">Video's</a></li>
 			</ul>
 
+			<!-- SOCIAL NAV -->
 			<ul>
 				<li><a href="#"><img src="images/" alt="Apple Music"></a></li>
 				<li><a href="#"><img src="images/" alt="Facebook"></a></li>
@@ -60,7 +58,8 @@
 	<main>
 		<section>
 			<h2>Listen to Honest</h2>
-			<a href="#">
+			<!-- Target blank, aria label, title of content? -->
+			<a href="#" aria-label="Click here to stream the latest song of Justin Bieber" target="_blank">
 				<img src="images/promo-jb-honest-landscape.jpg" alt="Cover newest single 'Honest' by Justin Bieber and Don Oliver. Het centrale beeld op de cover toont Justin Bieber en Don Oliver die tegenover elkaar staan met dikke felgekleurde winterjassen. De achtergrond van de cover is een sneeuwbedekt landschap. Het lijkt een winterlandschap te zijn, met veel wit van de sneeuw die een frisse en koele sfeer creëert. Voor hun staat centraal een jetski op de sneeuw in beeld. De letters van de tekst zijn fel oranje.">
 			</a>
 		</section>
@@ -69,42 +68,52 @@
 			<h2>Music</h2>
 
 			<ul>
-				<li>
+				<li id="dia1">
 					<!-- volgorde image en tekst -->
 					<h3>Honest</h3>
 					<!-- Date time? -->
-                    <p><time datetime="2022-04-29">Apr 29th 2022</time></p>
+                    <p><time datetime="2021-03-05">Mar 5th 2021</time></p>
                     <a href="#">Stream/Download</a>
 
-					<img src="images/carousel/hold-on-single.jpg" alt="Honest ">
+					<img src="images/carousel/hold-on-single.jpg" alt="Hold on sigle ">
 				</li>
+
+				<li id="dia2">
+					<!-- volgorde image en tekst -->
+					<h3>I feel funny</h3>
+					<!-- Date time? -->
+                    <p><time datetime="2022-04-27">Apr 27th 2022</time></p>
+                    <a href="#">Stream/Download</a>
+
+					<img src="images/carousel/ifeelfunny-carousel.jpg" alt="Honest ">
+				</li>
+
 			</ul>
 
 			<!-- Navigatieknoppen in een nav-element -->
 			<!-- Tekst kan ik vervangen naar een icoon in CSS -->
-			<nav class="carousel-controls">
+			<nav aria-label="Carousel-controls">
 				<button>Next song</button>
 				<button>Previous song</button>
 			</nav>
 		
 			<!-- Dots als navigatie in een nav-element -->
-			<nav class="carousel-dots">
-				<button class="dot active" onclick="goToSlide(1)">Load first song</button>
-				<button class="dot" onclick="goToSlide(2)">Load second song</button>
-				<button class="dot" onclick="goToSlide(2)">Load third song</button>
+			<nav aria-label="Carousel-dots">
+				<button aria-label="Hold On - Justin Bieber" aria-current="true">Load first song</button>
+				<button aria-label="I feel funny - Justin Bieber">Load second song</button>
+				<button aria-label="Peaches - Justin Bieber">Load third song</button>
 			</nav>
 
-			<!-- Span of button? -->
-			<button aria-label="Ga naar alle singles en albums">View All</button> <!-- Is aria label nodig?? -->
+			<a href="justice-pagina.html" aria-label="View all songs and albums">View All</a>
 		</section>
 
 		<section>
 			<h2>Video's</h2>
 
+			<video src="videos/Justin Bieber - Honest ft. Don Toliver.mp4" poster="images/video.jpg" controls width="50%" preload="none"></video>
+			<button aria-label="Play Honest">Play Honest</button>
 
-			<img src="images/video.jpg" alt="Thumbnail van de video van Honest van Justin Bieber en Don Oliver op Vevo. Het centrale beeld op de cover toont Justin Bieber en Don Oliver op een jetski die door de sneeuw rijdt. Dit beeld is verrassend en enigszins surrealistisch, aangezien jetski's meestal geassocieerd worden met water en niet met sneeuw. De jetski zelf is opvallend en gedetailleerd, en het contrast tussen de sneeuw en het voertuig benadrukt de unieke en speelse aard van de cover.">
-
-			<button>View All</button> <!-- Is aria label nodig?? -->
+			<a href="#" aria-label="View all video's">View All</a>
 		</section>
 
 	

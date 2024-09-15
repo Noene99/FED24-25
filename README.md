@@ -240,28 +240,56 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Antwoord Chat GPT (https://chatgpt.com/c/66df49ba-dbac-8005-983e-56c3c8a2903a):
   Inline-element: Het <time>-element gedraagt zich inline, net als andere tekst, en kan binnen een <p> gebruikt worden, maar dat hoeft niet.
   Keuze afhankelijk van context: Als de datum onderdeel is van een tekst, gebruik je het binnen een <p>. Als de datum zelfstandig is, kun je het zonder aanvullende tags gebruiken.
+  --> wat ChatGPT zegt klopt --> een losse datum alleen is vaak wel ambigu 
 
   - Ik snap h2 ''Listen to Hones'' niet op de officiele website. Deze staat achter de afbeelding, maar je kan niet op de afbeelding klikken. Via tab kan je hierheen navigeren en als je op enter klikt dan wordt je doorgestuurd naar een website, maar je kan niet op de afbeelding zelf klikken. Waarom?
+  --> ja een aria label - als je alleen het linkje hoort weet je niet waar "all" op slaat
 
   - Wel of geen aria label bij view all? (want de link bevind zich in de desbetreffende sectie/je kan aan de context zien wat het moet zijn)
 
   - Op welke onderdelen kan ik me het beste als eerst focussen en welke daarna en welke niet? (te moeilijk). Is alles haalbaar?
 
+  - Zal ik het menu, form of carousel uitwerken?
+  --> dingen die verschillend zijn uitwerken
+  --> dingen die interessant zijn uitwerken
+  --> tot de tijd op is
+
+  - Is een form een dynamisch deel?
+  --> als het form wat doet wel
+
   - Kan ik ergens anders op focussen in plaats van op de links onderaan de carousel want ik ben bang dat ik met de carousel, animaties en hamburgermenu al mn handen vol heb.
 
+  - Chat GPT zegt dat die dots onderaan de carousel eigenlijk buttons zijn:
+ 
+  --> ChatGPT heeft geen gelijk (en links zijn ook nog makkelijker qua code :)
+  
+  --> ChatGPT kijkt naar wat er in het verleden gemaakt is. Heel veel websites zitten niet zo goed in elkaar. Dat is voor ChatGPT de werkelijkheid. Dus altijd kritisch zijn wat ChatGPT tegen je zegt (dat ben je overigens 👍).
+  
+  Nb. code die ja van ChatGPT overneemt telt niet mee als eigen werk. Zorg dat je je bronnen in je code vermeldt.
+
   - Moet de section wel of geen aria label? moet dit consistent?
+  --> alleen een aria-label als er geen heading is --> maar dan nog liever een heading toevoegen en die toegankelijk verstoppen
+  --> dus nee dat hoeft niet consistent
 
   - Moet de website nagemaakt worden ondanks dat ik denk dat sommige ontwerpkeuzes beter konden? Bv. Newsletter wordt afgesneden en dat is fixed responsiveness.
+  --> Je moet de website beter maken
 
   - Moeten we rekening houden met fluid design, fixed design en adaptive design?
+  --> fluid design --> yeah
+  --> fixed design --> bah
+  --> adaptive design --> mwah
 
   - Moet ik een legend geven in het formulier?
   Ja, je kunt een <fieldset> gebruiken zonder een <legend>-element en in plaats daarvan een ARIA-label gebruiken om de toegankelijkheid te verbeteren. Het <legend>-element wordt echter aanbevolen omdat het standaard ondersteunt wordt door schermlezers en browsers om de context van de velden te verduidelijken. Maar als je om welke reden dan ook geen <legend> wilt gebruiken, kun je een ARIA-label toevoegen voor toegankelijkheid.
   https://chatgpt.com/c/66e4268f-aa78-8005-a9af-4c22c7f4dffb
+  --> zelfde als voor sections en heading --> een legend toevoegen (en eventueel toegankelijk verstoppen)
 
   - Klopt de html code in mijn formulier zo?
 
   - Kloppen onderstaande media queries?
+  --> nee
+  --> van klein naar groot werken (mobile first) --> wel min-width --> geen max-width
+  -->en ook niet denken in devices --> fluid design is een continuüm
     /* Telefoons */
     @media (max-width: 767px) {
     /* CSS voor telefoons */
