@@ -1,3 +1,30 @@
+@font-face {
+	font-family: "Nimbus sans regular";
+	src: url("../fonts/NimbusSanL-Reg.otf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "Nimbus sans bold";
+	src: url("../fonts/NimbusSanL-Bol.otf") format("opentype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "Playfair Display";
+	src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+	font-weight: 400 900;
+	font-style: normal;
+	font-display: fallback;
+}
+
+
+
+
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -31,32 +58,20 @@
 
 	--color-vibrant: #FE5768;
 	--color-vibrant-dark:#7F2B34;
-
-	@font-face {
-		font-family: "Nimbus sans regular";
-		src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
-		font-weight: 400;
-		font-style: normal;
-		font-display: fallback;
-	  }
-
-	  @font-face {
-		font-family: "Nimbus sans bold";
-		src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
-		font-weight: 700;
-		font-style: normal;
-		font-display: fallback;
-	  }
-
-	@font-face {
-		font-family: "Playfair Display bold";
-		src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
-		font-weight: 700;
-		font-style: normal;
-		font-display: fallback;
-	  }
-
 }
+
+
+
+
+
+* {
+	font-family: 'Playfair Display';
+}
+
+/* * {
+	font-family: 'Nimbus Sans regular';
+	text-transform: uppercase;
+} */
 
 
 
