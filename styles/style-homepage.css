@@ -1,0 +1,69 @@
+/**************/
+/*   Fonts    */
+/**************/
+/* moeten als eerste worden ingeladen omdat deze worden geimporteerd. Deze moeten daarom bovenaan in de CSS staan */
+
+@font-face {
+	font-family: "Nimbus sans regular";
+	src: url("../fonts/NimbusSanL-Reg.otf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "Nimbus sans bold";
+	src: url("../fonts/NimbusSanL-Bol.otf") format("opentype"); 
+	font-weight: 700;
+	font-style: normal;
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "Playfair Display";
+	src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+	font-weight: 400 900;
+	font-style: normal;
+	font-display: fallback;
+}
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text-primary: black;
+	--color-text-primary: white;
+	--color-text-secondary: #555555;
+	--color-text-footer: #B3B3B3;
+	--color-bigtext-background-light: #E5E5E5;
+	--color-bigtext-background-dark: #1A1A1A;
+
+	--color-logo: white;
+
+	--color-section-background-light: white;
+	--color-section-background-dark: black;
+	--color-section-background-album: lightgrey;
+	--color-footer-background: black;
+
+	--color-vibrant: #FE5768;
+	--color-vibrant-dark:#7F2B34;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+

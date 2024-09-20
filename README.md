@@ -242,7 +242,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Keuze afhankelijk van context: Als de datum onderdeel is van een tekst, gebruik je het binnen een <p>. Als de datum zelfstandig is, kun je het zonder aanvullende tags gebruiken.
   --> wat ChatGPT zegt klopt --> een losse datum alleen is vaak wel ambigu 
 
-  - Ik snap h2 ''Listen to Hones'' niet op de officiele website. Deze staat achter de afbeelding, maar je kan niet op de afbeelding klikken. Via tab kan je hierheen navigeren en als je op enter klikt dan wordt je doorgestuurd naar een website, maar je kan niet op de afbeelding zelf klikken. Waarom?
+  - Ik snap h2 ''Listen to Honest'' niet op de officiele website. Deze staat achter de afbeelding, maar je kan niet op de afbeelding klikken. Via tab kan je hierheen navigeren en als je op enter klikt dan wordt je doorgestuurd naar een website, maar je kan niet op de afbeelding zelf klikken. Waarom?
   --> ja een aria label - als je alleen het linkje hoort weet je niet waar "all" op slaat
 
   - Wel of geen aria label bij view all? (want de link bevind zich in de desbetreffende sectie/je kan aan de context zien wat het moet zijn)
@@ -315,16 +315,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  
+  Wat ging er goed:
+  - Ik ben verder gekomen met de carousel, want ik heb een schets gemaakt, een div toegevoegd aan de html en een beginnetje gemaakt met de css.
+  img
+
+  Wat ging er niet goed:
+  - Ik heb verder gewerkt aan het huiswerk maar daardoor niet veel tijd gehad voor de website. 
+  - Ik had moeite met het definieren van het grid. 
+  - Ik heb moeite met de boxen.
+
+  <img src="/readme-images/schets-carousel1.png" width="375px" alt="Schets van de carousel">
+  <img src="/readme-images/schets-carousel2.jpg" width="375px" alt="Schets van de carousel">
+  <img src="/readme-images/carousel-grid-flex.png" width="375px" alt="Schets van de carousel">
+  <img src="/readme-images/definieren-carousel.jpg" width="375px" alt="Schets van de carousel">
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  - Definieren grid en div?
+  - Ik snap h2 ''Listen to Honest'' niet op de officiele website. Deze staat achter de afbeelding, maar je kan niet op de afbeelding klikken. Via   tab kan je hierheen navigeren en als je op enter klikt dan wordt je doorgestuurd naar een website, maar je kan niet op de afbeelding zelf klikken. Waarom?
+  - Hoe weet je bij welke schermgrootte een media-query nodig is?
+
 
 
   ### Verslag van meeting
@@ -333,7 +346,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - punt 1
   - punt 2
   - nog een punt
-- ...
+  - ...
 
 </details>
 

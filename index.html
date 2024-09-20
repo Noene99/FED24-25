@@ -7,11 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<title>Justin Bieber Music | Homepage </title>
-	<!-- logo -->
-	<link href="styles/style.css" rel="stylesheet">
-	<!-- logo -->
-	<link href="styles/style.css" rel="stylesheet">
-	<link href="styles/style.css" rel="stylesheet">
+	<!-- stylesheets -->
+	<link href="styles/styles-general.css" rel="stylesheet general">
+	<link href="styles/style-homepage.css" rel="stylesheet homepage">
+	<link href="styles/style-albumpage.css" rel="stylesheet album">
 
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
@@ -67,42 +66,43 @@
 		<section>
 			<h2>Music</h2>
 
-			<ul>
-				<li id="dia1">
-					<!-- volgorde image en tekst -->
-					<h3>Honest</h3>
-					<!-- Date time? -->
-                    <p><time datetime="2021-03-05">Mar 5th 2021</time></p>
-                    <a href="#">Stream/Download</a>
+			<div class="container-carousel">
+				<ul class="container-slider">
+					<li id="dia1">
+						<!-- volgorde image en tekst -->
+						<h3>Honest</h3>
+						<!-- Date time? -->
+						<p><time datetime="2021-03-05">Mar 5th 2021</time></p>
+						<a href="#">Stream/Download</a>
 
-					<img src="images/carousel/hold-on-single.jpg" alt="Hold on sigle ">
-				</li>
+						<img src="images/carousel/hold-on-single.jpg" alt="Hold on sigle ">
+					</li>
 
-				<li id="dia2">
-					<!-- volgorde image en tekst -->
-					<h3>I feel funny</h3>
-					<!-- Date time? -->
-                    <p><time datetime="2022-04-27">Apr 27th 2022</time></p>
-                    <a href="#">Stream/Download</a>
+					<li id="dia2">
+						<!-- volgorde image en tekst -->
+						<h3>I feel funny</h3>
+						<!-- Date time? -->
+						<p><time datetime="2022-04-27">Apr 27th 2022</time></p>
+						<a href="#">Stream/Download</a>
 
-					<img src="images/carousel/ifeelfunny-carousel.jpg" alt="Honest ">
-				</li>
+						<img src="images/carousel/ifeelfunny-carousel.jpg" alt="Honest ">
+					</li>
+				</ul>
 
-			</ul>
-
-			<!-- Navigatieknoppen in een nav-element -->
-			<!-- Tekst kan ik vervangen naar een icoon in CSS -->
-			<nav aria-label="Carousel-controls">
-				<button>Next song</button>
-				<button>Previous song</button>
-			</nav>
-		
-			<!-- Dots als navigatie in een nav-element -->
-			<nav aria-label="Carousel-dots">
-				<button aria-label="Hold On - Justin Bieber" aria-current="true">Load first song</button>
-				<button aria-label="I feel funny - Justin Bieber">Load second song</button>
-				<button aria-label="Peaches - Justin Bieber">Load third song</button>
-			</nav>
+				<!-- Navigatieknoppen in een nav-element -->
+				<!-- Tekst kan ik vervangen naar een icoon in CSS -->
+				<nav aria-label="Carousel controls">
+					<button>Next song</button>
+					<button>Previous song</button>
+				</nav>
+			
+				<!-- Dots als navigatie in een nav-element -->
+				<nav aria-label="Carousel dots">
+					<button aria-label="Hold On - Justin Bieber" aria-current="true">Load first song</button>
+					<button aria-label="I feel funny - Justin Bieber">Load second song</button>
+					<button aria-label="Peaches - Justin Bieber">Load third song</button>
+				</nav>
+			</div>
 
 			<a href="justice-pagina.html" aria-label="View all songs and albums">View All</a>
 		</section>
