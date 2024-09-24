@@ -116,7 +116,9 @@ section:nth-of-type(2) .viewall {
 
 }
 
-/* SLIDER */
+/*************************/
+/* 		SLIDER	 		*/
+/************************/
 section:nth-of-type(2) > ul { /* slider in carousel parent */
 	background-color: yellow;
 
@@ -138,6 +140,8 @@ section:nth-of-type(2) > ul { /* slider in carousel parent */
 section:nth-of-type(2)>ul li { 
 	flex-shrink: 0; /* De kinderen in de ul worden dan niet inelkaar gedrukt maar behouden hun breedte */
 	width:100%; /* 1 li per keer zichtbaar */
+	display:grid;
+	grid-template-rows: max-content 1fr;
 }
 
 
@@ -145,7 +149,27 @@ section:nth-of-type(2) ul li:first-of-type { /* slider in carousel parent */
 	background-color: rgb(251, 0, 255);
 }
 
-/* GRID NAV */
+section:nth-of-type(2)>ul li p {
+	background-color: aqua;
+	text-transform:uppercase;
+	font-size:1.25em;
+
+}
+
+section:nth-of-type(2)>ul h3 {
+	font-size: 1.5em;
+}
+
+section:nth-of-type(2)>ul li a {
+	background-color: aqua;
+	text-transform:uppercase;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+/*************************/
+/* 	CAROUSEL NAV		*/
+/************************/
 main section:nth-of-type(2) nav:first-of-type {
 	background-color: blue;
 }
@@ -167,16 +191,25 @@ section:nth-of-type(2) a { /* alle links in de tweede sectie */
 	
 }
 
-/*************************/
-/* PIJL IN CAROUSEL 	*/
-/************************/
+/********************************/
+/* PIJL naar links IN CAROUSEL 	*/
+/********************************/
+
+main section:nth-of-type(2) nav:first-of-type { 
+	display:flex;
+	gap: .1em;
+}
+
+/* 	met Sanne gemaakt */
+
+/* 	de button */
 main section:nth-of-type(2) nav:first-of-type button {
 	appearance:none;
 	border:none;
 	background-color:black;
 	
-	width:4em;
-	height:4em;
+	width:3.75em;
+	height:3.75em;
 	padding:0;
 	
 	display:grid;
@@ -185,11 +218,11 @@ main section:nth-of-type(2) nav:first-of-type button {
 	align-items:center;
 }
 
-main section:nth-of-type(2) nav:first-of-type button span {
+main section:nth-of-type(2) nav:first-of-type button:first-of-type span {
 	position:relative;
 	display:block;
-	width:2em;
-	height:.3em;
+	width:1.2em;
+	height:.2em;
 	background-color:white;
 	
 	transform-origin:.1em .1em;
@@ -199,7 +232,7 @@ main section:nth-of-type(2) nav:first-of-type button span {
 	border-radius: 3em;
 }
 
-main section:nth-of-type(2) nav:first-of-type button span::after {
+main section:nth-of-type(2) nav:first-of-type button:first-of-type span::after {
 	content:"";
 	
 	display:block;
@@ -213,6 +246,43 @@ main section:nth-of-type(2) nav:first-of-type button span::after {
 
 	border-radius: 3em;
 }
+
+/********************************/
+/* PIJL naar rechts IN CAROUSEL */
+/********************************/
+
+main section:nth-of-type(2) nav:first-of-type button:last-of-type span {
+	position:relative;
+	display:block;
+	width:1.2em;
+	height:.2em;
+	background-color:white;
+	
+	transform-origin:1.1em .1em;
+	
+	rotate:45deg;
+
+	border-radius: 3em;
+}
+
+main section:nth-of-type(2) nav:first-of-type button:last-of-type span::after {
+	content:"";
+	
+	display:block;
+	width:100%;
+	height:100%;
+	
+	background-color:white;
+	
+	rotate:-90deg;
+	transform-origin:1.1em .1em;
+
+	border-radius: 3em;
+}
+
+
+
+
 
 @media (width > 40em) {
 	section:nth-of-type(2) {
