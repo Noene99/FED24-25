@@ -41,6 +41,10 @@
   box-sizing:border-box;  
 }
 
+img {
+	max-width: 100%;
+}
+
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -76,10 +80,26 @@
 /****************/
 /* 	FONTS 	*/
 /****************/
-
 * {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h2, h3 {
 	font-family: 'Playfair Display';
 }
+
+h2:nth-of-type(even) {
+	/* color: var(--color-bigtext-background-dark); */
+	color: pink;
+}
+
+
+main, body {
+	margin: 0;
+	padding: 0;
+}
+
+
 
 /****************/
 /* 	HEADER 	*/
@@ -93,6 +113,7 @@ header button {
 	appearance: none;
 	background: none;
 }
+
 /* button children opmaak (de streepjes) */
 header button span {
 	display: block;
@@ -124,4 +145,54 @@ header.toonMenu button span:nth-child(2){
 header.toonMenu button span:nth-child(3){
 	translate: none;
 	rotate: -45deg;
+}
+
+
+h2 {
+	color: var(--color-bigtext-background-light);
+	width:100%;
+	background-color: orange;
+	text-transform:uppercase;
+	margin: 0;
+	font-size:5em;
+	line-height: .85em; /* Om de h2 minder padding te geven */
+	order: 10;
+	overflow: hidden; /* Om newsletter af te breken en niet vertivaal te kunnen scrollen */
+}
+
+
+/****************/
+/* 	FOOTER 	*/
+/****************/
+footer {
+	background-color: black;
+	height: 7em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* Om de ul verticaal te centreren in de footer */
+}
+
+footer ul {
+	list-style-type: none;
+
+	text-transform: uppercase;
+	color: var(--color-text-footer);
+	display: flex;
+	flex-flow: row wrap; /* Om het lijstje horizontaal en op een nieuwe regel weer te geven */
+	text-decoration: none;
+	gap: 0.8em 1em; /* ruimte om de links */
+
+	margin: 0;
+}
+
+footer ul a {
+	color: var(--color-text-footer);
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 0.75em; 
+
+}
+
+footer ul a:hover {
+	text-decoration: underline;
 }

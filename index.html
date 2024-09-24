@@ -40,7 +40,7 @@
 				<li><a href="#">Shop</a></li>
 				<li><a href="#">Video's</a></li>
 			</ul>
-
+<!-- 2 losse navs of h2 boven elke nav -->
 			<!-- SOCIAL NAV -->
 			<ul>
 				<li><a href="#"><img src="images/" alt="Apple Music"></a></li>
@@ -65,46 +65,81 @@
 
 		<section>
 			<h2>Music</h2>
-
-			<div class="container-carousel">
-				<ul class="container-slider">
-					<li id="dia1">
-						<!-- volgorde image en tekst -->
-						<h3>Honest</h3>
-						<!-- Date time? -->
-						<p><time datetime="2021-03-05">Mar 5th 2021</time></p>
-						<a href="#">Stream/Download</a>
-
-						<img src="images/carousel/hold-on-single.jpg" alt="Hold on sigle ">
-					</li>
-
-					<li id="dia2">
-						<!-- volgorde image en tekst -->
-						<h3>I feel funny</h3>
-						<!-- Date time? -->
-						<p><time datetime="2022-04-27">Apr 27th 2022</time></p>
-						<a href="#">Stream/Download</a>
-
-						<img src="images/carousel/ifeelfunny-carousel.jpg" alt="Honest ">
-					</li>
-				</ul>
-
-				<!-- Navigatieknoppen in een nav-element -->
-				<!-- Tekst kan ik vervangen naar een icoon in CSS -->
-				<nav aria-label="Carousel controls">
-					<button>Next song</button>
-					<button>Previous song</button>
-				</nav>
 			
-				<!-- Dots als navigatie in een nav-element -->
-				<nav aria-label="Carousel dots">
-					<button aria-label="Hold On - Justin Bieber" aria-current="true">Load first song</button>
-					<button aria-label="I feel funny - Justin Bieber">Load second song</button>
-					<button aria-label="Peaches - Justin Bieber">Load third song</button>
-				</nav>
-			</div>
+			<ul class="container-slider">
+				<li id="dia1">
+					<!-- volgorde image en tekst -->
+					<h3>Honest</h3>
+					<!-- Date time? -->
+					<p><time datetime="2021-03-05">Mar 5th 2021</time></p>
+					<a href="#">Stream/Download</a>
 
-			<a href="justice-pagina.html" aria-label="View all songs and albums">View All</a>
+					<img width="400px" src="images/carousel/hold-on-single.jpg" alt="Hold on sigle ">
+				</li>
+
+				<li id="dia2">
+					<!-- volgorde image en tekst -->
+					<h3>I feel funny</h3>
+					<!-- Date time? -->
+					<p><time datetime="2022-04-27">Apr 27th 2022</time></p>
+					<a href="#">Stream/Download</a>
+
+					<img width="400px" src="images/carousel/ifeelfunny-carousel.jpg" alt="Honest ">
+				</li>
+
+				<li id="dia2">
+					<!-- volgorde image en tekst -->
+					<h3>I feel funny</h3>
+					<!-- Date time? -->
+					<p><time datetime="2022-04-27">Apr 27th 2022</time></p>
+					<a href="#">Stream/Download</a>
+
+					<img width="400px" src="images/carousel/ifeelfunny-carousel.jpg" alt="Honest ">
+				</li>
+
+
+				<li id="dia2">
+					<!-- volgorde image en tekst -->
+					<h3>I feel funny</h3>
+					<!-- Date time? -->
+					<p><time datetime="2022-04-27">Apr 27th 2022</time></p>
+					<a href="#">Stream/Download</a>
+
+					<img width="400px" src="images/carousel/ifeelfunny-carousel.jpg" alt="Honest ">
+				</li>
+
+				<li id="dia2">
+					<!-- volgorde image en tekst -->
+					<h3>I feel funny</h3>
+					<!-- Date time? -->
+					<p><time datetime="2022-04-27">Apr 27th 2022</time></p>
+					<a href="#">Stream/Download</a>
+
+					<img width="400px" src="images/carousel/ifeelfunny-carousel.jpg" alt="Honest ">
+				</li>
+
+			</ul>
+
+			<!-- Navigatieknoppen in een nav-element -->
+			<!-- Tekst kan ik vervangen naar een icoon in CSS -->
+			<nav aria-label="Carousel controls">
+				<button aria-label="Previous song">
+					<span></span> <!-- misschien nog een pijltje in de button -->
+				</button>
+
+				<button aria-label="Next song">
+					<span></span>
+				</button>
+			</nav>
+		
+			<!-- Dots als navigatie in een nav-element. de dots zijn a en geen buttons want er wordt genavigeerd -->
+			<nav aria-label="Carousel dots">
+				<a href="#dia1" aria-label="Hold On - Justin Bieber" aria-current="true">Load first song</a>
+				<a href="#dia2" aria-label="I feel funny - Justin Bieber">Load second song</a>
+				<a href="#dia3" aria-label="Peaches - Justin Bieber">Load third song</a>
+			</nav>
+
+			<a class="viewall" href="justice-pagina.html" aria-label="View all songs and albums">View All</a>
 		</section>
 
 		<section>
@@ -118,61 +153,62 @@
 
 	
 
-		</section>
-			<h2>Newsletter</h3>
+		<section>
+			<h2>Newsletter</h2>
 
 			<form action="#" method="POST"> <!-- attributen nog bekijken -->
 			<!-- Koptitel voor de sectie -->
 		  
-			<!-- Groep van checkboxes voor de keuze wie updates stuurt, van chat gpt -->
-			<fieldset>
-			  <legend>Subscribe to Email Updates From:</legend>
-		  
-			  <label>
-				<input type="checkbox" name="subscription" value="justin-bieber"> Justin Bieber
-			  </label><br>
-		  
-			  <label>
-				<input type="checkbox" name="subscription" value="def-jam"> Def Jam
-			  </label><br>
-		  
-			  <label>
-				<input type="checkbox" name="subscription" value="universal-music-group"> Universal Music Group
-			  </label>
-			</fieldset>
-
-			<fieldset>
-				<!-- Label en invoerveld voor het e-mailadres -->
-				<label for="email">Email</label>
-				<input type="email" id="email" name="email" autocomplete="email" required>
+				<!-- Groep van checkboxes voor de keuze wie updates stuurt, van chat gpt -->
+				<fieldset>
+				<legend>Subscribe to Email Updates From:</legend>
 			
-				<!-- Label en invoerveld voor landselectie -->
-				<!-- Country selection field -->
-				<label for="country">Choose country</label>
-				<input list="countries" id="country" name="country" placeholder="Select country" required>
-				<datalist id="countries">
-					<option value="United States"></option>
-					<option value="Canada"></option>
-					<option value="United Kingdom"></option>
-					<option value="Australia"></option>
-					<option value="Germany"></option>
-						<!-- More countries -->
-				</datalist>
-			</fieldset>
+				<label>
+					<input type="checkbox" name="subscription" value="justin-bieber"> Justin Bieber
+				</label><br>
+			
+				<label>
+					<input type="checkbox" name="subscription" value="def-jam"> Def Jam
+				</label><br>
+			
+				<label>
+					<input type="checkbox" name="subscription" value="universal-music-group"> Universal Music Group
+				</label>
+				</fieldset>
+
+				<fieldset>
+					<!-- Label en invoerveld voor het e-mailadres -->
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" autocomplete="email" required>
+				
+					<!-- Label en invoerveld voor landselectie -->
+					<!-- Country selection field -->
+					<label for="country">Choose country</label>
+					<input list="countries" id="country" name="country" placeholder="Select country" required>
+					<datalist id="countries">
+						<option value="United States"></option>
+						<option value="Canada"></option>
+						<option value="United Kingdom"></option>
+						<option value="Australia"></option>
+						<option value="Germany"></option>
+							<!-- More countries -->
+					</datalist>
+				</fieldset>
 
 		  
-			<!-- Informatie over de e-mails en privacybeleid -->
-			<p>Emails will be sent by or on behalf of Universal Music Group, 2220 Colorado Avenue, Santa Monica, CA 90404, (310) 865-4000. You may withdraw your consent at any time.</p>
-		  
-			<!-- Links naar Privacy Policy en Do Not Sell -->
-			<p>
-			  <a href="privacy-policy-url">Privacy Policy</a> /
-			  <a href="do-not-sell-url">Do Not Sell My Personal Information</a>
-			</p>
-		  
-			<!-- Submit-knop -->
-			<button type="submit">Sumbit</button>
-		</form>
+				<!-- Informatie over de e-mails en privacybeleid -->
+				<p>Emails will be sent by or on behalf of Universal Music Group, 2220 Colorado Avenue, Santa Monica, CA 90404, (310) 865-4000. You may withdraw your consent at any time.</p>
+			
+				<!-- Links naar Privacy Policy en Do Not Sell -->
+				<p>
+				<a href="privacy-policy-url">Privacy Policy</a> /
+				<a href="do-not-sell-url">Do Not Sell My Personal Information</a>
+				</p>
+			
+				<!-- Submit-knop -->
+				<button type="submit">Sumbit</button>
+			</form>
+		</section>
 
 	</main>
 

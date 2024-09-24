@@ -35,14 +35,13 @@
 }
 
 
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
 	/* startje */
 	--color-text-primary: black;
-	--color-text-primary: white;
+	--color-text-primary-white: white;
 	--color-text-secondary: #555555;
 	--color-text-footer: #B3B3B3;
 	--color-bigtext-background-light: #E5E5E5;
@@ -66,4 +65,203 @@
 /****************/
 /* JOUW STYLING */
 /****************/
+/**********************/
+/* SECTION 1/HONEST   */
+/**********************/
+section:nth-of-type(1), section:nth-of-type(3), section:nth-of-type(4) {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
 
+/****************/
+/* SECTION 3/VIDEO */
+/****************/
+
+/****************/
+/* SECTION 4/FORM */
+/****************/
+
+/*************************/
+/* SECTION 2/CAROUSEL 	*/
+/************************/
+
+
+
+section {
+	background-color: green;
+}
+
+section:nth-of-type(2) { /* hele section als parent voor de grid met carousel en h2 */
+	background-color: red;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding: 0;
+}
+
+
+		/* VIEW ALL BUTTON */
+
+section:nth-of-type(2) .viewall {
+	background-color: yellow;
+	order:1;
+	text-transform: uppercase;
+
+	font-size: .9em;
+	font-weight:700;
+	
+	align-self: end;
+	transform: translate(0, 300%);
+
+}
+
+/* SLIDER */
+section:nth-of-type(2) > ul { /* slider in carousel parent */
+	background-color: yellow;
+
+	position: relative;
+
+	margin:0;
+	padding:0;
+	list-style: none;
+
+	width: 100%;
+
+	display: flex;
+	/* overflow-x: auto; Dit niet want dan kan je scrollen maar je wil alleen met de buttons kunnen navigeren */
+	overflow: hidden;
+	scroll-behavior:smooth;
+	
+}
+
+section:nth-of-type(2)>ul li { 
+	flex-shrink: 0; /* De kinderen in de ul worden dan niet inelkaar gedrukt maar behouden hun breedte */
+	width:100%; /* 1 li per keer zichtbaar */
+}
+
+
+section:nth-of-type(2) ul li:first-of-type { /* slider in carousel parent */
+	background-color: rgb(251, 0, 255);
+}
+
+/* GRID NAV */
+main section:nth-of-type(2) nav:first-of-type {
+	background-color: blue;
+}
+
+main section:nth-of-type(2) nav:last-of-type {
+	background-color: lightskyblue;
+	
+	display:flex;
+	gap:1em;
+	
+	padding:0;
+	list-style:none;
+	margin:0;
+}
+
+section:nth-of-type(2) a { /* alle links in de tweede sectie */
+	text-decoration: none;
+	color: black;
+	
+}
+
+/*************************/
+/* PIJL IN CAROUSEL 	*/
+/************************/
+main section:nth-of-type(2) nav:first-of-type button {
+	appearance:none;
+	border:none;
+	background-color:black;
+	
+	width:4em;
+	height:4em;
+	padding:0;
+	
+	display:grid;
+/* 	place-items:center; */
+	justify-items:center;
+	align-items:center;
+}
+
+main section:nth-of-type(2) nav:first-of-type button span {
+	position:relative;
+	display:block;
+	width:2em;
+	height:.3em;
+	background-color:white;
+	
+	transform-origin:.1em .1em;
+	
+	rotate:-45deg;
+
+	border-radius: 3em;
+}
+
+main section:nth-of-type(2) nav:first-of-type button span::after {
+	content:"";
+	
+	display:block;
+	width:100%;
+	height:100%;
+	
+	background-color:white;
+	
+	rotate:90deg;
+	transform-origin:.1em .1em;
+
+	border-radius: 3em;
+}
+
+@media (width > 40em) {
+	section:nth-of-type(2) {
+		background-color:lightblue;
+		
+		display:grid;
+		
+		grid-template-columns:1fr max-content 1fr;
+	}
+	
+	section:nth-of-type(2) h2 {
+		grid-column-start:1;
+		grid-column-end:-1;
+		background-color: #1A1A1A;
+	}
+	
+	section:nth-of-type(2) > ul {
+		grid-column-start:1;
+		grid-column-end:-1;
+		grid-row-start:1;
+		
+	}
+	
+	main section:nth-of-type(2) nav:first-of-type {
+		grid-row-start:1;
+		grid-column-start:2;
+		
+		align-self:end;
+		
+		display:grid;
+	}
+	
+	main section:nth-of-type(2) nav:last-of-type {
+		grid-column-start:1;
+		grid-column-end:-1;
+		
+		
+		display:flex;
+		justify-content:center;
+		
+	}
+
+	section:nth-of-type(2) .viewall {
+		background-color: yellow;
+		
+		justify-self: end;
+		translate: 0 300%;
+
+		grid-column-start:1;
+		grid-column-end:-1;	
+	}
+}

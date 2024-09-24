@@ -337,16 +337,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Definieren grid en div?
   - Ik snap h2 ''Listen to Honest'' niet op de officiele website. Deze staat achter de afbeelding, maar je kan niet op de afbeelding klikken. Via   tab kan je hierheen navigeren en als je op enter klikt dan wordt je doorgestuurd naar een website, maar je kan niet op de afbeelding zelf klikken. Waarom?
   - Hoe weet je bij welke schermgrootte een media-query nodig is?
+  - Zijn het bij mij twee losse navs in de header of 1 nav met twee uls zoals ik nu heb? 
 
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+Wat heb ik geleerd?
+  - Buttons zijn voor acties en a is voor navigatie naar andere pagina of naar een ander deel/sectie op de pagina, zoals bij een carousel. Buttons zijn dus niet voor navigatie!!!
+  - Voor een header kan je flexbox gebruiken of grid. Het voordeel van grid is dat je het logo altijd in het midden kunt houden bij het verbreden van het scherm en het voordeel van flexbox is dat je minder regels nodig hebt.  
+  - Bij een svg kan je de kleur veranderen door de kleur van de stroke te veranderen. De binnenkant is fill. Geen color, dat is bij tekst en blockelementen. Je kan hier achter komen door in de browser te inspecteren en in de css bij de inspector te spelen met de kleuren van verschillende properties. Zo kan je erachter komen welke propertie je aan moet spreken.
+  - Gebruik GEEN telefoon/desktop modus tijdens het maken van je website. Hier zitten wat bugs in. Druk op het blauwe icoontje.
+  - Als je in een keer iets onder elkaar wil> parent grid
+    Als je in een keer iets naast elkaar wil> parent flex
+  - Overflow: hidden en visable
+  - overflow: visable is default.
+  - overflow: hidden zorg ervoor dat niks buiten het scherm valt
+
 
 </details>
 
