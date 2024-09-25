@@ -282,7 +282,7 @@ main section:nth-of-type(2) nav:last-of-type {
 	
 	padding:0;
 	list-style:none;
-	margin:.4em 0 0 0;
+	translate: 0 200%;
 }
 
 
