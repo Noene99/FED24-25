@@ -43,6 +43,7 @@
 
 img {
 	max-width: 100%;
+	display: block; /* Verwijder eventuele ruimte onder afbeelding omdat het een inline element is */
 }
 
 * {
