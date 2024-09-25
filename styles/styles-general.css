@@ -45,6 +45,9 @@ img {
 	max-width: 100%;
 }
 
+* {
+	text-transform: uppercase;
+}
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -52,7 +55,7 @@ img {
 :root {
 	/* startje */
 	--color-text-primary: black;
-	--color-text-primary: white;
+	--color-text-primary-white: white;
 	--color-text-secondary: #555555;
 	--color-text-footer: #B3B3B3;
 	--color-bigtext-background-light: #E5E5E5;
@@ -88,22 +91,151 @@ h2, h3 {
 	font-family: 'Playfair Display';
 }
 
-h2:nth-of-type(even) {
-	/* color: var(--color-bigtext-background-dark); */
-	color: pink;
-}
-
-
 main, body {
 	margin: 0;
 	padding: 0;
 }
 
+/****************/
+/* 	SECTIONS 	*/
+/****************/
+
+section {
+	padding: 7em 0 calc(9.25926vw + 20px + 7em) 0;
+	position: relative;
+}
+
+section:nth-of-type(odd) h2 {
+	color: var(--color-bigtext-background-dark);
+}
+
+section:nth-of-type(odd) {
+	background-color: var(--color-section-background-dark);
+}
+
+section:nth-of-type(even) {
+	background-color: var(--color-section-background-light);
+}
+
+h2 {
+	color: var(--color-bigtext-background-light);
+	width:100%;
+	margin: 0;
+	font-size:calc(9.25926vw + 70.37px); /* van de website */
+	line-height: .85em; /* Om de h2 minder padding te geven */
+	order: 10;
+	overflow: hidden; /* Om newsletter af te breken en niet vertivaal te kunnen scrollen */
+	position: absolute;
+	bottom:0;
+}
+
+section a { /* alle links in de tweede sectie */
+	text-decoration: none;
+	color: black;
+}
+
+/* VIEW ALL BUTTON */
+
+.viewall {
+	font-size: .9em;
+	font-weight:700;
+	align-self: end;
+	transform: translate(-60%, 750%);
+	color:  var(--color-text-primary);
+}
+
+/* STREEPJE */
+.viewall::after { 
+	content: "";
+	width: 2em;
+	height: .1em;
+	background-color: var(--color-text-primary);
+	position: absolute;
+	top:50%;
+	right:-60%;
+}
+
+section:nth-of-type(odd) .viewall  {
+color: var(--color-text-primary-white);
+}
+
+section:nth-of-type(odd) .viewall::after { 
+	content: "";
+	width: 2em;
+	height: .1em;
+	background-color: var(--color-section-background-light);
+	position: absolute;
+	top:50%;
+	right:-60%;
+}
 
 
 /****************/
 /* 	HEADER 	*/
 /****************/
+
+
+header {
+	position: relative;
+}
+
+header nav {
+    position: absolute;
+    top: 100%; /* Nav komt direct onder de header */
+    left: 0;
+    right: 3em;
+	height: calc(100vh - 4em);
+    background-color: black; /* Zichtbaarheid checken */
+    z-index: 10; /* Zorgt ervoor dat het nav boven andere elementen zichtbaar is */
+    padding: 1em;
+	min-height: auto;
+
+	display: grid;
+	grid-template-rows: 1fr max-content;
+	place-items: center;
+}
+
+
+header ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+header ul:first-of-type {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	text-align: center;
+}
+
+header ul:last-of-type {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 1.2em;
+}
+
+
+header a {
+	text-decoration: none;
+	color: var(--color-text-primary-white);
+	font-family: "Playfair Display";
+	font-size: 1.25em;
+}
+
+header ul:last-of-type img {
+	max-width: .625em;
+	/* Met behulp van chatgpt op 25/9/2024 */
+	filter: invert(100%) brightness(200%); 
+}
+
+
+
+
+
+
+/********************/
+/* 	HAMBURGERMENU 	*/
+/********************/
 
 /* Button container opmaak (het maken van grid en opmaak terwijl de streepjes opelkaar in het midden staan) */
 header button {
@@ -148,24 +280,14 @@ header.toonMenu button span:nth-child(3){
 }
 
 
-h2 {
-	color: var(--color-bigtext-background-light);
-	width:100%;
-	background-color: orange;
-	text-transform:uppercase;
-	margin: 0;
-	font-size:5em;
-	line-height: .85em; /* Om de h2 minder padding te geven */
-	order: 10;
-	overflow: hidden; /* Om newsletter af te breken en niet vertivaal te kunnen scrollen */
-}
+
 
 
 /****************/
 /* 	FOOTER 	*/
 /****************/
 footer {
-	background-color: black;
+	background-color: var(--color-section-background-dark);
 	height: 7em;
 	display: flex;
 	flex-direction: column;
@@ -175,7 +297,6 @@ footer {
 footer ul {
 	list-style-type: none;
 
-	text-transform: uppercase;
 	color: var(--color-text-footer);
 	display: flex;
 	flex-flow: row wrap; /* Om het lijstje horizontaal en op een nieuwe regel weer te geven */

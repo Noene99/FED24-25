@@ -43,7 +43,7 @@
 :root {
 	/* startje */
 	--color-text-primary: black;
-	--color-text-primary: white;
+	--color-text-primary-white: white;
 	--color-text-secondary: #555555;
 	--color-text-footer: #B3B3B3;
 	--color-bigtext-background-light: #E5E5E5;

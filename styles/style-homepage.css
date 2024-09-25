@@ -82,6 +82,94 @@ section:nth-of-type(1), section:nth-of-type(3), section:nth-of-type(4) {
 /* SECTION 4/FORM */
 /****************/
 
+form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: black; /* Voor moderne browsers, past de kleur van de checkbox aan */
+    background-color: yellow; /* Voor oudere browsers zonder accent-color */
+}
+
+form {
+	flex-grow: 1;
+	display: grid;
+	margin: 0 2em;
+}
+
+form fieldset {
+	border: none;       /* Verwijder de rand */
+    margin: 0;         /* Verwijder marge */
+    padding: 0;        /* Verwijder padding */
+	background-color: #FE5768;
+}
+
+form fieldset:last-of-type {
+	grid-row-start: 1;
+	margin-bottom: 1.3em;
+}
+
+form fieldset label {
+	display: block;
+	margin: 1.3em 0;
+	color:palegreen
+}
+
+form fieldset:last-of-type input {
+	display: block;
+	margin: 1.3em 0;
+}
+
+form fieldset:first-of-type label {
+	font-family: "Playfair Display";
+	font-weight: 700;
+	background-color: aqua;
+}
+
+form fieldset:first-of-type input {
+	background-color: transparent;
+	appearance: none;
+	border: 3px solid black;
+}
+
+form p {
+	background-color: brown;
+	text-align: center;
+	font-size: 0.6875em;
+	line-height: 1.8em;
+	margin: 0;
+}
+
+form p a:hover {
+	text-decoration: underline;
+}
+
+form button {
+	appearance: none;
+	font-size: 1em;
+	background-color: transparent;
+	border: none;
+	position: relative; /* voor het LIJNTJE ONDER SUBMIT BUTTON */
+	text-shadow: 0 1px 0 var(--color-section-background-album);
+	justify-self: start;
+	translate: 0 2em;
+}
+
+form button:hover {
+	text-shadow: 0 1px 0 var(--color-text-footer);
+}
+
+/* LIJNTJE ONDER SUBMIT BUTTON */
+form button::after {
+	content:"";
+	display: block;
+	width: 3.8em;
+	height: .08em;
+	background-color: black;
+	position: absolute;
+	left:10%;
+	bottom: 0;
+	
+}
+
 /*************************/
 /* SECTION 2/CAROUSEL 	*/
 /************************/
@@ -97,24 +185,12 @@ section:nth-of-type(2) { /* hele section als parent voor de grid met carousel en
 	display:flex;
 	flex-direction:column;
 	align-items:center;
-	padding: 0;
-}
-
-
-		/* VIEW ALL BUTTON */
-
-section:nth-of-type(2) .viewall {
-	background-color: yellow;
-	order:1;
-	text-transform: uppercase;
-
-	font-size: .9em;
-	font-weight:700;
 	
-	align-self: end;
-	transform: translate(0, 300%);
 
 }
+
+
+
 
 /*************************/
 /* 		SLIDER	 		*/
@@ -141,7 +217,8 @@ section:nth-of-type(2)>ul li {
 	flex-shrink: 0; /* De kinderen in de ul worden dan niet inelkaar gedrukt maar behouden hun breedte */
 	width:100%; /* 1 li per keer zichtbaar */
 	display:grid;
-	grid-template-rows: max-content 1fr;
+	justify-items: center;
+	grid-gap: .5em;
 }
 
 
@@ -149,22 +226,32 @@ section:nth-of-type(2) ul li:first-of-type { /* slider in carousel parent */
 	background-color: rgb(251, 0, 255);
 }
 
+section:nth-of-type(2)>ul li img {
+	grid-row: 1/2;
+	margin-bottom: 2em;
+}
+
 section:nth-of-type(2)>ul li p {
 	background-color: aqua;
-	text-transform:uppercase;
 	font-size:1.25em;
-
+	grid-row: 2/3;
+	margin: 0;
 }
 
 section:nth-of-type(2)>ul h3 {
 	font-size: 1.5em;
+	grid-row: 3/4;
+	margin: 0;
+	text-transform: capitalize;
 }
 
 section:nth-of-type(2)>ul li a {
 	background-color: aqua;
-	text-transform:uppercase;
+	text-decoration: underline;
 	font-size: 1em;
 	font-weight: 700;
+	grid-row: 4/5;
+	margin: 0;
 }
 
 /*************************/
@@ -172,6 +259,7 @@ section:nth-of-type(2)>ul li a {
 /************************/
 main section:nth-of-type(2) nav:first-of-type {
 	background-color: blue;
+	margin: 3em 0 0 0;
 }
 
 main section:nth-of-type(2) nav:last-of-type {
@@ -182,14 +270,9 @@ main section:nth-of-type(2) nav:last-of-type {
 	
 	padding:0;
 	list-style:none;
-	margin:0;
+	margin:.4em 0 0 0;
 }
 
-section:nth-of-type(2) a { /* alle links in de tweede sectie */
-	text-decoration: none;
-	color: black;
-	
-}
 
 /********************************/
 /* PIJL naar links IN CAROUSEL 	*/
@@ -335,3 +418,4 @@ main section:nth-of-type(2) nav:first-of-type button:last-of-type span::after {
 		grid-column-end:-1;	
 	}
 }
+
