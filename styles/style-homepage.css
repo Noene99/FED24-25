@@ -98,7 +98,7 @@ form input[type="checkbox"] {
     width: 20px;
     height: 20px;
     accent-color: black; /* Voor moderne browsers, past de kleur van de checkbox aan */
-    background-color: yellow; /* Voor oudere browsers zonder accent-color */
+    /* background-color: yellow; Voor oudere browsers zonder accent-color */
 }
 
 form {
@@ -111,7 +111,7 @@ form fieldset {
 	border: none;       /* Verwijder de rand */
     margin: 0;         /* Verwijder marge */
     padding: 0;        /* Verwijder padding */
-	background-color: #FE5768;
+	/* background-color: #FE5768; */
 }
 
 form fieldset:last-of-type {
@@ -122,7 +122,7 @@ form fieldset:last-of-type {
 form fieldset label {
 	display: block;
 	margin: 1.3em 0;
-	color:palegreen
+	/* color:palegreen */
 }
 
 form fieldset:last-of-type input {
@@ -133,7 +133,7 @@ form fieldset:last-of-type input {
 form fieldset:first-of-type label {
 	font-family: "Playfair Display";
 	font-weight: 700;
-	background-color: aqua;
+	/* background-color: aqua; */
 }
 
 form fieldset:first-of-type input {
@@ -143,7 +143,7 @@ form fieldset:first-of-type input {
 }
 
 form p {
-	background-color: brown;
+	/* background-color: brown; */
 	text-align: center;
 	font-size: 0.6875em;
 	line-height: 1.8em;
@@ -188,12 +188,12 @@ form button::after {
 
 
 
-section {
+/* section {
 	background-color: green;
-}
+} */
 
 section:nth-of-type(2) { /* hele section als parent voor de grid met carousel en h2 */
-	background-color: red;
+	/* background-color: red; */
 	display:flex;
 	flex-direction:column;
 	align-items:center;
@@ -208,7 +208,7 @@ section:nth-of-type(2) { /* hele section als parent voor de grid met carousel en
 /* 		SLIDER	 		*/
 /************************/
 section:nth-of-type(2) > ul { /* slider in carousel parent */
-	background-color: yellow;
+	/* background-color: yellow; */
 
 	position: relative;
 
@@ -233,10 +233,10 @@ section:nth-of-type(2)>ul li {
 	grid-gap: .5em;
 }
 
-
-section:nth-of-type(2) ul li:first-of-type { /* slider in carousel parent */
+ /* slider in carousel parent */
+/* section:nth-of-type(2) ul li:first-of-type {
 	background-color: rgb(251, 0, 255);
-}
+} */
 
 section:nth-of-type(2)>ul li img {
 	grid-row: 1/2;
@@ -244,7 +244,7 @@ section:nth-of-type(2)>ul li img {
 }
 
 section:nth-of-type(2)>ul li p {
-	background-color: aqua;
+	/* background-color: aqua; */
 	font-size:1.25em;
 	grid-row: 2/3;
 	margin: 0;
@@ -258,7 +258,7 @@ section:nth-of-type(2)>ul h3 {
 }
 
 section:nth-of-type(2)>ul li a {
-	background-color: aqua;
+	/* background-color: aqua; */
 	text-decoration: underline;
 	font-size: 1em;
 	font-weight: 700;
@@ -270,12 +270,12 @@ section:nth-of-type(2)>ul li a {
 /* 	CAROUSEL NAV		*/
 /************************/
 main section:nth-of-type(2) nav:first-of-type {
-	background-color: blue;
+	/* background-color: blue; */
 	margin: 3em 0 0 0;
 }
 
 main section:nth-of-type(2) nav:last-of-type {
-	background-color: lightskyblue;
+	/* background-color: lightskyblue; */
 	
 	display:flex;
 	gap:1em;
@@ -293,6 +293,7 @@ main section:nth-of-type(2) nav:last-of-type {
 main section:nth-of-type(2) nav:first-of-type { 
 	display:flex;
 	gap: .1em;
+	margin-bottom: .3em;
 }
 
 /* 	met Sanne gemaakt */
@@ -375,9 +376,34 @@ main section:nth-of-type(2) nav:first-of-type button:last-of-type span::after {
 	border-radius: 3em;
 }
 
+/********************************/
+/* 		DOTS IN CAROUSEL		 */
+/********************************/
+/* Met behulp van chat gpt */
+main section:nth-of-type(2) nav:last-of-type a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: transparent; 
+    border-radius: 50%; 
+    border: solid 1.5px #7F7F7F; 
+    transition: all 0.3s ease-in-out;
+    position: relative; /* Voor het verbergen van de tekst */
+    overflow: hidden; /* Zorgt ervoor dat de verborgen tekst niet zichtbaar is */
+    color: transparent;
+}
 
+/* Verberg de tekst */
+main section:nth-of-type(2) nav:last-of-type a::before {
+    content: ""; 
+    position: absolute;
+    inset: 0;
+}
 
-
+main section:nth-of-type(2) nav:last-of-type a:hover {
+    transform: scale(1.1);
+    border: solid 1px black;
+}
 
 @media (width > 40em) {
 	section:nth-of-type(2) {
