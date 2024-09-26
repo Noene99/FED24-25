@@ -337,13 +337,51 @@ header.toonMenu nav {
 }
 
 
+/* HEADER */
+@media (min-width:46em) {
+	header nav {
+	  /* JOUW CODE HIER - stap 8 */
+	  position:static;
+	  translate:unset;
+	  
+	  padding:0;
+	  background:none;
+	}
+	
+	header button {
+	  /* JOUW CODE HIER - stap 6 */
+	  display:none;
+	}
+	
+	header nav ul:first-of-type {
+	  /* JOUW CODE HIER - stap 7 */
+	 
+	}
 
-/****************/
-/* 	NIET VERGETEN 	*/
-/****************/
-/* header nav {
-	display: none;
-} */
+	header nav ul:last-of-type {
+		/* JOUW CODE HIER - stap 7 */
+	   
+	  }
+	
+	header nav li {
+	  /* JOUW CODE HIER - stap 9 */
+	  flex-basis:unset;
+	  flex-grow:unset;
+	}
+	
+	header nav a {
+	  /* JOUW CODE HIER - stap 10 */
+	  flex-direction:column;
+	  
+	  border:none;
+	}
+	
+	header > a:last-of-type {
+	  /* JOUW CODE HIER - stap 10 */
+	  flex-direction:column;
+	}
+  }
+
 
 
 
