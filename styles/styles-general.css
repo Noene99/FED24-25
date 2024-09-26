@@ -274,50 +274,60 @@ header ul:last-of-type img {
 /* 	HAMBURGERMENU 	*/
 /********************/
 
-/* Button container opmaak (het maken van grid en opmaak terwijl de streepjes opelkaar in het midden staan) */
+/* Button container opmaak */
 header button {
-	display:grid;
-	place-items:center;
-	aspect-ratio: 1;
-	appearance: none;
-	background: none;
-
-	justify-self: start;
-	margin-left: 1.3em;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    justify-self: start;
+    margin-left: 1.3em;
+  	width:3em;
+  	height:3em;
+	background-color: transparent;
 }
 
-/* button children opmaak (de streepjes) */
+/* de streepjes */
 header button span {
-	display: block;
-	grid-row-start: 1;
+    display: block;
+    width: 1em; 
+    height: 1.6px;
+    border-radius: 0.4em; 
+    transition: .2s; 
+  	background-color: black;
+/*   Grid-row-start en Grid-column-start: 1; zorgen ervoor dat alle span-elementen binnen de button, zodat ze vanuit dezelfde positie kunnen transformeren wanneer het menu wordt geopend en gesloten. */
+  	grid-row-start: 1;
 	grid-column-start: 1;
-	border-radius: .4em;
-	transition: .2s;
 }
 
 /* Button header maken tot hamburgermenu */
-header button span:nth-child(1){
-	translate: 0 -1em;
-}
-  
-header button span:nth-child(3){
-	translate: 0 1em;
+header button span:nth-child(1) {
+    transform: translateY(-.4em);
 }
 
-/* Button header wanneer geopend (dan is de klasse .toonMenu toegevoegd aan het element button) */
-header.toonMenu button span:nth-child(1){
-	translate: none;
-	rotate: 45deg;
+header button span:nth-child(3) {
+    transform: translateY(.4em);
 }
-  
-header.toonMenu button span:nth-child(2){
-	scale: 0 1;
+
+/* Button header wanneer geopend */
+header.toonMenu button span:nth-child(1) {
+    transform: none;
+    rotate: 45deg;
+	width: 20px;
 }
-  
-header.toonMenu button span:nth-child(3){
-	translate: none;
-	rotate: -45deg;
+
+header.toonMenu button span:nth-child(2) {
+    scale: 0; /* Verbergt de middelste streep */
 }
+
+header.toonMenu button span:nth-child(3) {
+    transform: none;
+    rotate: -45deg;
+	width: 20px;
+}
+
 
 
 
