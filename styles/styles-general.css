@@ -229,7 +229,9 @@ header nav {
 	grid-template-rows: 1fr max-content;
 	place-items: center;
 	margin-top: 4em;
-	translate: -100%;
+	translate: -100% 0%;
+
+	transition: .3s;
 }
 
 
@@ -311,7 +313,7 @@ header button span:nth-child(3) {
     transform: translateY(.4em);
 }
 
-/* Button header wanneer geopend */
+/* Hamburgermenu>Kruis wanneer erop geklikt wordt */
 header.toonMenu button span:nth-child(1) {
     transform: none;
     rotate: 45deg;
@@ -328,6 +330,11 @@ header.toonMenu button span:nth-child(3) {
 	width: 20px;
 }
 
+/* nav komt tevoorschijn wanneer er geklikt wordt */
+
+header.toonMenu nav {
+    translate: 0% 0%;
+}
 
 
 
