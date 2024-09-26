@@ -123,11 +123,14 @@ form fieldset label {
 	display: block;
 	margin: 1.3em 0;
 	/* color:palegreen */
+	
 }
 
 form fieldset:last-of-type input {
 	display: block;
 	margin: 1.3em 0;
+	/* accessibilty en gebruiksgemak. Het kan vreemd aanvoelen als je emailadres normaal niet in hoofdletters is en het dan nu wel moet */
+	text-transform: none;
 }
 
 form fieldset:first-of-type label {
