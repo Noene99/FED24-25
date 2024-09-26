@@ -149,7 +149,7 @@ section a { /* alle links in de tweede sectie */
 
 /* VIEW ALL BUTTON */
 
-.viewall {
+main section > a {
 	font-size: .9em;
 	font-weight:700;
 	align-self: end;
@@ -158,7 +158,7 @@ section a { /* alle links in de tweede sectie */
 }
 
 /* STREEPJE */
-.viewall::after { 
+main section > a::after { 
 	content: "";
 	width: 2em;
 	height: .1em;

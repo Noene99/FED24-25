@@ -26,7 +26,7 @@
 		<!--HAMBURGERMENU--> 
 		<!-- de button is niet relevant voor screenreaders -->
   		<!-- met aria-hidden="true" 'verstop' je de button voor ze -->
-		  <button aria-hidden="true" aria-label="Toggle navigatiemenu">
+		  <button aria-hidden="true">
 			<span></span>
 			<span></span>
 			<span></span>
@@ -34,7 +34,7 @@
 
 		<nav>
 			<!-- MAIN NAV -->
-			<ul>
+			<ul aria-label="main navigation">
 				 <!-- Zijn hier aria-labels nodig? -->
 				<li><a href="#">Music</a></li>
 				<li><a href="#">Tour</a></li>
@@ -43,7 +43,7 @@
 			</ul>
 <!-- 2 losse navs of h2 boven elke nav -->
 			<!-- SOCIAL NAV -->
-			<ul>
+			<ul aria-label="social navigation">
 				<li><a href="#"><img src="images/social-media-icons/apple-music.png" alt="Apple Music"></a></li>
 				<li><a href="#"><img src="images/social-media-icons/GOED-facebook.png" alt="Facebook"></a></li>
 				<li><a href="#"><img src="images/social-media-icons/instagram.png" alt="Instagram"></a></li>
@@ -189,7 +189,7 @@
 				<a href="#dia3" aria-label="Peaches - Justin Bieber">Load third song</a>
 			</nav>
 
-			<a class="viewall" href="justice-pagina.html" aria-label="View all songs and albums">View All</a>
+			<a href="justice-pagina.html" aria-label="View all songs and albums">View All</a>
 		</section>
 
 		<section>
@@ -198,7 +198,7 @@
 			<video src="videos/justin-bieber-honest-ft-don-oliver.mp4" poster="images/video.jpg" controls width="200px" preload="none"></video>
 			<button aria-label="Play Honest">Play Honest</button>
 
-			<a class="viewall" href="#" aria-label="View all video's">View All</a>
+			<a href="#" aria-label="View all video's">View All</a>
 		</section>
 
 	
