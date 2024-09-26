@@ -20,7 +20,7 @@
 		<!-- LOGO -->
 		 <!-- Aria label hier of onnodig door de alt tekst bij de img? Beter wel een aria-label want er staat geen tekst in de h1 maar een image --> 
 		<h1 aria-label="Justin Bieber Music website">
-			<img id="logo-website" src="images/logo-justin-bieber.png" alt="logo Justin Bieber" width="200px">
+			<img src="images/logo-justin-bieber.png" alt="logo Justin Bieber" width="200px">
 		</h1>
 
 		<!--HAMBURGERMENU--> 
@@ -57,6 +57,57 @@
 	</header>
 
 	<main>
+		<dialog aria-hidden="true">
+			<h2>Newsletter</h2>
+			<form action="#" method="POST"> <!-- attributen nog bekijken -->
+			<!-- Koptitel voor de sectie -->
+		  
+				<!-- Groep van checkboxes voor de keuze wie updates stuurt, van chat gpt -->
+				<fieldset>
+				<legend>Subscribe to Email Updates From:</legend>
+			
+				<label>
+					<input type="checkbox" name="subscription" value="justin-bieber"> Justin Bieber
+				</label>
+			
+				<label>
+					<input type="checkbox" name="subscription" value="def-jam"> Def Jam
+				</label>
+			
+				<label>
+					<input type="checkbox" name="subscription" value="universal-music-group"> Universal Music Group
+				</label>
+				</fieldset>
+
+				<fieldset>
+					<!-- Label en invoerveld voor het e-mailadres -->
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" autocomplete="email" required>
+				
+					<!-- Label en invoerveld voor landselectie -->
+					<!-- Country selection field -->
+					<label for="country">Choose country</label>
+					<input list="countries" id="country" name="country" placeholder="Select country" required>
+					<datalist id="countries">
+						<option value="United States"></option>
+						<option value="Canada"></option>
+						<option value="United Kingdom"></option>
+						<option value="Australia"></option>
+						<option value="Germany"></option>
+							<!-- More countries -->
+					</datalist>
+				</fieldset>
+
+				<p>Emails will be sent by or on behalf of Universal Music Group, 2220 Colorado Avenue, Santa Monica, CA 90404, (310) 865-4000. You may withdraw your consent at any time.
+					<a href="#">Privacy Policy</a> / <!-- niet weghalen -->
+					<a href="#">Do Not Sell My Personal Information</a>
+				</p>
+			
+				<!-- Submit-knop -->
+				<button type="submit">Submit</button>
+			</form>
+		</dialog>
+
 		<section>
 			<h2 aria-label="Stream Honest">Listen to Honest</h2>
 			<!-- Target blank, aria label, title of content? -->

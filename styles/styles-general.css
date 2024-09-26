@@ -98,6 +98,18 @@ main, body {
 }
 
 /****************/
+/* 	POP-UP	*/
+/****************/
+
+dialog {
+    border: none;
+    padding: 1em;
+    border-radius: .2em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 20em;
+}
+
+/****************/
 /* 	SECTIONS 	*/
 /****************/
 
@@ -298,7 +310,7 @@ header {
 
 
 /****************/
-/* 	NIETT VERGETEN 	*/
+/* 	NIET VERGETEN 	*/
 /****************/
 header nav {
 	display: none;
