@@ -384,15 +384,101 @@ Wat heb ik geleerd?
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Wat ging goed: 
+  - Het maken van een pijl: https://codepen.io/Sandra99/pen/KKOwyMw.
+  - Het maken van een hamburgermenu dat verandert in een pijl met css en js: https://codepen.io/Sandra99/pen/eYqNmpe.
+  - Het stylen van de header met het logo dat in het midden moet staan en groter en kleiner wordt (responsive) bij verschillende formaten.
+  - Het maken van interactief en sticky maken de header mbv opdracht 2 van JS huiswerkopdracht, ondanks dat mijn code anders was genest dan het voorbeeld (voorbeeld:https://codepen.io/Sandra99/pen/gOVpYvX).
+    <img src="/readme-images/JS-header-voortgang3.png" width="375px" alt="menu js">
+    <img src="/readme-images/header-opmaak-voortgang3-deel1.png" width="375px" alt="menu css">
+    <img src="/readme-images//header-opmaak-voortgang3-deel2.png" width="375px" alt="menu css">
+    <img src="/readme-images//header-opmaak-voortgang3-deel3.png" width="375px" alt="@madia queries responsive">
+  - Het maken van de radio buttons (a) in de navigatie van de carousel mbv chat gpt (https://codepen.io/Sandra99/pen/zYgxEZY).
+  - Het stylen van het formulier ging grotendeels goed, behalve de checkboxes.
+
+  Wat ging minder goed:
+  - Het ontwerpen en bedenken van of ik grid of flexbox gebruik en welke propeties bij beide gebruikt kunnen worden.
+  - Het effectief en logisch opstellen van de structuur op glabaal niveau qua padding/margin.
+  - Het bedenken van hoe je het beste en met de minste code de website kan maken.
+  Bedenken welke padding je nodig hebt en op welke elementen (section, body, main, form) ik padding/margin toevoeg om de afstanden op de website netjes te maken, welke afstanden nodig zijn en welke onderdelen meeschalen.
+  - Bedenken hoe ik onderdelen laat meeschalen en welke eenheden ik gebruik.
+  - De view all button met span erachter positioneren binnen het grid/flexbox aan de rechter kant is bij toeval gelukt maar ik vind het lastig om in te zien in welke context ik deze heb gestyled qua parent:flex/grid.
+  - De video section is niet af net als de buttons van de carousel.
+  - Het stylen van de checkboxes in het formulier
+  - Ik had veel moeite met de header op mobiel niveau maar dit is denk ik goed gelukt.
+
+  Mijn plan om dit goed te laten verlopen op volgorde van prioriteit:
+  - Stukke onderdelen wil ik fixen: het logo op github en de submitbutton op github doen het niet, maar wel op de live server. Waar ligt dit aan? 
+  - De buttons in de carousel werken maken met JS. Dit probeer ik nu nog te fixen en anders hulp vragen.
+  - html tweede pagina maken en content toevoegen en CSS hiervan doen
+  - Light dark mode toevoegen
+  - surface plane: header hover onderdelen.
+  - WCAG checklist checken
+  - custom properties overal toepassen
+  - De carousel wil ik (zo goed als het kan) perfect werkend maken. Dit gaat denk ik wel lukken dus dit ga ik zelf aanpakken.
+  - De header responsive maken: zelf proberen
+
+ 
+  
+  - Het formulier is niet prachtig maar ziet er OK uit. Ik wil alleen vragen hoe ik de checkboxes fix, maar dit is geen topprioriteit.
+  - De inputfields van email en country moeten ook nog gestyled, maar laat ik voor nu zitten omdat ik er niks aan heb gedaan en ik mn focus op andere delen wil leggen.
+  - Meer content teovoegen aan de carousel als finisching touch.
+
+
+  Wat ik al heb aan surface planen interactie: 
+  - Werkende header. 
+  - Zelf toegevoegd: hamburgermenu
+  -  radio buttons navigatie carousel
+  - hover over links
+  - submit text-shadow interactie
+  
+
+  Wat nog kan gedaan worden home page:
+  - pijl in carousel scalen
+  - video border animatie
+  - animatie zwart vlak video en fotos carousel
+  - hover over stream/download en navigatie heading
+
+  Wat nog kan gedaan worden album page:
+  - albums hover zwart vlak
+  - hover over stream/download en social navigatie
+
+  Prioriteit surface plane:
+  - animatie zwart vlak video en fotos carousel
+  - hover over stream/download en navigatie heading
+  - albums hover zwart vlak 
+
+  Minste prioriteit
+  - video section ivm andere onderdelen.
+
+  Doen: dark-light mode
+
+  Wat te doen voor een voldoende:
+  - ‘Nette’ vanilla HTML, CSS en Javascript (check)
+  - Diverse content - (check)
+  - Min. 1 micro-interactie tot in detail (met JS) - (navragen)
+  - Toegankelijk - WCAG checklist - (nog aflopen).
+  - Professionele vormgeving (huisstijl, licht & donker thema (nog doen) en i.i.g. custom properties voor kleurtjes) 
+
+  Voor Presentatie:
+  - Weet hoe Screenreader werkt (windows)> on/off is CTRL + WINDOWS + ENTER. k voor links, h voor headings, getallen voor speciefieke headings, tab. Scan mode is met CAPS LOCK + spatie. 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Vragen:
+  - werkt screenreader zo goed op small screen?
+  - Is er een reflectie?
+  - Is de heading die werkt minimaal 1 micro-interactie tot in detail (met JS)? Zo niet, is dat wel het geval met stream-download? Is dit lastig?
+  - Stukke onderdelen wil ik fixen: het logo op github en de submitbutton op github doen het niet, maar wel op de live server. Waar ligt dit aan?
+  - light-dark mode?
+  - Wat wordt er bedoeld met Responsive voor small screens?
+  - Hoeveel regels CSS is normaal?
+
+  Extra vraag:
+  - Checkboxes stylen? hoe kan je ze stylen zonder dat dit heel veel werk is?
+  - planning checken.
+  
 
 
   ### Verslag van meeting
