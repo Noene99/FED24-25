@@ -18,152 +18,209 @@
 
 <body>
 	<header>
-		<!-- logo -->
-		 <!-- Aria label hier of onnodig door de alt tekst bij de img? --> 
-		<h1>
-			<a href='index.html'> 
-				<img id="logo-website" src="images/logo-justin-bieber.png" alt="logo Justin Bieber" width="200px">
-			</a>
-		</h1>
+		<!-- LOGO -->
+		 <!-- Aria label hier of onnodig door de alt tekst bij de img? Beter wel een aria-label want er staat geen tekst in de h1 maar een image --> 
+		<a href="index.html">
+			<img src="images/logo-justin-bieber.png" alt="logo Justin Bieber">
+		 </a>
 
-		<!--navigatie--> 
-		<!-- DE VOLGORDE VAN DE HEADER ELEMENTEN -->
-		<button aria-label="Toggle navigatiemenu">
+		<!--HAMBURGERMENU--> 
+		<!-- de button is niet relevant voor screenreaders -->
+  		<!-- met aria-hidden="true" 'verstop' je de button voor ze -->
+		<button aria-hidden="true">
 			<span></span>
 			<span></span>
 			<span></span>
 		</button>
 
 		<nav>
-			<ul>
-				<!-- Klopt dit met die #? -->
+			<!-- MAIN NAV -->
+			<ul aria-label="main navigation">
 				 <!-- Zijn hier aria-labels nodig? -->
 				<li><a href="#">Music</a></li>
 				<li><a href="#">Tour</a></li>
 				<li><a href="#">Shop</a></li>
 				<li><a href="#">Video's</a></li>
 			</ul>
-
-			<ul>
-				<li><a href="#"><img src="images/" alt="Apple Music"></a></li>
-				<li><a href="#"><img src="images/" alt="Facebook"></a></li>
-				<li><a href="#"><img src="images/" alt="Instagram"></a></li>
-				<li><a href="#"><img src="images/" alt="Spotify"></a></li>
-				<li><a href="#"><img src="images/" alt="X"></a></li>
-				<li><a href="#"><img src="images/" alt="Youtube"></a></li>
-				<li><a href="#"><img src="images/" alt="Mailing list"></a></li>
+<!-- 2 losse navs of h2 boven elke nav -->
+			<!-- SOCIAL NAV -->
+			<ul aria-label="social navigation">
+				<li><a href="#"><img src="images/social-media-icons/apple-music.png" alt="Apple Music"></a></li>
+				<li><a href="#"><img src="images/social-media-icons/GOED-facebook.png" alt="Facebook"></a></li>
+				<li><a href="#"><img src="images/social-media-icons/instagram.png" alt="Instagram"></a></li>
+				<li><a href="#"><img src="images/social-media-icons/spotify.png" alt="Spotify"></a></li>
+				<li><a href="#"><img src="images/social-media-icons/twitter.png" alt="X"></a></li>
+				<li><a href="#"><img src="images/social-media-icons/youtube.png" alt="Youtube"></a></li>
+				<li><a href="#"><img src="images/social-media-icons/mail.png" alt="Mailing list"></a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<main>
-		<section>
-			<h2>Listen to Honest</h2>
-			<a href="#">
-				<img src="images/promo-jb-honest-landscape.jpg" alt="Cover newest single 'Honest' by Justin Bieber and Don Oliver. Het centrale beeld op de cover toont Justin Bieber en Don Oliver die tegenover elkaar staan met dikke felgekleurde winterjassen. De achtergrond van de cover is een sneeuwbedekt landschap. Het lijkt een winterlandschap te zijn, met veel wit van de sneeuw die een frisse en koele sfeer creëert. Voor hun staat centraal een jetski op de sneeuw in beeld. De letters van de tekst zijn fel oranje.">
-			</a>
+		<section aria-labelledby="Justice">
+			<h1 id="Justice">Justice (Triple Chucks Deluxe)</h1>
+			<p><time datetime="2021-03-26">26 mar 2021</time></p>
+			<a href="#">Stream/download</a>
+			<img src="images/carousel/justice-album.jpg" alt="Cover van Justin Bieber album Justice. Je ziet Justin met zn hand op zn voorhoofd. Hij knielt op een weg en lijkt ontspannen. De cover heeft een groene tint">
+			
+			<!-- Is dit goed? -->
+			<section aria-labelledby="Share">
+				<p id="Share">Share</p>
+				<ul aria-label="A list of social media platforms" aria-labelledby="Share">
+					<li>
+						<a href="#" aria-label="Share on Facebook">
+						<img src="facebook-icon.png" alt="Facebook logo">
+						</a>
+					</li>
+					<li>
+						<a href="#" aria-label="Share on Twitter">
+						<img src="twitter-icon.png" alt="Twitter logo">
+						</a>
+					</li>
+					<li>
+						<a href="#" aria-label="Share on Google Plus">
+						<img src="googleplus-icon.png" alt="Google Plus logo">
+						</a>
+					</li>
+					<li>
+						<a href="#" aria-label="Share on Tumblr">
+						<img src="tumblr-icon.png" alt="Tumblr logo">
+						</a>
+					</li>
+					<li>
+						<a href="#" aria-label="Share on Pinterest">
+						<img src="pinterest-icon.png" alt="Pinterest logo">
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<table>
+			<thead>
+			  <tr>
+				<th>Nummer op het album</th>
+				<th>Naam single</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>1</td>
+				<td>2 Much</td>
+			  </tr>
+			  <tr>
+				<td>2</td>
+				<td>Deserve You</td>
+			  </tr>
+			  <tr>
+				<td>3</td>
+				<td>As I Am (feat. Khalid)</td>
+			  </tr>
+			  <tr>
+				<td>4</td>
+				<td>Off My Face</td>
+			  </tr>
+			  <tr>
+				<td>5</td>
+				<td>Holy (feat. Chance The Rapper)</td>
+			  </tr>
+			  <tr>
+				<td>6</td>
+				<td>Unstable (feat. The Kid LAROI)</td>
+			  </tr>
+			  <tr>
+				<td>7</td>
+				<td>MLK Interlude</td>
+			  </tr>
+			  <tr>
+				<td>8</td>
+				<td>Die For You (feat. Dominic Fike)</td>
+			  </tr>
+			  <tr>
+				<td>9</td>
+				<td>Hold On</td>
+			  </tr>
+			  <tr>
+				<td>10</td>
+				<td>Somebody</td>
+			  </tr>
+			  <tr>
+				<td>11</td>
+				<td>Ghost</td>
+			  </tr>
+			  <tr>
+				<td>12</td>
+				<td>Peaches (feat. Daniel Caesar & Giveon)</td>
+			  </tr>
+			  <tr>
+				<td>13</td>
+				<td>Love You Different (feat. BEAM)</td>
+			  </tr>
+			  <tr>
+				<td>14</td>
+				<td>Loved By You (feat. Burna Boy)</td>
+			  </tr>
+			  <tr>
+				<td>15</td>
+				<td>Anyone</td>
+			  </tr>
+			  <tr>
+				<td>16</td>
+				<td>Lonely (with benny blanco)</td>
+			  </tr>
+			  <tr>
+				<td>17</td>
+				<td>There She Go (feat. Lil Uzi Vert)</td>
+			  </tr>
+			  <tr>
+				<td>18</td>
+				<td>I Can't Be Myself (feat. Jaden)</td>
+			  </tr>
+			  <tr>
+				<td>19</td>
+				<td>Lifetime</td>
+			  </tr>
+			  <tr>
+				<td>20</td>
+				<td>Wish You Would (feat. Quavo)</td>
+			  </tr>
+			  <tr>
+				<td>21</td>
+				<td>Know No Better (feat. DaBaby)</td>
+			  </tr>
+			  <tr>
+				<td>22</td>
+				<td>Name (feat. Tori Kelly)</td>
+			  </tr>
+			</tbody>
+			</table>
 		</section>
-
-		<section>
-			<h2>Music</h2>
-
+	
+		  
+		  
+		<section aria-labelledby="more-music">
+			<h2>More Music</h2>
 			<ul>
-				<li>
-					<!-- volgorde image en tekst -->
-					<h3>Honest</h3>
-					<!-- Date time? -->
-                    <p><time datetime="2022-04-29">Apr 29th 2022</time></p>
-                    <a href="#">Stream/Download</a>
-
-					<img src="images/carousel/hold-on-single.jpg" alt="Honest ">
-				</li>
+			  <li>
+				<!-- Is dit goed? -->
+				<figure>
+				  <img src="album1-cover.png" alt="Cover of 'i feel funny' by Justin Bieber">
+				  <figcaption><a href="#">i feel funny</a></figcaption>
+				</figure>
+			  </li>
+			  <li>
+				<figure>
+				  <img src="album2-cover.png" alt="Cover of 'Peaches' by Justin Bieber">
+				  <figcaption><a href="#">Peaches (Remix)</a></figcaption>
+				</figure>
+			  </li>
+			  <!-- More album links -->
 			</ul>
 
-			<!-- Navigatieknoppen in een nav-element -->
-			<!-- Tekst kan ik vervangen naar een icoon in CSS -->
-			<nav aria-label="Carousel-controls">
-				<button>Next song</button>
-				<button>Previous song</button>
-			</nav>
-		
-			<!-- Dots als navigatie in een nav-element -->
-			<nav aria-label="Carousel-dots">
-				<button aria-label="Hold On - Justin Bieber" aria-current="true">Load first song</button>
-				<button aria-label="I feel funny - Justin Bieber">Load second song</button>
-				<button aria-label="Peaches - Justin Bieber">Load third song</button>
-			</nav>
+			<button aria-label="load more songs">Load more</button>
 
-			<!-- Span of button? -->
-			<button aria-label="View all songs and albums">View All</button>
+			<!-- Is dit goed? -->
+			<p aria-hidden="true">Music</p>
 		</section>
-
-		<section>
-			<h2>Video's</h2>
-
-			<video src="videos/Justin Bieber - Honest ft. Don Toliver.mp4" poster="images/video.jpg"></video>
-			<img src="images/video.jpg" alt="Thumbnail van de video van Honest van Justin Bieber en Don Oliver op Vevo. Het centrale beeld op de cover toont Justin Bieber en Don Oliver op een jetski die door de sneeuw rijdt. Dit beeld is verrassend en enigszins surrealistisch, aangezien jetski's meestal geassocieerd worden met water en niet met sneeuw. De jetski zelf is opvallend en gedetailleerd, en het contrast tussen de sneeuw en het voertuig benadrukt de unieke en speelse aard van de cover.">
-
-			<button aria-label="View all video's">View All</button>
-		</section>
-
-	
-
-		</section>
-			<h2>Newsletter</h3>
-
-			<form action="#" method="POST"> <!-- attributen nog bekijken -->
-			<!-- Koptitel voor de sectie -->
-		  
-			<!-- Groep van checkboxes voor de keuze wie updates stuurt, van chat gpt -->
-			<fieldset>
-			  <legend>Subscribe to Email Updates From:</legend>
-		  
-			  <label>
-				<input type="checkbox" name="subscription" value="justin-bieber"> Justin Bieber
-			  </label><br>
-		  
-			  <label>
-				<input type="checkbox" name="subscription" value="def-jam"> Def Jam
-			  </label><br>
-		  
-			  <label>
-				<input type="checkbox" name="subscription" value="universal-music-group"> Universal Music Group
-			  </label>
-			</fieldset>
-
-			<fieldset>
-				<!-- Label en invoerveld voor het e-mailadres -->
-				<label for="email">Email</label>
-				<input type="email" id="email" name="email" autocomplete="email" required>
-			
-				<!-- Label en invoerveld voor landselectie -->
-				<!-- Country selection field -->
-				<label for="country">Choose country</label>
-				<input list="countries" id="country" name="country" placeholder="Select country" required>
-				<datalist id="countries">
-					<option value="United States"></option>
-					<option value="Canada"></option>
-					<option value="United Kingdom"></option>
-					<option value="Australia"></option>
-					<option value="Germany"></option>
-						<!-- More countries -->
-				</datalist>
-			</fieldset>
-
-		  
-			<!-- Informatie over de e-mails en privacybeleid -->
-			<p>Emails will be sent by or on behalf of Universal Music Group, 2220 Colorado Avenue, Santa Monica, CA 90404, (310) 865-4000. You may withdraw your consent at any time.</p>
-		  
-			<!-- Links naar Privacy Policy en Do Not Sell -->
-			<p>
-			  <a href="privacy-policy-url">Privacy Policy</a> /
-			  <a href="do-not-sell-url">Do Not Sell My Personal Information</a>
-			</p>
-		  
-			<!-- Submit-knop -->
-			<button type="submit">Sumbit</button>
-		</form>
-
 	</main>
 
 	<footer>
