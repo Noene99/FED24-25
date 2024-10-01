@@ -143,7 +143,7 @@ form input[type="checkbox"] {
 form {
 	flex-grow: 1;
 	display: grid;
-	margin: 0 2em;
+	padding: 0 clamp(1em, 8.33%, 3em);
 }
 
 form fieldset {
