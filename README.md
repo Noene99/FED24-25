@@ -464,8 +464,6 @@ Wat heb ik geleerd?
   - Weet hoe Screenreader werkt (windows)> on/off is CTRL + WINDOWS + ENTER. k voor links, h voor headings, getallen voor speciefieke headings, tab. Scan mode is met CAPS LOCK + spatie. 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
   Vragen:
   - werkt screenreader zo goed op small screen?
   - Is er een reflectie?
@@ -478,17 +476,33 @@ Wat heb ik geleerd?
   Extra vraag:
   - Checkboxes stylen? hoe kan je ze stylen zonder dat dit heel veel werk is?
   - planning checken.
+  - Is share een h2, h3 of p en aria labeledby
   
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Wat heb ik geleerd:
+  - Hoe je een tabel maakt en dat daar rows in zitten tr en tds dat zis data dat de kolommen vormt. Table heading zet je erboven en dat vormt de heading van de kolommen dus niet de title van de tabel. De parents hiervan zijn thead en tbody.
+  - Altijd kopjes voor screenreaders en zoekmachines. Dus de klasse visually hidden a11y  project toevoegen aan de html.
+  - Writing mode: verticle-lr;
+  - Inzoomen afbeelding> object-fit: cover
+  - Plaatje: width:100% en height:100% zodat het plaatje het hele vakje (de li) opvult. Dus op de img> height, width, object cover. Het - - plaatje krijgt geen aspect ratio!!
+  - Li> width en aspect-ratio geven. In plaats van aspect ratio kan je ook op een andere manier de hoogte en grootte bepalen. Bv met height of aspect ratio. Kijk gewoon naar parent en container.
+  - Stel je wilt dat het verandert bij een andere schermgrootte dan media query en dn aspect ratio> andere verhouding (in mediaquery) dan verandert de groote en verhouding van het plaatje, wordt het opgevuld door het plaatje en zeg je object fit cover(niet in de media query).
+  - Github about
 
+  Beantwoorde vragen:
+  - Stukke onderdelen wil ik fixen: het logo op github en de submitbutton op github doen het niet, maar wel op de live server. Waar ligt dit aan?
+  > in de map images in Github zit een bestand met de verkeerde naam. Ik moet de bestandsnaam veranderen naar justin-bieber met kleine letters.
+  - light-dark mode?
+  > @media-query toevoegen met light darm mode.
+  > Het kan ook als variabele worden toegevoegd boven in.
+  - Checkboxes stylen? hoe kan je ze stylen zonder dat dit heel veel werk is?
+  > het is veel werk. accent color is hetgene wat het minste werk is maar weinig mogelijkheden.
+  - Is share een h2, h3 of p en aria labeledby?
+  > nav met daarin h2 en ul.
 </details>
 
 
@@ -514,6 +528,8 @@ Wat heb ik geleerd?
   Korte omschrijving met plaatjes
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Carousel:
+  Als ik de screenreader gebruik en ik navigeer door de h3'tjes dan ligt de focus wel op het goede onderdeel maar de focus zit niet op de goede locatie. Dit is niet goed want mensen die slechtziend zijn willen wel precies zien welk deel het precies is dat wordt voorgelezen.
 </details>
 
 

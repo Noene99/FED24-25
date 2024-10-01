@@ -7,11 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<title>Justin Bieber Music | Justice </title>
-	<!-- logo -->
-	<link href="styles/style.css" rel="stylesheet">
-	<!-- logo -->
-	<link href="styles/style.css" rel="stylesheet">
-	<link href="styles/style.css" rel="stylesheet">
+	<!-- stylesheets -->
+	<link href="styles/styles-general.css" rel="stylesheet general">
+	<link href="styles/style-albumpage.css" rel="stylesheet album">
 
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
@@ -57,163 +55,192 @@
 	</header>
 
 	<main>
-		<section aria-labelledby="Justice">
+		<section aria-label="Info Justice">
 			<h1 id="Justice">Justice (Triple Chucks Deluxe)</h1>
-			<p><time datetime="2021-03-26">26 mar 2021</time></p>
+			<p><time datetime="2021-03-26">mar 26 2021</time></p>
 			<a href="#">Stream/download</a>
 			<img src="images/carousel/justice-album.jpg" alt="Cover van Justin Bieber album Justice. Je ziet Justin met zn hand op zn voorhoofd. Hij knielt op een weg en lijkt ontspannen. De cover heeft een groene tint">
 			
 			<!-- Is dit goed? -->
-			<section aria-labelledby="Share">
-				<p id="Share">Share</p>
-				<ul aria-label="A list of social media platforms" aria-labelledby="Share">
+			<nav aria-label="Share Justice">
+				<h2>Share</h2>
+				<ul aria-label="A list of social media platforms to">
 					<li>
 						<a href="#" aria-label="Share on Facebook">
-						<img src="facebook-icon.png" alt="Facebook logo">
+						<img src="images/social-media-icons/GOED-facebook.png" alt="Facebook logo">
 						</a>
 					</li>
 					<li>
 						<a href="#" aria-label="Share on Twitter">
-						<img src="twitter-icon.png" alt="Twitter logo">
+						<img src="images/social-media-icons/twitter.png" alt="Twitter logo">
 						</a>
 					</li>
 					<li>
 						<a href="#" aria-label="Share on Google Plus">
-						<img src="googleplus-icon.png" alt="Google Plus logo">
+						<img src="images/social-media-icons/spotify.png" alt="Google Plus logo">
 						</a>
 					</li>
 					<li>
 						<a href="#" aria-label="Share on Tumblr">
-						<img src="tumblr-icon.png" alt="Tumblr logo">
+						<img src="images/social-media-icons/youtube.png" alt="Tumblr logo">
 						</a>
 					</li>
 					<li>
 						<a href="#" aria-label="Share on Pinterest">
-						<img src="pinterest-icon.png" alt="Pinterest logo">
+						<img src="images/social-media-icons/instagram.png" alt="Pinterest logo">
 						</a>
 					</li>
 				</ul>
-			</section>
+			</nav>
 
 			<table>
-			<thead>
-			  <tr>
-				<th>Nummer op het album</th>
-				<th>Naam single</th>
-			  </tr>
-			</thead>
-			<tbody>
-			  <tr>
-				<td>1</td>
-				<td>2 Much</td>
-			  </tr>
-			  <tr>
-				<td>2</td>
-				<td>Deserve You</td>
-			  </tr>
-			  <tr>
-				<td>3</td>
-				<td>As I Am (feat. Khalid)</td>
-			  </tr>
-			  <tr>
-				<td>4</td>
-				<td>Off My Face</td>
-			  </tr>
-			  <tr>
-				<td>5</td>
-				<td>Holy (feat. Chance The Rapper)</td>
-			  </tr>
-			  <tr>
-				<td>6</td>
-				<td>Unstable (feat. The Kid LAROI)</td>
-			  </tr>
-			  <tr>
-				<td>7</td>
-				<td>MLK Interlude</td>
-			  </tr>
-			  <tr>
-				<td>8</td>
-				<td>Die For You (feat. Dominic Fike)</td>
-			  </tr>
-			  <tr>
-				<td>9</td>
-				<td>Hold On</td>
-			  </tr>
-			  <tr>
-				<td>10</td>
-				<td>Somebody</td>
-			  </tr>
-			  <tr>
-				<td>11</td>
-				<td>Ghost</td>
-			  </tr>
-			  <tr>
-				<td>12</td>
-				<td>Peaches (feat. Daniel Caesar & Giveon)</td>
-			  </tr>
-			  <tr>
-				<td>13</td>
-				<td>Love You Different (feat. BEAM)</td>
-			  </tr>
-			  <tr>
-				<td>14</td>
-				<td>Loved By You (feat. Burna Boy)</td>
-			  </tr>
-			  <tr>
-				<td>15</td>
-				<td>Anyone</td>
-			  </tr>
-			  <tr>
-				<td>16</td>
-				<td>Lonely (with benny blanco)</td>
-			  </tr>
-			  <tr>
-				<td>17</td>
-				<td>There She Go (feat. Lil Uzi Vert)</td>
-			  </tr>
-			  <tr>
-				<td>18</td>
-				<td>I Can't Be Myself (feat. Jaden)</td>
-			  </tr>
-			  <tr>
-				<td>19</td>
-				<td>Lifetime</td>
-			  </tr>
-			  <tr>
-				<td>20</td>
-				<td>Wish You Would (feat. Quavo)</td>
-			  </tr>
-			  <tr>
-				<td>21</td>
-				<td>Know No Better (feat. DaBaby)</td>
-			  </tr>
-			  <tr>
-				<td>22</td>
-				<td>Name (feat. Tori Kelly)</td>
-			  </tr>
-			</tbody>
+				<thead class="visually-hidden">
+				<tr>
+					<th>Nummer op het album</th>
+					<th>Naam single</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td><a href="#">2 Much</a></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><a href="#">Deserve You</a></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><a href="#">As I Am (feat. Khalid)</a></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td><a href="#">Off My Face</a></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><a href="#">Holy (feat. Chance The Rapper)</a></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><a href="#">Unstable (feat. The Kid LAROI)</a></td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td><a href="#">MLK Interlude</a></td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td><a href="#">Die For You (feat. Dominic Fike)</a></td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td><a href="#">Hold On</a></td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td><a href="#">Somebody</a></td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td><a href="#">Ghost</a></td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td><a href="#">Peaches (feat. Daniel Caesar & Giveon)</a></td>
+					</tr>
+					<tr>
+						<td>13</td>
+						<td><a href="#">Love You Different (feat. BEAM)</a></td>
+					</tr>
+					<tr>
+						<td>14</td>
+						<td><a href="#">Loved By You (feat. Burna Boy)</a></td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td><a href="#">Anyone</a></td>
+					</tr>
+					<tr>
+						<td>16</td>
+						<td><a href="#">Lonely (with benny blanco)</a></td>
+					</tr>
+					<tr>
+						<td>17</td>
+						<td><a href="#">There She Go (feat. Lil Uzi Vert)</a></td>
+					</tr>
+					<tr>
+						<td>18</td>
+						<td><a href="#">I Can't Be Myself (feat. Jaden)</a></td>
+					</tr>
+					<tr>
+						<td>19</td>
+						<td><a href="#">Lifetime</a></td>
+					</tr>
+					<tr>
+						<td>20</td>
+						<td><a href="#">Wish You Would (feat. Quavo)</a></td>
+					</tr>
+					<tr>
+						<td>21</td>
+						<td><a href="#">Know No Better (feat. DaBaby)</a></td>
+					</tr>
+					<tr>
+						<td>22</td>
+						<td><a href="#">Name (feat. Tori Kelly)</a></td>
+					</tr>
+				</tbody>
 			</table>
 		</section>
 	
 		  
 		  
-		<section aria-labelledby="more-music">
+		<section aria-label="More music">
 			<h2>More Music</h2>
 			<ul>
-			  <li>
 				<!-- Is dit goed? -->
-				<figure>
-				  <img src="album1-cover.png" alt="Cover of 'i feel funny' by Justin Bieber">
-				  <figcaption><a href="#">i feel funny</a></figcaption>
-				</figure>
-			  </li>
-			  <li>
-				<figure>
-				  <img src="album2-cover.png" alt="Cover of 'Peaches' by Justin Bieber">
-				  <figcaption><a href="#">Peaches (Remix)</a></figcaption>
-				</figure>
-			  </li>
-			  <!-- More album links -->
+			  	<li>
+					<a href="#">
+						<h3>Hold on</h3>
+						<img src="images/carousel/hold-on-single.jpg" alt="Cover of 'i feel funny' by Justin Bieber">
+						<p href="#">More info</p>
+					</a>
+			  	</li>
+			  	<li>
+					<a href="#">
+						<h3>Rocking around the christmas tree</h3>
+						<img src="images/carousel/rockin-around-the-christmas-tree.jpg" alt="Rocking around the christmas tree' by Justin Bieber">
+						<p href="#">More info</p>
+					</a>
+			  	</li>
+				  <li>
+					<a href="#">
+						<h3>I feel funny</h3>
+						<img src="images/carousel/ifeelfunny-single.jpg" alt="Cover of 'I feel funny' by Justin Bieber">
+						<p href="#">More info</p>
+					</a>
+			  	</li>
+				  <li>
+					<a href="#">
+						<h3>Peaches Remix</h3>
+						<img src="images/carousel/peaches-remix.jpg" alt="Cover of 'Peaches Remix' by Justin Bieber">
+						<p href="#">More info</p>
+					</a>
+			  	</li>
+				  <li>
+					<a href="#">
+						<h3>Peaches- Masterkraft Remix</h3>
+						<img src="images/carousel/peaches-masterkraft-remix.jpg" alt="Cover of 'Peaches' by Justin Bieber">
+						<p href="#">More info</p>
+					</a>
+			  	</li>
+				  <li>
+					<a href="#">
+						<h3>Honest</h3>
+						<img src="images/carousel/honest-single.jpg" alt="Cover of 'Honest' by Justin Bieber">
+						<p href="#">More info</p>
+					</a>
+			  	</li>
 			</ul>
 
 			<button aria-label="load more songs">Load more</button>

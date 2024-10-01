@@ -53,10 +53,241 @@
 
 	--color-section-background-light: white;
 	--color-section-background-dark: black;
-	--color-section-background-album: lightgrey;
+	--color-section-background-album: #EEEEEE;
 	--color-footer-background: black;
 
 	--color-vibrant: #FE5768;
 	--color-vibrant-dark:#7F2B34;
+}
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+section:first-of-type {
+	background-color: var(--color-section-background-album);
+}
+
+/****************/
+/* 	MAIN SECTION */
+/****************/
+main section:nth-of-type(1) {
+	display: flex;
+	flex-direction: column;
+	background-color: #7F2B34;
+}
+
+main section:first-of-type>h1 {
+	font-size: 1.5em;
+	font-family: "Playfair Display";
+	/* van de website geplukt */
+	line-height: 1.3em;
+	text-transform: capitalize;
+	background-color: yellow;
+	margin: 0;
+	order: 4;
+}
+
+main section:first-of-type>p {
+	font-size: 0.8125em;
+	color: var(--color-text-secondary);
+	line-height: 1.56875em;
+	background-color: green;
+	margin: 0;
+	order: 3;
+}
+
+main section:first-of-type>a {
+	font-size: 1em;
+	color: var(--color-text-primary);
+	line-height: 1em;
+	text-decoration: underline;
+	background-color: palevioletred;
+	order: 5;
+}
+
+main section:first-of-type>img {
+	order: 1;
+} 
+
+/********************/
+/* social NAVIGATIE */
+/********************/
+
+main section:nth-of-type(1)>nav { /* 'share' */
+	/* background-color: aqua; */
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: .3em;
+	order:2;
+}
+
+main section:nth-of-type(1)>nav ul {
+	display: flex;
+	flex-wrap: nowrap;
+	list-style: none;
+	/* background-color: red; */
+	margin: 0;
+	padding: 0;
+}
+
+main section:nth-of-type(1)>nav h2 {
+	font-size: 1em;
+	/* background-color: orange; */
+	font-weight: 400;
+	margin: .1em;
+}
+
+main section:nth-of-type(1)>nav ul li {
+	margin: .2em;
+    width: 2em;
+    height: 2em;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--color-text-secondary);
+    overflow: hidden; 
+}
+
+main section:nth-of-type(1)>nav ul li img {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+    object-position: center; 
+	opacity: 0.7; 
+}
+/* https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678 */
+/* :nth-child() selecteert het element op basis van zijn positie tussen alle broers/zussen.
+:nth-of-type() selecteert het element op basis van zijn positie binnen alle elementen van hetzelfde type (bijv. alle li-elementen binnen een ul). */
+main section:nth-of-type(1)>nav ul li:nth-child(1) img {
+    scale: 0.4; 
+}
+
+main section:nth-of-type(1) >nav ul li:nth-child(2) img {
+    scale: 0.5;  
+}
+
+main section:nth-of-type(1) >nav ul li:nth-child(3) img {
+    scale: 0.49; 
+}
+
+main section:nth-of-type(1) >nav ul li:nth-child(4) img {
+    scale:.6; 
+}
+
+main section:nth-of-type(1) >nav ul li:nth-child(5) img {
+    scale: 0.6;  
+}
+
+
+/*************/
+/*	 TABEL	 */
+/*************/
+table {
+    width: 100%; /* https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678 */
+    border-collapse: collapse; /* https://www.youtube.com/watch?v=biI9OFH6Nmg */
+	text-align: left; 
+	font-size: .75em;
+	line-height: 1.32em;
+	order: 6;
+}
+
+table tbody tr {
+	border-bottom: 1px solid var(--color-text-footer);
+}
+
+td { /* alle cellen in de body en head */
+    padding: .75em;
+}
+
+table tbody tr td:first-of-type {
+	/* https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678 */
+    width: auto; /* Eerste kolom past zich aan de inhoud aan */
+	/* max-width: fit-content; Dit heeft geen nut*/
+	background-color: #FE5768;
+	color: var(--color-text-secondary);
+
+}
+
+table tbody tr td:last-of-type {
+	/* https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678 */
+    width: 100%; /* Tweede kolom kan breder worden */
+	background-color: yellow;
+}
+
+/***********************/
+/*	    GRID-ALBUMS 	 */
+/***********************/
+
+main section:nth-of-type(2) ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-gap: 2em;
+  }
+  
+main section:nth-of-type(2) ul li {
+	aspect-ratio: 1/1;
+	overflow: hidden;
+}
+
+main section:nth-of-type(2) ul li a {
+	position: relative;
+	display: block;
+	display: grid; /* Maak van de <a> ook een grid */
+	place-items: center; /* Centreer alle inhoud horizontaal */
+	gap: 10px; /* Voeg ruimte toe tussen de items */
+	z-index: 3;
+}
+
+main section:nth-of-type(2) ul a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: opacity 0.3s ease;
+	opacity: 0;
+	z-index:3;
+}
+
+main section:nth-of-type(2) ul li:hover a::before {
+	opacity: 1; /* Toon overlay bij hover */
+	
+}
+
+main section:nth-of-type(2) ul li a p, main section:nth-of-type(2) ul li a h3 {
+	position: absolute;
+	color: white;
+	font-weight: 700;
+	z-index: 10;
+	transition: opacity 0.3s ease;
+/*   opacity: 0; */
+}
+
+main section:nth-of-type(2) ul li a p {
+	transform: translate(0, 50%);
+}
+
+main section:nth-of-type(2) ul li a h3 {
+	transform: translate(0, -50%);
+}
+
+main section:nth-of-type(2) ul li img {
+	width: 100%; /* Zorg dat de afbeelding nooit breder is dan de container */
+	height: 100%;
+	object-fit: cover;
+	transition: scale .1s linear;
+}
+
+main section:nth-of-type(2) ul li:hover img {
+	scale: 1.05;
+}
+
+main section:nth-of-type(2) ul li:hover a h3, main section:nth-of-type(2) ul li:hover a p {
+	opacity: 1;
 }
 

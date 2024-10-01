@@ -65,6 +65,45 @@
 /****************/
 /* JOUW STYLING */
 /****************/
+/* VIEW ALL BUTTON */
+
+main section > a {
+	font-size: .9em;
+	font-weight:700;
+	align-self: end;
+	transform: translate(-60%, 750%);
+	color:  var(--color-text-primary);
+}
+
+/* STREEPJE */
+main section > a::after { 
+	content: "";
+	width: 2em;
+	height: .1em;
+	background-color: var(--color-text-primary);
+	position: absolute;
+	top:50%;
+	right:-60%;
+}
+
+section:nth-of-type(odd) .viewall  {
+color: var(--color-text-primary-white);
+}
+
+section:nth-of-type(odd) .viewall::after { 
+	content: "";
+	width: 2em;
+	height: .1em;
+	background-color: var(--color-section-background-light);
+	position: absolute;
+	top:50%;
+	right:-60%;
+}
+
+header > a:last-of-type:hover {
+text-decoration: underline;
+}
+
 /**********************/
 /* SECTION 1/HONEST   */
 /**********************/
@@ -258,6 +297,7 @@ section:nth-of-type(2)>ul h3 {
 	grid-row: 3/4;
 	margin: 0;
 	text-transform: capitalize;
+	font-family: 'Playfair Display';
 }
 
 section:nth-of-type(2)>ul li a {
