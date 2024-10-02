@@ -40,25 +40,7 @@
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
-:root {
-	/* startje */
-	--color-text-primary: black;
-	--color-text-primary-white: white;
-	--color-text-secondary: #555555;
-	--color-text-footer: #B3B3B3;
-	--color-bigtext-background-light: #E5E5E5;
-	--color-bigtext-background-dark: #1A1A1A;
 
-	--color-logo: white;
-
-	--color-section-background-light: white;
-	--color-section-background-dark: black;
-	--color-section-background-album: #EEEEEE;
-	--color-footer-background: black;
-
-	--color-vibrant: #FE5768;
-	--color-vibrant-dark:#7F2B34;
-}
 
 
 /****************/
@@ -106,7 +88,7 @@ main section:first-of-type>p {
 
 main section:first-of-type>a {
 	font-size: 1em;
-	color: var(--color-text-primary);
+	color: var(--color-text-primary-nuance);
 	line-height: 1em;
 	text-decoration: underline;
 	grid-row-start: 5;
@@ -230,6 +212,11 @@ table tbody tr td:last-of-type {
 	/* background-color: yellow; */
 }
 
+table tbody tr td:last-of-type a {
+
+	color: var(--color-text-primary);
+}
+
 /***********************/
 /*	    GRID-ALBUMS 	 */
 /***********************/
@@ -237,11 +224,12 @@ main aside {
 	padding: 7em 0 calc(9.25926vw + 5em) 0;
 	position: relative;
 	display: grid;
+	background-color: var(--color-section-background-light);
 }
 
 main aside h2 {
 	font-family: "Playfair Display";
-	font-size: 1em;
+	font-size: 1.3em;
 	text-transform: capitalize;
 	padding-left: clamp(1em, 8.33%, 3em);
 
@@ -288,7 +276,7 @@ main aside ul li:hover a::before {
 
 main aside ul li a p, main aside ul li a h3 {
 	position: absolute;
-	color: white;
+	color: var(--color-text-album-opacity);
 	font-weight: 700;
 	z-index: 10;
 	transition: opacity 0.5s ease;
