@@ -116,11 +116,11 @@ img {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-section>h2, section>h3 {
+section>h2, section>h3, aside>p {
 	font-family: 'Playfair Display';
 }
 
-section>h2 {
+section>h2, aside>p {
 	color: var(--color-bigtext-background-light);
 	width:100%;
 	margin: 0;
@@ -130,6 +130,7 @@ section>h2 {
 	overflow: hidden; /* Om newsletter af te breken en niet vertivaal te kunnen scrollen */
 	position: absolute;
 	bottom:0;
+	font-weight: 700;
 }
 
 main, body {

@@ -234,23 +234,27 @@ table tbody tr td:last-of-type {
 /*	    GRID-ALBUMS 	 */
 /***********************/
 main aside {
-	padding: 7em clamp(1em, 8.33%, 3em) calc(9.25926vw + 20px + 7em) clamp(1em, 8.33%, 3em);
-
+	padding: 7em 0 calc(9.25926vw + 5em) 0;
+	position: relative;
+	display: grid;
 }
 
 main aside h2 {
 	font-family: "Playfair Display";
 	font-size: 1em;
 	text-transform: capitalize;
+	padding-left: clamp(1em, 8.33%, 3em);
+
 }
 
 main aside ul {
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: 0 clamp(1em, 8.33%, 3em) 0 clamp(1em, 8.33%, 3em);
 	display: grid;
 	grid-gap: 2em;
-  }
+
+}
   
 main aside ul li {
 	aspect-ratio: 1/1;
@@ -322,15 +326,33 @@ main aside ul li:hover a h3, main aside ul li:hover a p {
 	opacity: 1;
 }
 
+main aside button {
+	justify-self: center;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 1em;
+	margin-top: 2em;
+	
+}
 
+/********************/
+/* 		TABLET		*/
+/********************/
 
 @media (min-width: 48em) {
-
-	main section:nth-of-type(1) {
+	/* main section:nth-of-type(1) {
+		padding: 11em clamp(1em, 8.33%, 3em) calc(9.25926vw + 20px + 7em) clamp(1em, 8.33%, 3em);
+	} AKA padding is 3 em want max padding is 3 em*/
+	
+	main section:first-of-type {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: max-content max-content max-content max-content max-content;
 		background-color: palegreen;
+		grid-column-gap: 3rem;
 	}
 	main section:first-of-type>h1 {
 		font-size: 1.5em;
@@ -341,6 +363,10 @@ main aside ul li:hover a h3, main aside ul li:hover a p {
 		margin: 0;
 		grid-row-start: 2;
 		grid-column:2/3 ;
+		padding: 0;
+		margin: 1.5rem 3rem 1.5rem 0;
+		align-self: center;
+
 	}
 	
 	main section:first-of-type>p {
@@ -351,6 +377,8 @@ main aside ul li:hover a h3, main aside ul li:hover a p {
 		margin: 0;
 		grid-row-start: 1;
 		grid-column: 2/3;
+		padding: 0;
+		align-self: self-end;
 	}
 	
 	main section:first-of-type>a {
@@ -359,13 +387,20 @@ main aside ul li:hover a h3, main aside ul li:hover a p {
 		line-height: 1em;
 		text-decoration: underline;
 		background-color: palevioletred;
-		grid-row-start: 5;
+		grid-row-start: 3;
 		grid-column: 2/3;
+		padding: 0;
+		margin: 0;
+		align-self: self-start;
+
 	}
 	
 	main section:first-of-type>img {
-		grid-row-start: 1;
+		grid-row: 1/4;
 		grid-column: 1/2;
+		border: #FE5768 5px solid;
+		padding: 0;
+		
 	} 
 	
 	/********************/
@@ -374,12 +409,9 @@ main aside ul li:hover a h3, main aside ul li:hover a p {
 	
 	main section:nth-of-type(1)>nav { 
 		/* background-color: aqua; */
-		display: flex;
-		flex-wrap: nowrap;
-		align-items: center;
-		gap: .3em;
-		grid-row-start: 2;
-		grid-column:1/-1 ;
+		grid-row-start: 4;
+		grid-column:1/2 ;
+
 	}
 
 	/************/
@@ -387,13 +419,23 @@ main aside ul li:hover a h3, main aside ul li:hover a p {
 	/************/
 
 	table {
-		width: 100%; 
+		width: calc(100%-3rem); 
 		border-collapse: collapse; 
 		text-align: left; 
 		font-size: .75em;
 		line-height: 1.32em;
-		grid-row-start: 6;
+		grid-row-start: 5;
 		grid-column: 1/-1;
+		margin: 0 3rem;
+
 	}
 	
 }
+
+/********************/
+/* 		DESKTOP	 	*/
+/********************/
+
+@media (min-width: 61.875em) {
+}
+
