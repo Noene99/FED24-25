@@ -47,14 +47,14 @@
 /* JOUW STYLING */
 /****************/
 
-section:first-of-type {
+main>section:first-of-type {
 	background-color: var(--color-section-background-album);
 }
 
 /****************/
 /* 	MAIN SECTION */
 /****************/
-main section:nth-of-type(1) {
+main> section:nth-of-type(1) {
 	display: grid;
 	/* background-color: #7F2B34; */
 	/* van de website geplukt */
@@ -62,7 +62,7 @@ main section:nth-of-type(1) {
 	
 }
 
-main section:first-of-type>h1 {
+main> section:first-of-type>h1 {
 	font-size: 1.5em;
 	font-family: "Playfair Display";
 	/* van de website geplukt */
@@ -75,7 +75,7 @@ main section:first-of-type>h1 {
 	
 }
 
-main section:first-of-type>p {
+main >section:first-of-type>p {
 	font-size: 0.8125em;
 	color: var(--color-text-secondary);
 	line-height: 1.56875em;
@@ -86,7 +86,7 @@ main section:first-of-type>p {
 	margin: 0;
 }
 
-main section:first-of-type>a {
+main> section:first-of-type>a {
 	font-size: 1em;
 	color: var(--color-text-primary-nuance);
 	line-height: 1em;
@@ -96,7 +96,7 @@ main section:first-of-type>a {
 	margin: 0 0 2rem 0;
 }
 
-main section:first-of-type>img {
+main> section:first-of-type>img {
 	grid-row-start: 1;
 	padding: 0 1rem;
 } 
@@ -150,6 +150,8 @@ main [aria-label="Share Justice"] ul li img {
     object-position: center; 
 	opacity: 0.7; 
 }
+
+
 /* https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678 */
 /* :nth-child() selecteert het element op basis van zijn positie tussen alle broers/zussen.
 :nth-of-type() selecteert het element op basis van zijn positie binnen alle elementen van hetzelfde type (bijv. alle li-elementen binnen een ul). */
@@ -335,14 +337,14 @@ main aside button {
 		padding: 11em clamp(1em, 8.33%, 3em) calc(9.25926vw + 20px + 7em) clamp(1em, 8.33%, 3em);
 	} AKA padding is 3 em want max padding is 3 em*/
 	
-	main section:first-of-type {
+	main >section:first-of-type {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: max-content max-content max-content max-content max-content;
 		background-color: palegreen;
 		grid-column-gap: 3rem;
 	}
-	main section:first-of-type>h1 {
+	main >section:first-of-type>h1 {
 		font-size: 1.5em;
 		font-family: "Playfair Display";
 		line-height: 1.3em;
@@ -357,7 +359,7 @@ main aside button {
 
 	}
 	
-	main section:first-of-type>p {
+	main >section:first-of-type>p {
 		font-size: 0.8125em;
 		color: var(--color-text-secondary);
 		line-height: 1.56875em;
@@ -369,7 +371,7 @@ main aside button {
 		align-self: self-end;
 	}
 	
-	main section:first-of-type>a {
+	main >section:first-of-type>a {
 		font-size: 1em;
 		color: var(--color-text-primary);
 		line-height: 1em;
@@ -383,7 +385,7 @@ main aside button {
 
 	}
 	
-	main section:first-of-type>img {
+	main >section:first-of-type>img {
 		grid-row: 1/4;
 		grid-column: 1/2;
 		border: #FE5768 5px solid;
@@ -395,7 +397,7 @@ main aside button {
 	/* social NAVIGATIE */
 	/********************/
 	
-	main section:nth-of-type(1)>nav { 
+	main >section:nth-of-type(1)>nav { 
 		/* background-color: aqua; */
 		grid-row-start: 4;
 		grid-column:1/2 ;

@@ -370,6 +370,68 @@ Wat heb ik geleerd?
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+>>>>>>>>>>>TEST Screenreader
+
+  •	h1 is niet uniek en omvat opzich wel de inhoud van de eerste pagina maar onvoldoende.
+  •	Er is een link 'Listen to Honest' achter de image op de eerste pagina maar deze kan je niet aanklikken zonder de tab toets te gebruiken.
+
+>>>>>>>>>>>>>TEST WCAG checklist
+
+  CONTENT
+  •	Songtitels worden meevertaald wanneer de taal wordt aangepast.
+  •	Stream/download mag specifieker met een aria label en er moet worden aangegeven dat je naar een niewue pagina wordt geleid. (opent in nieuw venster)
+  •	Bekijk alles is te vaag en moet met een aria label worden gekenmerkt.
+  •	Alleen de term newsletter is wat kort. Kan wellicht beter worden aangemerkt als schrijf je in voor de nieuwsbrief met een aria label.
+
+  GLOBAL CODE
+  •	Er zijn 3 fouten in de code en veel waarschuwingen.
+  
+  KEYBOARD
+  •	De visuele focus van de tab is minimaal en weinig opvallend.
+  •	Keyboard focus en visuele layout kloppen niet helemaal. De volgorde van de carousel klopt ook niet helemaal. Eerst kan je op verder dan door alles heen en dan terug.
+  •	h2 staat onderaan de pagina en komt visueel na de eerste h3.
+
+  MOBILE AND TOUCH
+  Landscape mode op telefoon> nav is te lang. 
+
+  HEADINGS
+  •	h1 is niet uniek (het logo is de h1).
+
+  LISTS
+  •	Voor de Carousel is geen ul gebruikt. Moet dat? !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  IMAGES
+  •	Niet alle afbeeldingen hebben een goede alt-tekst met tekst die ook op ed afbeelding staat.
+
+  MEDIA (VIDEO en AUDIO)
+  •	Er is geen transcriptie en makkelijk toegankelijk en zichtbaar  maken.  
+
+  CONTROLS<<<>>>
+  •	Geen href bij sommige links maar een #
+  •	Geen type=’’button’’ bij sommige buttons
+  •	Onclick ipv button of a (submit form) 
+  •	De footer links hebben wel onderstreping bij hover state, maar BEKIJK ALLES en STREAM/DOWNLOAD niet.
+  •	STREAM/DOWNLOAD> onduidelijk dat er een nieuwe pagina wordt geopend voor mensen (met? en) zonder beperking.
+  •	Buttons in Carousel zijn niet genoeg herkenbaar als button.
+
+  APPEARANCE
+  •	Er is geen verschil tussen donkere en lichte modus. Wat moet ik hiermee!!!!!!??????
+  •	Animatie effecten besturingssysteem aan of uitzetten heeft geen verschil op de website.
+  •	Tekengrootte 200%> STREAM/DOWNLOAD overlapt elkaar wel op de homepagina maar op de albumpagina niet.
+  •	High-contrast wordt wel ondersteund maar de SM iconen hebben amper contrast op de albumpagina.
+
+  ANIMATIES
+  •	Kan niks vinden over de media query prefers reduced motion. Ik snap ook niet wat ermee bedoeld wordt en wat je zou moeten doen als het er is. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  •	Er is geen backgroundvideo
+  •	Animaties flitsen niet maar bewegen wel.
+
+  COLOR CONTRAST
+  •	de h2's hebben een te laag contrast en voldoen niet aan de regel van 3:1 contrastverhouding.
+  •	Ik kan geen custom ::selection colors vinden (voldoende contrast?) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  KLEURENBLINDHEID
+  •	Opvallend: De kleuren van de hoverstate van de navigatie worden grijs in plaats van rood bij kleurenblindheid voor de kleur rood.
+
 </details>
 
 
@@ -545,8 +607,25 @@ Wat heb ik geleerd?
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1: https://1000logos.net/justin-bieber-logo/
-  2. bron 2
-  3. ...
+  >>Generieke pagina CSS
+  1. https://1000logos.net/justin-bieber-logo/
+
+
+
+  >>Homepagina CSS
+  2. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label
+  3. https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+  4. https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced
+  5. https://codepen.io/shooft/pen/NWQWVGB (Sanne)
+  6. https://codepen.io/shooft/pen/xxvKGmY (Sanne)
+  7. /* https://www.a11yproject.com/posts/how-to-hide-content/ */
+
+  >>Albumpagina CSS
+  1. https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678  (css albumpagina, regel 155)
+
+  2. https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678 (css albumpagina, regel 183)
+  3. https://www.youtube.com/watch?v=biI9OFH6Nmg (css albumpagina, regel 184)
+  4. https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678 (css albumpagina, regel 183)
+  5. https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678 (css albumpagina, regel 202, 212)
 
 </details>

@@ -44,7 +44,7 @@
 /****************/
 /* VIEW ALL BUTTON */
 
-main section > a {
+main>section > a {
 	font-size: .9em;
 	font-weight:700;
 	align-self: end;
@@ -53,7 +53,7 @@ main section > a {
 }
 
 /* STREEPJE */
-main section > a::after { 
+main >section > a::after { 
 	content: "";
 	width: 2em;
 	height: .1em;
@@ -63,11 +63,11 @@ main section > a::after {
 	right:-60%;
 }
 
-section:nth-of-type(odd) .viewall  {
+main>section:nth-of-type(odd) .viewall  {
 color: var(--color-text-primary-white);
 }
 
-section:nth-of-type(odd) .viewall::after { 
+main>section:nth-of-type(odd) .viewall::after { 
 	content: "";
 	width: 2em;
 	height: .1em;
@@ -84,7 +84,7 @@ text-decoration: underline;
 /**********************/
 /* SECTION 1/HONEST   */
 /**********************/
-section:nth-of-type(1), section:nth-of-type(3), section:nth-of-type(4) {
+main>section:nth-of-type(1), main>section:nth-of-type(3), main>section:nth-of-type(4) {
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -95,7 +95,7 @@ h2[aria-label="Stream Honest"] {
 	font-size: small;
 }
 
-section:nth-of-type(1) {
+main>section:nth-of-type(1) {
     padding: 0;
     margin: 0;
 }
@@ -158,7 +158,7 @@ form fieldset:first-of-type label {
 form fieldset:first-of-type input {
 	background-color: transparent;
 	appearance: none;
-	border: 3px solid var(--color-text-primary-white);
+	border: 3px solid var(--color-text-primary);
 }
 
 form p {
@@ -211,7 +211,7 @@ form button::after {
 	background-color: green;
 } */
 
-section:nth-of-type(2) { /* hele section als parent voor de grid met carousel en h2 */
+main>section:nth-of-type(2) { /* hele section als parent voor de grid met carousel en h2 */
 	/* background-color: red; */
 	display:flex;
 	flex-direction:column;
@@ -224,7 +224,7 @@ section:nth-of-type(2) { /* hele section als parent voor de grid met carousel en
 /*************************/
 /* 		SLIDER	 		*/
 /************************/
-section:nth-of-type(2) > ul { /* slider in carousel parent */
+main>section:nth-of-type(2) > ul { /* slider in carousel parent */
 	/* background-color: yellow; */
 
 	position: relative;
@@ -244,7 +244,7 @@ section:nth-of-type(2) > ul { /* slider in carousel parent */
 	
 }
 
-section:nth-of-type(2)>ul li { 
+main>section:nth-of-type(2)>ul li { 
 	flex-shrink: 0; /* De kinderen in de ul worden dan niet inelkaar gedrukt maar behouden hun breedte */
 	width:100%; /* 1 li per keer zichtbaar */
 	display:grid;
@@ -257,45 +257,56 @@ section:nth-of-type(2)>ul li {
 	background-color: rgb(251, 0, 255);
 } */
 
-section:nth-of-type(2)>ul li img {
-	grid-row: 1/2;
-	margin-bottom: 2em;
+main>section:nth-of-type(2)>ul li>section {
+	text-align: center;
+	order: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-section:nth-of-type(2)>ul li p {
+main>section:nth-of-type(2)>ul li img {
+	padding: 0 1rem;
+}
+
+main>section:nth-of-type(2)>ul li>section p {
 	/* background-color: aqua; */
-	font-size:1.25em;
-	grid-row: 2/3;
+	font-size:1.25rem;
 	margin: 0;
+	order: 1 ;
 }
 
-section:nth-of-type(2)>ul h3 {
-	font-size: 1.5em;
-	grid-row: 3/4;
-	margin: 0;
+main>section:nth-of-type(2)>ul li>section h3 {
+	font-size: 1.5rem;
+	margin: .3em 0;
 	text-transform: capitalize;
 	font-family: 'Playfair Display';
+	order: 2 ;
+	letter-spacing: .03em;
+
 }
 
-section:nth-of-type(2)>ul li a {
+main>section:nth-of-type(2)>ul li>section a {
 	/* background-color: aqua; */
 	text-decoration: underline;
-	font-size: 1em;
+	font-size: 1rem;
 	font-weight: 700;
-	grid-row: 4/5;
 	margin: 0;
 	color: inherit;
+	order: 3;
+	letter-spacing: .05em;
+
 }
 
 /*************************/
 /* 	CAROUSEL NAV		*/
 /************************/
-main section:nth-of-type(2) nav:first-of-type {
+main >section:nth-of-type(2) nav:first-of-type {
 	/* background-color: blue; */
 	margin: 3em 0 0 0;
 }
 
-main section:nth-of-type(2) nav:last-of-type {
+main >section:nth-of-type(2) nav:last-of-type {
 	/* background-color: lightskyblue; */
 	
 	display:flex;
@@ -311,7 +322,7 @@ main section:nth-of-type(2) nav:last-of-type {
 /* PIJL naar links IN CAROUSEL 	*/
 /********************************/
 
-main section:nth-of-type(2) nav:first-of-type { 
+main >section:nth-of-type(2) nav:first-of-type { 
 	display:flex;
 	gap: .1em;
 	margin-bottom: .3em;
@@ -320,7 +331,7 @@ main section:nth-of-type(2) nav:first-of-type {
 /* 	met Sanne gemaakt */
 
 /* 	de button */
-main section:nth-of-type(2) nav:first-of-type button {
+main> section:nth-of-type(2) nav:first-of-type button {
 	appearance:none;
 	border:none;
 	background-color:var(--button-color-carousel);
@@ -335,7 +346,7 @@ main section:nth-of-type(2) nav:first-of-type button {
 	align-items:center;
 }
 
-main section:nth-of-type(2) nav:first-of-type button:first-of-type span {
+main >section:nth-of-type(2) nav:first-of-type button:first-of-type span {
 	position:relative;
 	display:block;
 	width:1.2em;
@@ -349,7 +360,7 @@ main section:nth-of-type(2) nav:first-of-type button:first-of-type span {
 	border-radius: 3em;
 }
 
-main section:nth-of-type(2) nav:first-of-type button:first-of-type span::after {
+main >section:nth-of-type(2) nav:first-of-type button:first-of-type span::after {
 	content:"";
 	
 	display:block;
@@ -368,7 +379,7 @@ main section:nth-of-type(2) nav:first-of-type button:first-of-type span::after {
 /* PIJL naar rechts IN CAROUSEL */
 /********************************/
 
-main section:nth-of-type(2) nav:first-of-type button:last-of-type span {
+main >section:nth-of-type(2) nav:first-of-type button:last-of-type span {
 	position:relative;
 	display:block;
 	width:1.2em;
@@ -382,7 +393,7 @@ main section:nth-of-type(2) nav:first-of-type button:last-of-type span {
 	border-radius: 3em;
 }
 
-main section:nth-of-type(2) nav:first-of-type button:last-of-type span::after {
+main >section:nth-of-type(2) nav:first-of-type button:last-of-type span::after {
 	content:"";
 	
 	display:block;
@@ -401,7 +412,7 @@ main section:nth-of-type(2) nav:first-of-type button:last-of-type span::after {
 /* 		DOTS IN CAROUSEL		 */
 /********************************/
 /* Met behulp van chat gpt */
-main section:nth-of-type(2) nav:last-of-type a {
+main >section:nth-of-type(2) nav:last-of-type a {
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -415,59 +426,85 @@ main section:nth-of-type(2) nav:last-of-type a {
 }
 
 /* Verberg de tekst */
-main section:nth-of-type(2) nav:last-of-type a::before {
+main >section:nth-of-type(2) nav:last-of-type a::before {
     content: ""; 
     position: absolute;
     inset: 0;
 }
 
-main section:nth-of-type(2) nav:last-of-type a:hover {
+main >section:nth-of-type(2) nav:last-of-type a:hover {
     transform: scale(1.1);
     border: solid 1px var(--color-hover-dot);
 }
 
+
+
+/* Sectie 1 */
+
+
+
+
+/* Sectie 2:CAROUSEL */
 @media (width > 37em) {
-	section:nth-of-type(2) {
+	main>section:nth-of-type(2) {
 		background-color:lightblue;
-		
 		display:grid;
-		
 		grid-template-columns:1fr max-content 1fr;
 	}
 	
-	section:nth-of-type(2) h2 {
+	main>section:nth-of-type(2) h2 {
 		grid-column-start:1;
 		grid-column-end:-1;
 		background-color: var(--color-bigtext-background-dark);
 	}
 	
-	section:nth-of-type(2) > ul {
-		grid-column-start:1;
-		grid-column-end:-1;
-		grid-row-start:1;
-		
+	main>section:nth-of-type(2) > ul {
+		grid-column:1/-1;
+		grid-row:1/3;
+		justify-self: end;
+		align-self: self-end;
 	}
-	
-	main section:nth-of-type(2) nav:first-of-type {
-		grid-row-start:1;
-		grid-column-start:2;
-		
-		align-self:end;
-		
-		display:grid;
+
+	main>section:nth-of-type(2) > ul li {
+		display: grid;
+		grid-template-columns:1fr 1fr;
+		column-gap: 50px;
 	}
-	
-	main section:nth-of-type(2) nav:last-of-type {
-		grid-column-start:1;
-		grid-column-end:-1;
-		
-		
-		display:flex;
-		justify-content:center;
+
+	main>section:nth-of-type(2) > ul li img {
+		padding: 0;
+		align-self: self-end;
+	}
+
+	main>section:nth-of-type(2) > ul li>section {
+		text-align: left;
 		
 	}
 
-	section:nth-of-type(2) .viewall {
+	main>section:nth-of-type(2) > ul li>section h3 {
+		font-size: 	2.3125em;
+		margin-top: .1em;
+	}
+
+	
+	main> section:nth-of-type(2) nav:first-of-type {
+		grid-row-start:2;
+		grid-column-start:2;
+		margin-bottom: 0;;
+		
+		display:grid;
+
+		z-index: 20;
+	}
+	
+	main >section:nth-of-type(2) nav:last-of-type {
+		grid-column:1/-1;
+		grid-row-start: 3;
+		display:flex;
+		justify-content:center;		
+	}
+
+	main>section:nth-of-type(2) .viewall {
 		background-color: yellow;
 		
 		justify-self: end;

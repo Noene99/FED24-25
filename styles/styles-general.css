@@ -161,11 +161,11 @@ img {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-section>h2, section>h3, aside>p {
+main>section>h2, section>h3, aside>p {
 	font-family: 'Playfair Display';
 }
 
-section>h2, aside>p {
+main>section>h2, aside>p {
 	color: var(--color-bigtext-background-light);
 	width:100%;
 	margin: 0;
@@ -199,24 +199,24 @@ dialog {
 /* 	SECTIONS 	*/
 /****************/
 
-section {
+main>section {
 	padding: 7em 0 calc(9.25926vw + 20px + 7em) 0;
 	position: relative;
 }
 
-section:nth-of-type(odd)>h2 {
+main>section:nth-of-type(odd)>h2 {
 	color: var(--color-bigtext-background-dark);
 }
 
-section:nth-of-type(odd) {
+main>section:nth-of-type(odd) {
 	background-color: var(--color-section-background-dark);
 }
 
-section:nth-of-type(even) {
+main>section:nth-of-type(even) {
 	background-color: var(--color-section-background-light);
 }
 
-section a { /* alle links in de tweede sectie */
+main>section a { /* alle links in de tweede sectie */
 	text-decoration: none;
 	color: black;
 }
@@ -229,8 +229,10 @@ header {
 	display:grid;
 	grid-template-columns: max-content 1fr ;
 	height: 2.75em;
-	position:sticky;
+	position:fixed;
 	top:0;
+	right: 0;
+	left:0;
 	z-index: 20;
 	background-color: var(--color-header-background);
 	align-items: center;
@@ -251,7 +253,7 @@ header nav {
     bottom:0; /* Nav komt direct onder de header */
     left: 0;
 	top:0;
-    right: 3em;
+    right: 2em;
     background-color: black; /* Zichtbaarheid checken */
     z-index: 10; /* Zorgt ervoor dat het nav boven andere elementen zichtbaar is */
     padding: 1em;
@@ -282,8 +284,31 @@ header ul:last-of-type {
 	display: flex;
 	flex-flow: row wrap;
 	gap: 1.2em;
+	align-items: center;
 }
 
+header nav ul:last-of-type li:nth-of-type(1) img {
+	scale:1.01; 
+}
+header nav ul:last-of-type li:nth-of-type(2) img {
+	scale:1.2; 
+}
+header nav ul:last-of-type li:nth-of-type(3) img {
+	scale:1.4; 
+}
+header nav ul:last-of-type li:nth-of-type(4) img {
+	scale:1.3; 
+}
+header nav ul:last-of-type li:nth-of-type(5) img {
+	scale:1.2; 
+}
+header nav ul:last-of-type li:nth-of-type(6) img {
+	scale:1.4; 
+}
+
+header nav ul:last-of-type li:nth-of-type(7) img {
+	scale:1.4; 
+}
 
 header nav ul a {
 	text-decoration: none;
@@ -367,57 +392,6 @@ header.toonMenu nav {
     translate: 0% 0%;
 }
 
-
-/* HEADER */
-@media (min-width:46em) {
-	header nav {
-	  /* JOUW CODE HIER - stap 8 */
-	  position:static;
-	  translate:unset;
-	  
-	  padding:0;
-	  background:none;
-	}
-	
-	header button {
-	  /* JOUW CODE HIER - stap 6 */
-	  display:none;
-	}
-	
-	header nav ul:first-of-type {
-	  /* JOUW CODE HIER - stap 7 */
-	 background-color: #7F2B34;
-	}
-
-	header nav ul:last-of-type {
-		/* JOUW CODE HIER - stap 7 */
-	   background-color: blue;
-	  }
-	
-	header nav li {
-	  /* JOUW CODE HIER - stap 9 */
-	  flex-basis:unset;
-	  flex-grow:unset;
-	}
-	
-	header nav a {
-	  /* JOUW CODE HIER - stap 10 */
-	  flex-direction:column;
-	  
-	  border:none;
-	}
-	
-	header > a:last-of-type {
-	  /* JOUW CODE HIER - stap 10 */
-	  flex-direction:column;
-	}
-  }
-
-
-
-
-
-
 /****************/
 /* 	FOOTER 	*/
 /****************/
@@ -453,3 +427,66 @@ footer ul a {
 footer ul a:hover {
 	text-decoration: underline;
 }
+
+/* HEADER */
+/* https://chatgpt.com/c/66fd1caf-6334-8005-9600-de51e11fbe7c */
+@media (min-width:46.875em) {
+	header {
+		overflow: visible;
+		height: auto;
+		display: flex;
+		justify-content: space-between;
+		height: 4.16875em;
+		background-color: transparent;
+		background: none;
+	}
+
+	header button {
+		display: none;
+	  }
+
+	header nav {
+		position: static;
+		translate: unset;
+		padding:0;
+		margin:0;
+		background-color: transparent;
+	}
+	
+	header nav ul:first-of-type {
+		/* Main nav */
+	 /* https://chatgpt.com/c/66fd1caf-6334-8005-9600-de51e11fbe7c */
+	 position: fixed;
+	 margin: 0;
+	 padding-bottom: 2rem;
+	 /* https://chatgpt.com/c/66fd1caf-6334-8005-9600-de51e11fbe7c */
+	 top:5em;
+	 right:1em;
+
+	 display: flex;
+	 flex-direction: row;
+	 writing-mode: vertical-rl;
+	}
+
+	header nav ul:last-of-type {
+		margin-right: 1.3rem;
+		background-color: none;
+	}
+	
+
+	header nav ul:last-of-type img {
+	   filter: none; 
+	}
+
+	header nav ul:first-of-type a {
+		font-family: Arial, Helvetica, sans-serif;
+		color: var(--color-hover-dot);
+
+	}
+
+	header nav ul:first-of-type a:hover {
+    color: var(--color-vibrant); /* Kleur bij hover */
+    transition: color 0.1s ease;
+	text-decoration: underline;
+	}
+  }
