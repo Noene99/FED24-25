@@ -448,7 +448,7 @@ main >section:nth-of-type(2) nav:last-of-type a:hover {
 /* Sectie 2:CAROUSEL */
 @media (width > 37em) {
 	main>section:nth-of-type(2) {
-		background-color:lightblue;
+		background-color:white;
 		display:grid;
 		grid-template-columns:1fr max-content 1fr;
 	}

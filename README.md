@@ -368,106 +368,132 @@ Wat heb ik geleerd?
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  TEST WCAG checklist eigen website vergelijken met de originele
 
->>>>>>>>>>>>>TEST WCAG checklist eigen website vergelijken met de originele
-
-  CONTENT
+  >>>CONTENT
   • De website is in het engels en daarom heb ik het html element een attribuut lang="en” meegegeven. Ik dacht dat songtitels wellicht specifiek het attribuut lang="en” moesten krijgen, maar volgensmij heeft is dit alleen noodzakelijk voor zoekmachines en screenreaders wanneer een website onderdelen met meerdere verschillende talen bevat. Wanneer ik mijn website laat vertalen door de browser worden songteksten ook vertaald terwijl dit in mijn ogen niet de bedoeling is. Los van of het de bedoeling is of niet, kan ik dit niet bereiken met het lang attribuut. Wel kan ik als er songtitels in een andere taal zijn deze het lang attribuut geven. 
-De content was verder al duidelijk, begrijpelijk, bevat geen jargon , stijlfiguren of lastige metaforen.
-Verbeterd:
+  • De content was verder al duidelijk, begrijpelijk, bevat geen jargon , stijlfiguren of lastige metaforen.
+  
+  Verbeterd:
   • De link view all-in de sectie Muziek en Video’s heb ik specifieker gemaakt zodat het duidelijk is wat je kan met de link. Ik heb deze links een aria label gegeven en nu hoor je: ‘view all songs en albums  on the music page. 
   • Ik heb met een aria label aangegeven wanneer een link opent in een nieuw venster. Dit is het geval bij stream/download en de social media link.
 
-  GLOBAL CODE
+  >>>GLOBAL CODE
   • Er zijn 3 fouten in de code en veel waarschuwingen.
-Lang attribuut is er, viiewwport-zoom is niet disabled en elke pagina heeft een unieke h1.
-Verbeterd:
-Mijn albumpagina heeft nu een unieke h1, namelijk de titel van het album. De originele website heeft twee h1’s: het logo en de titel. Dit is niet correct en nu is het logo een h1 op de homepage en een link op de albumpagina met de titel als unieke h1.
-W3C-validation: goed.
-   
+  • Lang attribuut is er, viiewwport-zoom is niet disabled en elke pagina heeft een unieke h1.
   
-  KEYBOARD
+  Verbeterd:
+  • Mijn albumpagina heeft nu een unieke h1, namelijk de titel van het album. De originele website heeft twee h1’s: het logo en de titel. Dit is niet correct en nu is het logo een h1 op de homepage en een link op de albumpagina met de titel als unieke h1.
+  • W3C-validation: goed, zonder waarschuwingen of fouten terwijl er eerst 3 fouten waren en heel veel waarschuwingen.
+  <img src="/readme-images/validator-homepagina.png" width="375px" alt="validator-homepagina">
+  <img src="/readme-images/validator-justice-pagina.png" width="375px" alt="validator-justice-pagina">
+   
+  >>>KEYBOARD
   • De visuele focus van de tab is minimaal en weinig opvallend.
   • Keyboard focus en visuele layout kloppen nog steeds niet helemaal:
   • h2 staat onderaan de pagina en komt visueel na de eerste h3. Dit heb ik zo gelaten. Welk klopt de html. Dus eerst navigeer je naar de h2 en dan naar de h3 en niet andersom. De keyboard focus komt dus niet overeen met de visuele focus.
+  <img src="/readme-images/heading-2-onderaan.png" width="375px" alt="heading-2-onderaan">
   • Dit geldt ook voor de carousel. Als je erdoorheen navigeert dan ligt de focus op het volgende li element en dat ligt voor een deel buiten het beeld omdat het zich dan op dat moemnt daar bevindt. De focus zou echter moeten liggen op vaar het li element komt te liggen en niet waar die lag als je ernaar toe navigeert.
   
-De eerste keer dat he op 3 klik en de tweede keer dat je op 3 klikt. De volgorde van de carousel klopt ook niet helemaal. Eerst kan je op verder dan door alles heen en dan terug.
-  • h2 staat onderaan de pagina en komt visueel na de eerste h3. Dit heb ik zo gelaten. Welk klopt de html. Dus eerst navigeer je naar de h2 en dan naar de h3 en niet andersom. De keyboard focus komt dus niet overeen met de visuele focus.
+  <img src="/readme-images/focus-slecht.png" width="375px" alt="focus-slecht">
+  <img src="/readme-images/focus-goed.png" width="375px" alt="focus-goed">
+  De eerste keer dat je op 3 klik en de tweede keer dat je op 3 klikt. 
  
-Verbeterd:
-Als ik meer tijd had:
-Ik heb op dit moment niet zelf een focus stijl gemaakt en toegevoegd. Als ik meer tijd had zou ik de focus state opvallender maken zodat je goed ziet bij welk onderdeel je bent. Ook zou ik het contrast verhogen.
-Ik zou de focus goed proberen te zetten op de h3 als je door de carousel navigeert.
-Ik zou het misschien zo kunnen maken dat als je op h2 focus dat de h2 dan boven in de sectie verschijnt in plaats van onder in de sectie of ik zou de h2 gewoon vast bovenin de sectie zetten. Ik twijfel of het zo als het nu is goed is.
+  Verbeterd:
+  Wat ik zou doen als ik meer tijd had:
+  • Ik heb op dit moment niet zelf een focus stijl gemaakt en toegevoegd. Als ik meer tijd had zou ik de focus state opvallender maken zodat je goed ziet bij welk onderdeel je bent. Ook zou ik het contrast verhogen.
+  • Ik zou de focus goed proberen te zetten op de h3 als je door de carousel navigeert.
+  • Ik zou het misschien zo kunnen maken dat als je op h2 focus dat de h2 dan boven in de sectie verschijnt in plaats van onder in de sectie of ik zou de h2 gewoon vast bovenin de sectie zetten. Ik twijfel of het zo als het nu is goed is.
 
-
-  MOBILE AND TOUCH
-  Landscape mode op telefoon> nav is te lang. 
-Je kan niet horizontaal scrollen, er is genoeg scroll area bij de meeste onderdelen.
-Bij de albumpagina op mobiel formaat kan de ruimte tussen interactieve elementen het beste nog wat meer zijn.
-Verbeterd:
-Bij de carousel zie je dat ik de afstand tussen de dots en de navigatie met pijltjes heb vegroot zodat je niet perongeluk op de verkeerde knop klikt.
+  >>>MOBILE AND TOUCH
+  • Landscape mode op telefoon> nav is te lang. 
+  • Je kan niet horizontaal scrollen, er is genoeg scroll area bij de meeste onderdelen.
+  Bij de albumpagina op mobiel formaat kan de ruimte tussen interactieve elementen het beste nog wat meer zijn.
   
-Wat ik nog zou doen als ik meer tijd had:
-Ik zou ervoor zorgen dat bij landscape mode op telefoon de main nav helemaal en goed in beeld komt, door een hamburger menu te gebruiken bij landscape mode.
- Video in de main nav staat er niet helemaal op.
-  HEADINGS
+  Verbeterd:
+  • Bij de carousel zie je dat ik de afstand tussen de dots en de navigatie met pijltjes heb vegroot zodat je niet perongeluk op de verkeerde knop klikt.
+  <img src="/readme-images/weinig-ruimte.png" width="375px" alt="buttons-carousel">
+  <img src="/readme-images/meer-ruimte.png" width="375px" alt="buttons-box-shadow">
+  
+  Wat ik zou doen als ik meer tijd had:
+  • Ik zou ervoor zorgen dat bij landscape mode op telefoon de main nav helemaal en goed in beeld komt, door een hamburger menu te gebruiken bij landscape mode.
+  • Video in de main nav staat er niet helemaal op.
+  <img src="/readme-images/website-overlappende-header-landscap.jpeg" width="375px" alt="website-overlappende-header-landscap">
+
+  >>>HEADINGS
   • h1 is nu uniek op alle pagina’s:
   
-Op de albumpagina waren er twee h1’s. Nu is het een unieke h1. Ook heb ik de navigatie een h2 gegeven zodat je snel kan navigeren naar de share navigatie, waarin een lijst is opgenomen. 
-De headings introduceren content. Verder was het heel onduidelijk waarom Music een h2 was, omdat het de music sectie van de website betreft, maar daar gaat de hele pagina over en niet more music. Verder zou deze h2 dan ook niet echt content introduceren. Bovendien moet more music een rangorde hoger staan dan de nummers die volgen. More music bevindt zich bovendien in een aside in plaats van in een sectie, omdat het los staat van de hoofdinhoud.
-Er worden geen headings geskipt en er is nu een logische volgorde.
-Wat ik zou doen als ik meer tijd had:
-Als ik meer tijd had zou ik Music niet in een p zetten, om het hierboven beschreven probleem aan te pakken, maar zou ik music plaatsen in een breadcrumb navigation. Ik zou de gebruiker dan laten weten dat hij via de muzieksectie naar de albumpagina is genavigeerd. Ik weet alleen niet of ik het dan anders zou vormgeven met traditionele > tussen de pagina’s of dat ik het zou proberen vorm te geven zoals het nu is vormgegeven (dus zonder alle stappen en alleen de stap met music).
-  LISTS
-Verbeterd:
+  • Op de albumpagina waren er twee h1’s. Nu is het een unieke h1. Ook heb ik de navigatie een h2 gegeven zodat je snel kan navigeren naar de share navigatie, waarin een lijst is opgenomen. 
+  <img src="/readme-images/headings-oud-origineel.png" width="375px" alt="headings-oud-origineel">
+  <img src="/readme-images/headings-nieuw.png" width="375px" alt="headings-nieuw">
+
+  • De headings introduceren content. Verder was het heel onduidelijk waarom Music een h2 was, omdat het de music sectie van de website betreft, maar daar gaat de hele pagina over en niet more music. Verder zou deze h2 dan ook niet echt content introduceren. Bovendien moet more music een rangorde hoger staan dan de nummers die volgen. More music bevindt zich bovendien in een aside in plaats van in een sectie, omdat het los staat van de hoofdinhoud.
+  • Er worden geen headings geskipt en er is nu een logische volgorde.
+  
+  Wat ik zou doen als ik meer tijd had:
+  • Als ik meer tijd had zou ik Music niet in een p zetten, om het hierboven beschreven probleem aan te pakken, maar zou ik music plaatsen in een breadcrumb navigation. Ik zou de gebruiker dan laten weten dat hij via de muzieksectie naar de albumpagina is genavigeerd. Ik weet alleen niet of ik het dan anders zou vormgeven met traditionele > tussen de pagina’s of dat ik het zou proberen vorm te geven zoals het nu is vormgegeven (dus zonder alle stappen en alleen de stap met music).
+  
+  >>>LISTS
+  Verbeterd:
   • Voor de Carousel was geen ul gebruikt en nu wel.
 
-  IMAGES
-Er zijn geen decoratieve afbeeldingem, dus er is geen null waarde voor de alt. Dit doe je om te laten zien dat je erover hebt nagedacht en dat niet een beschrijving bent vergeten. Er zijn geen complexe afbeeldingen/grafiekken die een alt nodig hebben.
-Verbeterd:
+  >>>IMAGES
+  • Er zijn geen decoratieve afbeeldingem, dus er is geen null waarde voor de alt. Dit doe je om te laten zien dat je erover hebt nagedacht en dat niet een beschrijving bent vergeten. Er zijn geen complexe afbeeldingen/grafiekken die een alt nodig hebben.
+  
+  Verbeterd:
   • Niet alle afbeeldingen hadden eerst een goede alt-tekst. Nu zijn ze erg beschrijvend en bevatten ze de tekst die ook op de afbeelding staan. 
 
-  MEDIA (VIDEO en AUDIO)
-Er was geen autoplay en dat heb ik zo gehouden. Video kan gepauzeerd worden. Er zijn geen transcripties of captions bijgevoegd.
-Wat zou ik doen als ik meer tijd had:
-Als ik meer tijd had zou ik transcripties en captions beschikbaar stellen en deze makkelijk toegankelijk en zichtbaar  maken met bijvoorbeeld een button.  
-  CONTROLS<<<>>>
-Linkjes zijn a elementen. 
-Verbeterd:
-Linkjes zijn nu beter herkenbaar als links. Zie de afbeelding met view all hieronder. Door de underline is het nu duidelijker dat het een link is. Ik heb ook bij linkjes in de main nav bij desktop formaat dat bij hover de kleur veranderd, om interactie te maken dat interactie mogelijk is. Ook de buttons van de carousel (a) heb ik beter herkenbaar gemaakt als button met box-shadow.
+  >>>MEDIA (VIDEO en AUDIO)
+  • Er was geen autoplay en dat heb ik zo gehouden. Video kan gepauzeerd worden. Er zijn geen transcripties of captions bijgevoegd.
   
+  Wat ik zou doen als ik meer tijd had:
+  • Als ik meer tijd had zou ik transcripties en captions beschikbaar stellen en deze makkelijk toegankelijk en zichtbaar  maken met bijvoorbeeld een button.  
   
+  >>>CONTROLS
+  • Linkjes zijn a elementen. 
+  
+  Verbeterd:
+  • Linkjes zijn nu beter herkenbaar als links. Zie de afbeelding met view all hieronder. Door de underline is het nu duidelijker dat het een link is. Ik heb ook bij linkjes in de main nav bij desktop formaat dat bij hover de kleur veranderd, om interactie te maken dat interactie mogelijk is. Ook de buttons van de carousel (a) heb ik beter herkenbaar gemaakt als button met box-shadow.
+  <img src="/readme-images/buttons-carousel.png" width="375px" alt="buttons-carousel">
+  <img src="/readme-images/buttons-box-shadow.png" width="375px" alt="readme-images/buttons-box-shadow">
 
-Met tab kan er gefocust worden op de controls. 
- 
+  <img src="/readme-images/onherkenbare-link.png" width="375px" alt="onherkenbare-link">
+  <img src="/readme-images/herkenbare-link-underline.png" width="375px" alt="herkenbare-link-underline">
+
+  Met tab kan er gefocust worden op de controls.
+  <img src="/readme-images/focus-controls.png" width="375px" alt="focus-controls">
+
   • STREAM/DOWNLOAD> aria-label toegevoegd om duidelijk te maken dat er een nieuwe pagina wordt geopend voor mensen (met? en) zonder beperking.
 
-Als ik meer tijd had:
-Zou ik de focus states van de controls duidelijk maken met meer contrast en een duidelijkere focus.
-Bij alle buttons die geen submit button binnen een formulier zijn heb ik type=’’button’’ toegevoegd als attribuut.
-Ik zou skip links toevoegen binnen de header zodat je de main nav bijvoorbeeld over kan slaan.
+  Wat ik zou doen als ik meer tijd had:
+  • Zou ik de focus states van de controls duidelijk maken met meer contrast en een duidelijkere focus.
+  • Bij alle buttons die geen submit button binnen een formulier zijn heb ik type=’’button’’ toegevoegd als attribuut.
+  • Ik zou skip links toevoegen binnen de header zodat je de main nav bijvoorbeeld over kan slaan.
 
-  APPEARANCE
+  >>>APPEARANCE
   • Tekengrootte 200% werkt. High-contrast wordt wel ondersteund maar de SM iconen hebben amper contrast op de albumpagina.
+    <img src="/readme-images/hoog-contrast.png" width="375px" alt="hoog-contrast">
  
-Verbeterd:
+  Verbeterd:
   • Ik heb een custom light dark mode toegevoegd, want eerst was er niks.
-  
+  <img src="/readme-images/dark-mode.png" width="375px" alt="dark-mode">
 
-  ANIMATIES
-    • Ik heb geen prefers reduced motion, want mijn animaties bewegen langzaam of flashen niet. Ik heb niet veel animaties.
+  >>>ANIMATIES
+  • Ik heb geen prefers reduced motion, want mijn animaties bewegen langzaam of flashen niet. Ik heb niet veel animaties.
   • Er is geen backgroundvideo
-Als ik meer tijd had zou ik prefers reduces motion toevoegen en contrast overal vergroten.
 
-  COLOR CONTRAST
+  Wat ik zou doen als ik meer tijd had:
+  • Als ik meer tijd had zou ik prefers reduces motion toevoegen en contrast overal vergroten.
+
+  >>>COLOR CONTRAST
   • de h2's hebben een te laag contrast en voldoen niet aan de regel van 3:1 contrastverhouding.
-Omdat deze vrij groot zijn dacht ik dat het niet erg zou zijn, maar ik zou het de volgende keer toch meer contrast geven voor de toegankelijkheid. Ook zou ik het contrast van de header net als bij de originele pagina volgen. Dus dat de tekst en icons en tekst op de homepage van wit naar zwart veranderen zodra ze over een andere sectie gaan. Dat is bij niet gelukt.
+  • Omdat deze vrij groot zijn dacht ik dat het niet erg zou zijn, maar ik zou het de volgende keer toch meer contrast geven voor de toegankelijkheid. Ook zou ik het contrast van de header net als bij de originele pagina volgen. Dus dat de tekst en icons en tekst op de homepage van wit naar zwart veranderen zodra ze over een andere sectie gaan. Dat is bij mij niet gelukt.
   
-Hier is contrast goed`		hier moet de header wit worden en niet zwart blijven.
+  Hier is contrast goed
+  <img src="/readme-images/header-hoog-contrast.png" width="375px" alt="header hoog contrast">
 
+  Hier moet de header wit worden en niet zwart blijven.
+  <img src="/readme-images/header-laag-contrast.png" width="375px" alt="header laag contrast">
 </details>
 
 
@@ -582,7 +608,7 @@ Hier is contrast goed`		hier moet de header wit worden en niet zwart blijven.
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   Wat heb ik geleerd:
-  - Hoe je een tabel maakt en dat daar rows in zitten tr en tds dat zis data dat de kolommen vormt. Table heading zet je erboven en dat vormt de heading van de kolommen dus niet de title van de tabel. De parents hiervan zijn thead en tbody.
+  - Hoe je een tabel maakt en dat daar rows in zitten tr en tds dat is data dat de kolommen vormt. Table heading zet je erboven en dat vormt de heading van de kolommen dus niet de title van de tabel. De parents hiervan zijn thead en tbody.
   - Altijd kopjes voor screenreaders en zoekmachines. Dus de klasse visually hidden a11y  project toevoegen aan de html.
   - Writing mode: verticle-lr;
   - Inzoomen afbeelding> object-fit: cover
@@ -617,22 +643,21 @@ Hier is contrast goed`		hier moet de header wit worden en niet zwart blijven.
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb veel geleerd over een goede semantische html pagina en dat dit de basis is voor screenreaders. Het gaat bij de html niet om hoe het er vidueel uit komt te zien maar dat de opbouw logisch is. Met aria labels kan je secties verduidelijken en linkjes naar andere pagina beter omschrijven als de inhoud van een link/button onduidelijk is. Ik heb geleerd wat grid is, wanneer je het beste grid of flexbox kan gebuiken, hoe je een carousel maakt, wanneer je button of link gebruikt en nog veel meer wat niet goed samen te vatten is. Ook heb ik geleerd om zelf op zoek te gaan in goede bronnen en dat er veel meer op internet staat en makkerlijker uitgelegd dan verwacht.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="/readme-images/website-top-carousel.jpeg" width="375px" alt="top carousel">
+  <img src="/readme-images/website-top-overlay.jpeg" width="375px" alt="top overlay">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Wat niet goed ging is het toevoegen van paddings/margins om content op de juiste plek te krijgen en de pagina globaal indelen. Kleine onderdelen stylen snap ik meestal wel maar zodra ik een hele sectie moet indelen, snap ik niet waar ik padding aan moet toevoegen en welke onderdelen ik het beste in een grid kan zetten en welke niet. Ook vind ik het vermijden van divs heel lastig. Het was erg frustrerend dat sommige onderdelen mij niet zijn gelukt om te bouwen. Ik heb het op meerdere manieren geprobeerd maar soms kwam ik er gewoon niet uit. Dit vind ik erg jammer, maar ik ben wel trots op wat wel is gelukt, omdat ik die onderdelen dan ook goed snap en ik dit leuk vind om toe te passen of uit te leggen.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="/readme-images/website-overlappende-header-landscap.jpeg" width="375px" alt="bummer header">
+  <img src="/readme-images/carousel-desktop-eind.png" width="375px" alt="bummer carousel lukte niet">
+
   Carousel:
   Als ik de screenreader gebruik en ik navigeer door de h3'tjes dan ligt de focus wel op het goede onderdeel maar de focus zit niet op de goede locatie. Dit is niet goed want mensen die slechtziend zijn willen wel precies zien welk deel het precies is dat wordt voorgelezen.
 </details>
-
-
-
-
 
 ## Bronnenlijst
 
