@@ -58,6 +58,7 @@ img {
 	--button-color-carousel: black;
 	--arrow-color-button: white;
 	--color-hover-dot: black;
+	--submit-shadow: #B3B3B3;
 
 	--color-section-background-light: white;
 	--color-section-background-dark: black;
@@ -88,6 +89,8 @@ img {
 		--button-color-carousel: #FE5768;
 		--arrow-color-button: white;
 		--color-hover-dot: white;
+		--submit-shadow: #ff9aa4;
+
 	
 		--color-section-background-light: #37373D;
 		--color-section-background-dark: #252526;

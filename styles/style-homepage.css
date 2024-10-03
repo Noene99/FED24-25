@@ -129,6 +129,10 @@ form fieldset {
     padding: 0;       
 }
 
+form legend {
+	color: var(--color-text-primary);
+}
+
 form fieldset:last-of-type {
 	grid-row-start: 1;
 	margin-bottom: 1.3em;
@@ -137,7 +141,8 @@ form fieldset:last-of-type {
 form fieldset label {
 	display: block;
 	margin: 1.3em 0;
-	
+	color: var(--color-text-secondary);
+
 }
 
 form fieldset:last-of-type input {
@@ -149,6 +154,8 @@ form fieldset:last-of-type input {
 form fieldset:first-of-type label {
 	font-family: "Playfair Display";
 	font-weight: 700;
+	color: var(--color-text-primary);
+
 }
 
 form fieldset:first-of-type input {
@@ -162,10 +169,16 @@ form p {
 	font-size: 0.6875em;
 	line-height: 1.8em;
 	margin: 0;
+	color: var(--color-text-primary);
+}
+
+form p a {
+	color: var(--color-text-primary);
 }
 
 form p a:hover {
 	text-decoration: underline;
+	color: var(--accent-color-checkbox);
 }
 
 form button {
@@ -177,10 +190,14 @@ form button {
 	text-shadow: 0 1px 0 var(--color-section-background-album);
 	justify-self: start;
 	translate: 0 2em;
+	color: var(--color-text-primary);
+
 }
 
 form button:hover {
-	text-shadow: 0 1px 0 var(--color-text-footer);
+	text-shadow: 0 1px 0 var(--submit-shadow);
+	color: var(--accent-color-checkbox);
+
 }
 
 form button::after {
@@ -194,6 +211,12 @@ form button::after {
 	bottom: 0;
 	
 }
+
+form button:hover button::after {
+	color: var(--accent-color-checkbox);
+}
+
+
 
 /*************************/
 /* SECTION 2/CAROUSEL 	*/
@@ -417,7 +440,6 @@ main >section:nth-of-type(2) nav:last-of-type a:hover {
 /* Sectie 2:CAROUSEL */
 @media (width > 37em) {
 	main>section:nth-of-type(2) {
-		background-color:white;
 		display:grid;
 		grid-template-columns:1fr max-content 1fr;
 	}

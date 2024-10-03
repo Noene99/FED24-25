@@ -130,6 +130,7 @@ main [aria-label="Share Justice"] h2 {
 	/* background-color: orange; */
 	font-weight: 400;
 	margin: 0 .4em 0 0;
+	color: var(--color-text-primary-nuance);
 }
 
 main [aria-label="Share Justice"] ul li {
@@ -233,7 +234,7 @@ main aside h2 {
 	font-size: 1.3em;
 	text-transform: capitalize;
 	padding-left: clamp(1em, 8.33%, 3em);
-
+	color: var(--color-text-primary);
 }
 
 main aside ul {
@@ -324,7 +325,7 @@ main aside button {
 	text-decoration: underline;
 	font-size: 1em;
 	margin-top: 2em;
-	
+	color: var(--color-text-primary);
 }
 
 /********************/
@@ -340,7 +341,7 @@ main aside button {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: max-content max-content max-content max-content max-content;
-		background-color: palegreen;
+		/* background-color: palegreen; */
 		grid-column-gap: 3rem;
 	}
 	main >section:first-of-type>h1 {
@@ -348,7 +349,7 @@ main aside button {
 		font-family: "Playfair Display";
 		line-height: 1.3em;
 		text-transform: capitalize;
-		background-color: yellow;
+		/* background-color: yellow; */
 		margin: 0;
 		grid-row-start: 2;
 		grid-column:2/3 ;
@@ -362,7 +363,7 @@ main aside button {
 		font-size: 0.8125em;
 		color: var(--color-text-secondary);
 		line-height: 1.56875em;
-		background-color: green;
+		/* background-color: green; */
 		margin: 0;
 		grid-row-start: 1;
 		grid-column: 2/3;
@@ -375,7 +376,7 @@ main aside button {
 		color: var(--color-text-primary);
 		line-height: 1em;
 		text-decoration: underline;
-		background-color: palevioletred;
+		/* background-color: palevioletred; */
 		grid-row-start: 3;
 		grid-column: 2/3;
 		padding: 0;
@@ -387,7 +388,7 @@ main aside button {
 	main >section:first-of-type>img {
 		grid-row: 1/4;
 		grid-column: 1/2;
-		border: #FE5768 5px solid;
+		/* border: #FE5768 5px solid; */
 		padding: 0;
 		
 	} 
