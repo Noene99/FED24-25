@@ -370,67 +370,103 @@ Wat heb ik geleerd?
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
->>>>>>>>>>>TEST Screenreader
-
-  •	h1 is niet uniek en omvat opzich wel de inhoud van de eerste pagina maar onvoldoende.
-  •	Er is een link 'Listen to Honest' achter de image op de eerste pagina maar deze kan je niet aanklikken zonder de tab toets te gebruiken.
-
->>>>>>>>>>>>>TEST WCAG checklist
+>>>>>>>>>>>>>TEST WCAG checklist eigen website vergelijken met de originele
 
   CONTENT
-  •	Songtitels worden meevertaald wanneer de taal wordt aangepast.
-  •	Stream/download mag specifieker met een aria label en er moet worden aangegeven dat je naar een niewue pagina wordt geleid. (opent in nieuw venster)
-  •	Bekijk alles is te vaag en moet met een aria label worden gekenmerkt.
-  •	Alleen de term newsletter is wat kort. Kan wellicht beter worden aangemerkt als schrijf je in voor de nieuwsbrief met een aria label.
+  • De website is in het engels en daarom heb ik het html element een attribuut lang="en” meegegeven. Ik dacht dat songtitels wellicht specifiek het attribuut lang="en” moesten krijgen, maar volgensmij heeft is dit alleen noodzakelijk voor zoekmachines en screenreaders wanneer een website onderdelen met meerdere verschillende talen bevat. Wanneer ik mijn website laat vertalen door de browser worden songteksten ook vertaald terwijl dit in mijn ogen niet de bedoeling is. Los van of het de bedoeling is of niet, kan ik dit niet bereiken met het lang attribuut. Wel kan ik als er songtitels in een andere taal zijn deze het lang attribuut geven. 
+De content was verder al duidelijk, begrijpelijk, bevat geen jargon , stijlfiguren of lastige metaforen.
+Verbeterd:
+  • De link view all-in de sectie Muziek en Video’s heb ik specifieker gemaakt zodat het duidelijk is wat je kan met de link. Ik heb deze links een aria label gegeven en nu hoor je: ‘view all songs en albums  on the music page. 
+  • Ik heb met een aria label aangegeven wanneer een link opent in een nieuw venster. Dit is het geval bij stream/download en de social media link.
 
   GLOBAL CODE
-  •	Er zijn 3 fouten in de code en veel waarschuwingen.
+  • Er zijn 3 fouten in de code en veel waarschuwingen.
+Lang attribuut is er, viiewwport-zoom is niet disabled en elke pagina heeft een unieke h1.
+Verbeterd:
+Mijn albumpagina heeft nu een unieke h1, namelijk de titel van het album. De originele website heeft twee h1’s: het logo en de titel. Dit is niet correct en nu is het logo een h1 op de homepage en een link op de albumpagina met de titel als unieke h1.
+W3C-validation: goed.
+   
   
   KEYBOARD
-  •	De visuele focus van de tab is minimaal en weinig opvallend.
-  •	Keyboard focus en visuele layout kloppen niet helemaal. De volgorde van de carousel klopt ook niet helemaal. Eerst kan je op verder dan door alles heen en dan terug.
-  •	h2 staat onderaan de pagina en komt visueel na de eerste h3.
+  • De visuele focus van de tab is minimaal en weinig opvallend.
+  • Keyboard focus en visuele layout kloppen nog steeds niet helemaal:
+  • h2 staat onderaan de pagina en komt visueel na de eerste h3. Dit heb ik zo gelaten. Welk klopt de html. Dus eerst navigeer je naar de h2 en dan naar de h3 en niet andersom. De keyboard focus komt dus niet overeen met de visuele focus.
+  • Dit geldt ook voor de carousel. Als je erdoorheen navigeert dan ligt de focus op het volgende li element en dat ligt voor een deel buiten het beeld omdat het zich dan op dat moemnt daar bevindt. De focus zou echter moeten liggen op vaar het li element komt te liggen en niet waar die lag als je ernaar toe navigeert.
+  
+De eerste keer dat he op 3 klik en de tweede keer dat je op 3 klikt. De volgorde van de carousel klopt ook niet helemaal. Eerst kan je op verder dan door alles heen en dan terug.
+  • h2 staat onderaan de pagina en komt visueel na de eerste h3. Dit heb ik zo gelaten. Welk klopt de html. Dus eerst navigeer je naar de h2 en dan naar de h3 en niet andersom. De keyboard focus komt dus niet overeen met de visuele focus.
+ 
+Verbeterd:
+Als ik meer tijd had:
+Ik heb op dit moment niet zelf een focus stijl gemaakt en toegevoegd. Als ik meer tijd had zou ik de focus state opvallender maken zodat je goed ziet bij welk onderdeel je bent. Ook zou ik het contrast verhogen.
+Ik zou de focus goed proberen te zetten op de h3 als je door de carousel navigeert.
+Ik zou het misschien zo kunnen maken dat als je op h2 focus dat de h2 dan boven in de sectie verschijnt in plaats van onder in de sectie of ik zou de h2 gewoon vast bovenin de sectie zetten. Ik twijfel of het zo als het nu is goed is.
+
 
   MOBILE AND TOUCH
   Landscape mode op telefoon> nav is te lang. 
-
+Je kan niet horizontaal scrollen, er is genoeg scroll area bij de meeste onderdelen.
+Bij de albumpagina op mobiel formaat kan de ruimte tussen interactieve elementen het beste nog wat meer zijn.
+Verbeterd:
+Bij de carousel zie je dat ik de afstand tussen de dots en de navigatie met pijltjes heb vegroot zodat je niet perongeluk op de verkeerde knop klikt.
+  
+Wat ik nog zou doen als ik meer tijd had:
+Ik zou ervoor zorgen dat bij landscape mode op telefoon de main nav helemaal en goed in beeld komt, door een hamburger menu te gebruiken bij landscape mode.
+ Video in de main nav staat er niet helemaal op.
   HEADINGS
-  •	h1 is niet uniek (het logo is de h1).
-
+  • h1 is nu uniek op alle pagina’s:
+  
+Op de albumpagina waren er twee h1’s. Nu is het een unieke h1. Ook heb ik de navigatie een h2 gegeven zodat je snel kan navigeren naar de share navigatie, waarin een lijst is opgenomen. 
+De headings introduceren content. Verder was het heel onduidelijk waarom Music een h2 was, omdat het de music sectie van de website betreft, maar daar gaat de hele pagina over en niet more music. Verder zou deze h2 dan ook niet echt content introduceren. Bovendien moet more music een rangorde hoger staan dan de nummers die volgen. More music bevindt zich bovendien in een aside in plaats van in een sectie, omdat het los staat van de hoofdinhoud.
+Er worden geen headings geskipt en er is nu een logische volgorde.
+Wat ik zou doen als ik meer tijd had:
+Als ik meer tijd had zou ik Music niet in een p zetten, om het hierboven beschreven probleem aan te pakken, maar zou ik music plaatsen in een breadcrumb navigation. Ik zou de gebruiker dan laten weten dat hij via de muzieksectie naar de albumpagina is genavigeerd. Ik weet alleen niet of ik het dan anders zou vormgeven met traditionele > tussen de pagina’s of dat ik het zou proberen vorm te geven zoals het nu is vormgegeven (dus zonder alle stappen en alleen de stap met music).
   LISTS
-  •	Voor de Carousel is geen ul gebruikt. Moet dat? !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Verbeterd:
+  • Voor de Carousel was geen ul gebruikt en nu wel.
 
   IMAGES
-  •	Niet alle afbeeldingen hebben een goede alt-tekst met tekst die ook op ed afbeelding staat.
+Er zijn geen decoratieve afbeeldingem, dus er is geen null waarde voor de alt. Dit doe je om te laten zien dat je erover hebt nagedacht en dat niet een beschrijving bent vergeten. Er zijn geen complexe afbeeldingen/grafiekken die een alt nodig hebben.
+Verbeterd:
+  • Niet alle afbeeldingen hadden eerst een goede alt-tekst. Nu zijn ze erg beschrijvend en bevatten ze de tekst die ook op de afbeelding staan. 
 
   MEDIA (VIDEO en AUDIO)
-  •	Er is geen transcriptie en makkelijk toegankelijk en zichtbaar  maken.  
-
+Er was geen autoplay en dat heb ik zo gehouden. Video kan gepauzeerd worden. Er zijn geen transcripties of captions bijgevoegd.
+Wat zou ik doen als ik meer tijd had:
+Als ik meer tijd had zou ik transcripties en captions beschikbaar stellen en deze makkelijk toegankelijk en zichtbaar  maken met bijvoorbeeld een button.  
   CONTROLS<<<>>>
-  •	Geen href bij sommige links maar een #
-  •	Geen type=’’button’’ bij sommige buttons
-  •	Onclick ipv button of a (submit form) 
-  •	De footer links hebben wel onderstreping bij hover state, maar BEKIJK ALLES en STREAM/DOWNLOAD niet.
-  •	STREAM/DOWNLOAD> onduidelijk dat er een nieuwe pagina wordt geopend voor mensen (met? en) zonder beperking.
-  •	Buttons in Carousel zijn niet genoeg herkenbaar als button.
+Linkjes zijn a elementen. 
+Verbeterd:
+Linkjes zijn nu beter herkenbaar als links. Zie de afbeelding met view all hieronder. Door de underline is het nu duidelijker dat het een link is. Ik heb ook bij linkjes in de main nav bij desktop formaat dat bij hover de kleur veranderd, om interactie te maken dat interactie mogelijk is. Ook de buttons van de carousel (a) heb ik beter herkenbaar gemaakt als button met box-shadow.
+  
+  
+
+Met tab kan er gefocust worden op de controls. 
+ 
+  • STREAM/DOWNLOAD> aria-label toegevoegd om duidelijk te maken dat er een nieuwe pagina wordt geopend voor mensen (met? en) zonder beperking.
+
+Als ik meer tijd had:
+Zou ik de focus states van de controls duidelijk maken met meer contrast en een duidelijkere focus.
+Bij alle buttons die geen submit button binnen een formulier zijn heb ik type=’’button’’ toegevoegd als attribuut.
+Ik zou skip links toevoegen binnen de header zodat je de main nav bijvoorbeeld over kan slaan.
 
   APPEARANCE
-  •	Er is geen verschil tussen donkere en lichte modus. Wat moet ik hiermee!!!!!!??????
-  •	Animatie effecten besturingssysteem aan of uitzetten heeft geen verschil op de website.
-  •	Tekengrootte 200%> STREAM/DOWNLOAD overlapt elkaar wel op de homepagina maar op de albumpagina niet.
-  •	High-contrast wordt wel ondersteund maar de SM iconen hebben amper contrast op de albumpagina.
+  • Tekengrootte 200% werkt. High-contrast wordt wel ondersteund maar de SM iconen hebben amper contrast op de albumpagina.
+ 
+Verbeterd:
+  • Ik heb een custom light dark mode toegevoegd, want eerst was er niks.
+  
 
   ANIMATIES
-  •	Kan niks vinden over de media query prefers reduced motion. Ik snap ook niet wat ermee bedoeld wordt en wat je zou moeten doen als het er is. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  •	Er is geen backgroundvideo
-  •	Animaties flitsen niet maar bewegen wel.
+    • Ik heb geen prefers reduced motion, want mijn animaties bewegen langzaam of flashen niet. Ik heb niet veel animaties.
+  • Er is geen backgroundvideo
+Als ik meer tijd had zou ik prefers reduces motion toevoegen en contrast overal vergroten.
 
   COLOR CONTRAST
-  •	de h2's hebben een te laag contrast en voldoen niet aan de regel van 3:1 contrastverhouding.
-  •	Ik kan geen custom ::selection colors vinden (voldoende contrast?) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-  KLEURENBLINDHEID
-  •	Opvallend: De kleuren van de hoverstate van de navigatie worden grijs in plaats van rood bij kleurenblindheid voor de kleur rood.
+  • de h2's hebben een te laag contrast en voldoen niet aan de regel van 3:1 contrastverhouding.
+Omdat deze vrij groot zijn dacht ik dat het niet erg zou zijn, maar ik zou het de volgende keer toch meer contrast geven voor de toegankelijkheid. Ook zou ik het contrast van de header net als bij de originele pagina volgen. Dus dat de tekst en icons en tekst op de homepage van wit naar zwart veranderen zodra ze over een andere sectie gaan. Dat is bij niet gelukt.
+  
+Hier is contrast goed`		hier moet de header wit worden en niet zwart blijven.
 
 </details>
 

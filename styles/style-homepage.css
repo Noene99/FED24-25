@@ -50,6 +50,7 @@ main>section > a {
 	align-self: end;
 	transform: translate(-60%, 750%);
 	color:  var(--color-text-primary);
+	text-decoration: underline;
 }
 
 /* STREEPJE */
@@ -63,11 +64,11 @@ main >section > a::after {
 	right:-60%;
 }
 
-main>section:nth-of-type(odd) .viewall  {
+main>section:nth-of-type(odd)>a  {
 color: var(--color-text-primary-white);
 }
 
-main>section:nth-of-type(odd) .viewall::after { 
+main>section:nth-of-type(odd) > a::after { 
 	content: "";
 	width: 2em;
 	height: .1em;
@@ -341,9 +342,9 @@ main> section:nth-of-type(2) nav:first-of-type button {
 	padding:0;
 	
 	display:grid;
-/* 	place-items:center; */
 	justify-items:center;
 	align-items:center;
+	box-shadow: .2em .2em var(--color-text-footer);
 }
 
 main >section:nth-of-type(2) nav:first-of-type button:first-of-type span {

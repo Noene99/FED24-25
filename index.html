@@ -25,7 +25,7 @@
 		<!--HAMBURGERMENU--> 
 		<!-- de button is niet relevant voor screenreaders -->
   		<!-- met aria-hidden="true" 'verstop' je de button voor ze -->
-		  <button aria-hidden="true">
+		  <button type="button" aria-hidden="true">
 			<span></span>
 			<span></span>
 			<span></span>
@@ -34,8 +34,8 @@
 		<nav>
 			<!-- MAIN NAV -->
 			<ul aria-label="main navigation">
-				 <!-- Zijn hier aria-labels nodig? -->
-				<li><a href="#">Music</a></li>
+				<!-- Zijn hier aria-labels nodig? -->
+				<li><a href="justice-pagina.html">Music</a></li>
 				<li><a href="#">Tour</a></li>
 				<li><a href="#">Shop</a></li>
 				<li><a href="#">Video's</a></li>
@@ -57,9 +57,7 @@
 	<main>
 		<dialog aria-hidden="true">
 			<h2>Newsletter</h2>
-			<form action="#" method="POST"> <!-- attributen nog bekijken -->
-			<!-- Koptitel voor de sectie -->
-		  
+			<form action="#" method="POST">
 				<!-- Groep van checkboxes voor de keuze wie updates stuurt, van chat gpt -->
 				<fieldset>
 				<legend>Subscribe to Email Updates From:</legend>
@@ -79,12 +77,12 @@
 
 				<fieldset>
 
-					<label for="email">Email</label>
-					<input type="email" id="email" name="email" autocomplete="email" required>
+					<label for="email-popup">Email</label>
+					<input type="email" id="email-popup" name="email" autocomplete="email" required>
 				
-					<label for="country">Choose country</label>
-					<input list="countries" id="country" name="country" placeholder="Select country" required>
-					<datalist id="countries">
+					<label for="country-popup">Choose country</label>
+					<input list="countries" id="country-popup" name="country" placeholder="Select country" required>
+					<datalist>
 						<option value="United States"></option>
 						<option value="Canada"></option>
 						<option value="United Kingdom"></option>
@@ -100,6 +98,7 @@
 				</p>
 			
 				<button type="submit">Submit</button>
+				<button type="button">Sluiten</button>
 			</form>
 		</dialog>
 
@@ -119,7 +118,7 @@
 						<p><time datetime="2021-03-05">Mar 5th 2021</time></p>
 						<a href="#" aria-label="Opens in a new window">Stream/Download</a>
 					</section>
-					<img width="400px" src="images/carousel/hold-on-single.jpg" alt="Hold on sigle ">
+					<img width="400" src="images/carousel/hold-on-single.jpg" alt="Hold on sigle ">
 				</li>
 
 				<li id="dia2">
@@ -128,7 +127,7 @@
 					<p><time datetime="2022-04-27">Apr 27th 2022</time></p>
 					<a href="#" aria-label="Opens in a new window">Stream/Download</a>
 
-					<img width="400px" src="images/carousel/peaches-remix.jpg" alt="Honest ">
+					<img width="400" src="images/carousel/peaches-remix.jpg" alt="Honest ">
 				</li>
 
 				<li id="dia3">
@@ -138,7 +137,7 @@
 					<p><time datetime="2022-04-27">Apr 27th 2022</time></p>
 					<a href="#" aria-label="Opens in a new window">Stream/Download</a>
 
-					<img width="400px" src="images/carousel/peaches-masterkraft-remix.jpg" alt="Honest ">
+					<img width="400" src="images/carousel/peaches-masterkraft-remix.jpg" alt="Honest ">
 				</li>
 
 
@@ -149,7 +148,7 @@
 					<p><time datetime="2022-04-27">Apr 27th 2022</time></p>
 					<a href="#" aria-label="Opens in a new window">Stream/Download</a>
 
-					<img width="400px" src="images/carousel/ifeelfunny-carousel.jpg" alt="Honest ">
+					<img width="400" src="images/carousel/ifeelfunny-carousel.jpg" alt="Honest ">
 				</li>
 
 				<li id="dia5">
@@ -159,17 +158,17 @@
 					<p><time datetime="2022-04-27">Apr 27th 2022</time></p>
 					<a href="#" aria-label="Opens in a new window">Stream/Download</a>
 
-					<img width="400px" src="images/carousel/ifeelfunny-carousel.jpg" alt="Honest ">
+					<img width="400" src="images/carousel/ifeelfunny-carousel.jpg" alt="Honest ">
 				</li>
 
 			</ul>
 
 			<nav aria-label="Carousel controls">
-				<button aria-label="Previous song">
+				<button type="button" aria-label="Previous song">
 					<span></span>
 				</button>
 
-				<button aria-label="Next song">
+				<button type="button" aria-label="Next song">
 					<span></span>
 				</button>
 			</nav>
@@ -186,8 +185,8 @@
 		<section>
 			<h2>Video's</h2>
 
-			<video src="videos/justin-bieber-honest-ft-don-oliver.mp4" poster="images/video.jpg" controls width="200px" preload="none"></video>
-			<button aria-label="Play Honest">Play Honest</button>
+			<video src="videos/justin-bieber-honest-ft-don-oliver.mp4" poster="images/video.jpg" controls width="200" preload="none"></video>
+			<button type="button" aria-label="Play Honest">Play Honest</button>
 
 			<a href="#" aria-label="View all video's on the Video page">View All</a>
 		</section>
