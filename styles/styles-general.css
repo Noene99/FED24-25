@@ -112,7 +112,7 @@ img {
 	--color-vibrant-dark:#7F2B34;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 	:root {
 		--color-text-primary: white;
 		--color-text-primary-white: #B6BDC6;
@@ -148,7 +148,7 @@ img {
 	header>h1 img, header>a img {
 		filter: invert(100%) brightness(200%); 
 	}
-} */
+}
 
 /****************/
 /* JOUW STYLING */
