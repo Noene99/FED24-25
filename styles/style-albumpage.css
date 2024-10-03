@@ -58,8 +58,7 @@ main> section:nth-of-type(1) {
 	display: grid;
 	/* background-color: #7F2B34; */
 	/* van de website geplukt */
-	padding: 11em clamp(1em, 8.33%, 3em) calc(9.25926vw + 20px + 7em) clamp(1em, 8.33%, 3em);
-	
+	padding: 11em clamp(1em, 8.33%, 3em) calc(9.25926vw + 20px + 7em) clamp(1em, 8.33%, 3em);	
 }
 
 main> section:first-of-type>h1 {
@@ -72,7 +71,7 @@ main> section:first-of-type>h1 {
 	margin: 0;
 	grid-row-start: 4;
 	padding: 1em 2rem;
-	
+	color: var(--color-text-primary);
 }
 
 main >section:first-of-type>p {
@@ -88,7 +87,7 @@ main >section:first-of-type>p {
 
 main> section:first-of-type>a {
 	font-size: 1em;
-	color: var(--color-text-primary-nuance);
+	color: var(--color-text-primary);
 	line-height: 1em;
 	text-decoration: underline;
 	grid-row-start: 5;

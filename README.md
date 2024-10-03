@@ -670,23 +670,24 @@ Wat heb ik geleerd?
 
   >>Generieke pagina CSS
   1. https://1000logos.net/justin-bieber-logo/
-
-
+  2. https://www.a11yproject.com/posts/how-to-hide-content/ (css regel 28)
+  3. https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678 (css regel 29)
+  4. https://chatgpt.com/c/66fd1caf-6334-8005-9600-de51e11fbe7c (css regel 389)
+  5. https://chatgpt.com/c/66fd1caf-6334-8005-9600-de51e11fbe7c (css regel 415 en 419)
+  6. https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+  7. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label
 
   >>Homepagina CSS
-  2. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label
-  3. https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
-  4. https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced
-  5. https://codepen.io/shooft/pen/NWQWVGB (Sanne)
-  6. https://codepen.io/shooft/pen/xxvKGmY (Sanne)
-  7. /* https://www.a11yproject.com/posts/how-to-hide-content/ */
+  1. https://codepen.io/shooft/pen/NWQWVGB (Sanne 't Hoofd)
+  2. https://codepen.io/shooft/pen/xxvKGmY (Sanne 't Hoofd)
 
   >>Albumpagina CSS
-  1. https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678  (css albumpagina, regel 155)
+  1. https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678  (css albumpagina, regel 154)
 
-  2. https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678 (css albumpagina, regel 183)
-  3. https://www.youtube.com/watch?v=biI9OFH6Nmg (css albumpagina, regel 184)
+  2. https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678 (css albumpagina, regel 182)
+  3. https://www.youtube.com/watch?v=biI9OFH6Nmg (css albumpagina, regel 183)
   4. https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678 (css albumpagina, regel 183)
-  5. https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678 (css albumpagina, regel 202, 212)
+  5. https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678 (css albumpagina, regel 201, 211)
+  6. https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced
 
 </details>

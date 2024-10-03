@@ -2,23 +2,6 @@
 /*   Fonts    */
 /**************/
 /* moeten als eerste worden ingeladen omdat deze worden geimporteerd. Deze moeten daarom bovenaan in de CSS staan */
-
-@font-face {
-	font-family: "Nimbus sans regular";
-	src: url("../fonts/NimbusSanL-Reg.otf") format("opentype");
-	font-weight: 400;
-	font-style: normal;
-	font-display: fallback;
-}
-
-@font-face {
-	font-family: "Nimbus sans bold";
-	src: url("../fonts/NimbusSanL-Bol.otf") format("opentype"); /* De goede vorm van de url is: ../ en dan ook het format type goed matchen! */
-	font-weight: 700;
-	font-style: normal;
-	font-display: fallback;
-}
-
 @font-face {
 	font-family: "Playfair Display";
 	src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
@@ -26,13 +9,6 @@
 	font-style: normal;
 	font-display: fallback;
 }
-
-/* * {
-	font-family: 'Nimbus Sans regular';
-	text-transform: uppercase;
-} */
-
-
 
 /**************/
 /* CSS REMEDY */
@@ -49,8 +25,8 @@ img {
 * {
 	text-transform: uppercase;
 }
-/* https://www.a11yproject.com/posts/how-to-hide-content/ */
-/* https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678 */
+/* in bronnenlijst https://www.a11yproject.com/posts/how-to-hide-content/ */
+/* in bronnenlijst https://chatgpt.com/c/66faa3fd-154c-8005-a75e-51cec58a1678 */
 .visually-hidden {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
@@ -60,25 +36,7 @@ img {
 	white-space: nowrap;
 	width: 1px;
   }
-  
-  /* WEGHALEN TENZIJ DETHEAD EEN H2 WORDT
-  
-  .visually-hidden:not(:focus):not(:active) {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%); 
-  }
-  
-  .visually-hidden:focus,
-  .visually-hidden:active {
-	clip: auto;
-	clip-path: none;
-	height: auto;
-	width: auto;
-	white-space: normal;
-	position: static;
-	overflow: visible;
-  } */
-  
+
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -112,6 +70,7 @@ img {
 	--color-vibrant-dark:#7F2B34;
 }
 
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme */
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-text-primary: white;
@@ -387,7 +346,6 @@ header.toonMenu button span:nth-child(3) {
 }
 
 /* nav komt tevoorschijn wanneer er geklikt wordt */
-
 header.toonMenu nav {
     translate: 0% 0%;
 }
@@ -429,7 +387,7 @@ footer ul a:hover {
 }
 
 /* HEADER */
-/* https://chatgpt.com/c/66fd1caf-6334-8005-9600-de51e11fbe7c */
+/* bronnenlijst https://chatgpt.com/c/66fd1caf-6334-8005-9600-de51e11fbe7c */
 @media (min-width:46.875em) {
 	header {
 		overflow: visible;
